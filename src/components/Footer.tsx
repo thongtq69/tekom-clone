@@ -1,7 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
+import type { Dictionary, Locale } from "@/dictionaries";
 
-export default function Footer() {
+type Props = { lang: Locale; dict: Dictionary };
+
+export default function Footer({ lang, dict }: Props) {
+  const f = dict.footer;
   return (
     <footer
       className="text-white/90 text-sm"
@@ -19,10 +23,13 @@ export default function Footer() {
             />
           </div>
           <p className="text-white/70 text-xs uppercase tracking-[0.32em] mb-3">
-            Follow Us On
+            {f.follow}
           </p>
           <div className="flex gap-3 mb-6">
-            <SocialIcon href="https://www.facebook.com/TekcomCorporation/" label="Facebook">
+            <SocialIcon
+              href="https://www.facebook.com/TekcomCorporation/"
+              label="Facebook"
+            >
               <path d="M22 12a10 10 0 1 0-11.56 9.88v-7H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.88h-2.34v7A10 10 0 0 0 22 12z" />
             </SocialIcon>
             <SocialIcon href="https://www.youtube.com" label="YouTube">
@@ -32,7 +39,7 @@ export default function Footer() {
           <form className="flex border border-white/30">
             <input
               type="email"
-              placeholder="Enter your email"
+              placeholder={f.emailPlaceholder}
               className="bg-transparent px-3 py-2 text-xs flex-1 outline-none placeholder-white/50"
             />
             <button
@@ -40,46 +47,40 @@ export default function Footer() {
               className="px-4 py-2 text-xs font-bold uppercase tracking-wider"
               style={{ background: "var(--color-gold)" }}
             >
-              Subscribe
+              {f.subscribe}
             </button>
           </form>
         </div>
 
         <div>
           <h4 className="text-xs uppercase tracking-[0.32em] mb-4 text-white">
-            TEKCOM Corporation
+            {f.company}
           </h4>
-          <p className="font-bold mb-2 text-white">Binh Duong 1 Factory — Head Office</p>
-          <p className="text-white/70 leading-relaxed text-[13px]">
-            Lots M1-M2-M7-M8, N2-N3 Street,
-            <br />
-            Nam Tan Uyen Expansion
-            <br />
-            Industrial Park, Binh Co Ward,
-            <br />
-            Ho Chi Minh City, Vietnam
+          <p className="font-bold mb-2 text-white">{f.bd1Title}</p>
+          <p className="text-white/70 leading-relaxed text-[13px] whitespace-pre-line">
+            {f.address}
           </p>
         </div>
 
         <div>
           <h4 className="text-xs uppercase tracking-[0.32em] mb-4 text-white">
-            Binh Duong 2 Factory
+            {f.bd2Title}
           </h4>
-          <p className="text-white/70 leading-relaxed text-[13px] mb-6">
-            Lots A1-A2-A3-A4-A5, N5 Street,
-            <br />
-            Nam Tan Uyen Expansion
-            <br />
-            Industrial Park, Binh Co Ward,
-            <br />
-            Ho Chi Minh City, Vietnam
+          <p className="text-white/70 leading-relaxed text-[13px] whitespace-pre-line mb-6">
+            {f.address2}
           </p>
           <p className="text-[13px]">
-            <a href="tel:+84977668000" className="hover:text-[color:var(--color-gold)]">
+            <a
+              href="tel:+84977668000"
+              className="hover:text-[color:var(--color-gold)]"
+            >
               (+84) 977 668 000
             </a>{" "}
             —{" "}
-            <a href="mailto:info@tekcom.vn" className="hover:text-[color:var(--color-gold)]">
+            <a
+              href="mailto:info@tekcom.vn"
+              className="hover:text-[color:var(--color-gold)]"
+            >
               info@tekcom.vn
             </a>
           </p>
@@ -87,25 +88,24 @@ export default function Footer() {
 
         <div>
           <h4 className="text-xs uppercase tracking-[0.32em] mb-4 text-white">
-            Company Info
+            Info
           </h4>
-          <p className="text-white/70 leading-relaxed text-[13px]">
-            Công ty Cổ phần TEKCOM
-            <br />
-            Số ĐKKD 3702612545 do Sở KHĐT T. Bình Dương cấp ngày 27/10/2017
-            <br />
-            Người đại diện: Vũ Quang Huy
+          <p className="text-white/70 leading-relaxed text-[13px] whitespace-pre-line">
+            {f.companyInfo}
           </p>
-          <Link href="/career" className="inline-block mt-4 text-[color:var(--color-gold)] text-xs uppercase tracking-[0.2em] font-bold">
-            Career →
+          <Link
+            href={`/${lang}/career`}
+            className="inline-block mt-4 text-[color:var(--color-gold)] text-xs uppercase tracking-[0.2em] font-bold"
+          >
+            {f.careerCta}
           </Link>
         </div>
       </div>
 
       <div className="border-t border-white/10">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-10 py-4 text-xs text-white/50 flex flex-col md:flex-row justify-between gap-2">
-          <p>© {new Date().getFullYear()} TEKCOM Corporation. All rights reserved.</p>
-          <p>Together Building The Best.</p>
+          <p>{f.rights.replace("{year}", String(new Date().getFullYear()))}</p>
+          <p>{f.tagline}</p>
         </div>
       </div>
     </footer>
