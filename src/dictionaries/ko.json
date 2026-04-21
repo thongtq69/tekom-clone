@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "title": "TEKCOM Corp — 함께 최고를 만들다",
+    "description": "베트남 프리미엄 합판 제조사: 고무나무, 유칼립투스, 아카시아, 소나무 단판. 2005년 설립, 30개국 이상 수출."
+  },
+  "nav": {
+    "about": "회사 소개",
+    "plywood": "합판",
+    "experience": "경험",
+    "news": "뉴스",
+    "contact": "연락처",
+    "search": "키워드를 입력하세요...",
+    "menu": "메뉴"
+  },
+  "common": {
+    "scrollDown": "아래로 스크롤",
+    "viewMore": "더 보기",
+    "viewDetail": "상세 보기",
+    "readMore": "자세히 보기",
+    "contactUs": "지금 연락하기",
+    "send": "메시지 보내기",
+    "minOrderQty": "최소 주문 수량",
+    "dimensions": "규격",
+    "material": "재질",
+    "price": "참고 가격",
+    "viewMap": "지도에서 보기"
+  },
+  "logo": { "tagline": "함께 최고를 만들다" },
+  "home": {
+    "hero": {
+      "eyebrow": "회사 소개",
+      "title": "함께 최고를 만들다.",
+      "description": "2005년에 설립된 TEKCOM은 베트남과 수출 시장의 파트너 및 고객에게 합판 및 관련 제품을 전문적으로 공급합니다.",
+      "products": "주요 제품:",
+      "productsList": "고무나무 단판  |  유칼립투스 단판  |  아카시아 단판  |  소나무 단판"
+    },
+    "vision": {
+      "eyebrow": "비전",
+      "title": "목재 및 관련 제품의 시장 리더가 되겠습니다",
+      "lead": "건설 및 건축 디자인 분야의 혁신적인 솔루션을 제공합니다.",
+      "items": [
+        "혁신적인 솔루션과 잘 알려진 브랜드를 통해 국내 및 지역 시장에서 선도적인 위치 확보.",
+        "지역 내 지속 가능한 선도 제조사가 되는 것.",
+        "효과적인 공급망 관리 운영.",
+        "고객에게 적합한 솔루션을 제공하기 위한 지속적 혁신."
+      ]
+    },
+    "globalReach": {
+      "eyebrow": "글로벌 진출",
+      "title": "수출 시장",
+      "items": [
+        { "flag": "🇮🇳", "name": "인도", "desc": "남아시아 핵심 파트너" },
+        { "flag": "🇨🇳", "name": "중국", "desc": "주요 제조 허브" },
+        { "flag": "🇺🇸", "name": "미국", "desc": "주요 수출 대상국" },
+        { "flag": "🇦🇪", "name": "두바이", "desc": "중동의 관문" },
+        { "flag": "🇴🇲", "name": "오만", "desc": "성장하는 지역 파트너" },
+        { "flag": "🇰🇷", "name": "한국", "desc": "신뢰할 수 있는 산업 파트너" }
+      ]
+    },
+    "aboutUs": { "eyebrow": "회사 소개", "title": "우리는 누구인가?", "lead": "품질의 전문가.", "desc": "TEKCOM은 신뢰할 수 있는 합판 제조 파트너로서, 베트남과 전 세계 고객에게 국제 표준 제품과 헌신적인 서비스를 제공하기 위해 노력합니다.", "cta": "더 알아보기" },
+    "privateLabel": { "eyebrow": "파트너십", "title": "PRIVATE LABEL 파트너가 되어드립니다", "desc": "우리는 항상 고객의 성공을 위해 일합니다. 유연한 생산 능력과 경험 많은 엔지니어링 팀과 함께, TEKCOM은 포장 디자인부터 기술 사양까지 귀사의 자체 브랜드 구축을 함께할 준비가 되어 있습니다.", "cta": "함께 협력하기" },
+    "experiencePreview": { "eyebrow": "경험", "title": "우리의 여정", "desc": "제품, 고객, 컨테이너 적재, 수출 서류 사진 — 20년 이상의 업계 경험의 증거.", "cta": "갤러리 보기" },
+    "plywoodPreview": { "eyebrow": "합판 제품", "title": "4가지 핵심 단판 라인", "desc": "고무나무, 유칼립투스, 아카시아부터 소나무까지 — 다양한 수출 요구를 충족합니다.", "cta": "전체 제품 보기" },
+    "factories": {
+      "eyebrow": "공장",
+      "title": "제조 우수성",
+      "items": [
+        { "name": "빈증 1공장", "desc": "TEKCOM의 55,000m² 공장은 FFP 산업에서 가장 최첨단 시설을 갖추고 있습니다. 제품은 EN 13986 (CE) 인증과 TÜV Rheinland 인증을 받았습니다.", "area": "55,000 m²", "products": "건축용 합판", "people": "700+ 직원" },
+        { "name": "빈증 2공장", "desc": "2019년 개설된 BD2는 더욱 자동화되어 가구 및 기타 산업용 합판, 프리미엄 RTA 주방 캐비닛에 특화되어 있습니다.", "area": "60,000 m²", "products": "가구용 합판, 주방 캐비닛", "people": "600+ 직원" }
+      ],
+      "labels": { "area": "면적", "products": "제품", "people": "인력" }
+    },
+    "milestones": {
+      "eyebrow": "주요 이정표",
+      "title": "우리의 여정",
+      "subtitle": "운영의 모든 단계에서 TEKCOM은 파트너와 일관된 협력을 위해 노력합니다.",
+      "items": [
+        { "year": "2005", "title": "설립", "desc": "단열재 무역 회사로 시작." },
+        { "year": "2007", "title": "무역 — FFP", "desc": "베트남에서 FFP 유통 시작." },
+        { "year": "2012", "title": "제조 — FFP", "desc": "연 12,000 cbm 설계 용량의 FFP 생산 시설 운영." },
+        { "year": "2015", "title": "빈증 1 — 1단계", "desc": "연 60,000 cbm 설계 용량의 신규 시설 개설." },
+        { "year": "2016", "title": "빈증 1 — 2단계", "desc": "용량을 연 138,000 cbm으로 확장." },
+        { "year": "2019", "title": "빈증 2 — 1단계", "desc": "신제품 포트폴리오: 가구 합판, 바닥재 — 연 84,000 cbm." }
+      ]
+    }
+  },
+  "plywood": {
+    "hero": { "eyebrow": "합판", "title": "4가지 핵심 단판 라인", "description": "고무나무, 유칼립투스, 아카시아부터 소나무까지 — TEKCOM은 전 세계 가구 및 수출 고객에게 다양한 원자재를 공급합니다." },
+    "products": {
+      "eyebrow": "제품 범위",
+      "title": "단판 제품",
+      "items": [
+        { "slug": "rubberwood", "name": "고무나무 단판", "material": "고무나무 (Hevea brasiliensis)", "dimensions": "1220 × 2440 mm — 두께 3 / 5 / 9 / 12 / 15 / 18 mm", "price": "견적 문의", "moq": "1 × 40' 컨테이너 (≈ 25 m³)", "highlights": ["매끄러운 표면, 균일한 결", "프리미엄 가구에 이상적", "건조 함수율 8–12%"] },
+        { "slug": "eucalyptus", "name": "유칼립투스 단판", "material": "유칼립투스", "dimensions": "1220 × 2440 mm — 두께 3 / 5 / 9 / 12 / 15 / 18 / 21 mm", "price": "견적 문의", "moq": "1 × 40' 컨테이너 (≈ 25 m³)", "highlights": ["높은 기계적 강도", "곧은 결, 적은 옹이", "거푸집 및 가구에 적합"] },
+        { "slug": "acacia", "name": "아카시아 단판", "material": "아카시아", "dimensions": "1220 × 2440 mm — 두께 3 / 5 / 9 / 12 / 15 / 18 mm", "price": "견적 문의", "moq": "1 × 40' 컨테이너 (≈ 25 m³)", "highlights": ["안정적인 국내 공급", "밝은 색조, 도장/접착 용이", "경쟁력 있는 가격"] },
+        { "slug": "pine", "name": "소나무 단판", "material": "소나무", "dimensions": "1220 × 2440 mm — 두께 3 / 5 / 9 / 12 / 15 / 18 mm", "price": "견적 문의", "moq": "1 × 40' 컨테이너 (≈ 25 m³)", "highlights": ["독특한 소나무 향", "아름다운 결, 높은 미관", "수출용 가구에 이상적"] }
+      ]
+    },
+    "certifications": {
+      "eyebrow": "인증서 및 서류",
+      "title": "수출을 위한 완전한 법적 서류",
+      "subtitle": "TEKCOM은 모든 수출 선적에 필요한 모든 서류를 제공합니다.",
+      "items": [
+        { "name": "합법 임산물 기록", "shortName": "임산물 명세서", "desc": "베트남 규정 및 EUTR에 따른 합법 목재 원산지 증명." },
+        { "name": "원산지 증명서", "shortName": "C/O Form E", "desc": "ASEAN — 중국 특혜 관세를 위한 원산지 증명서." },
+        { "name": "식물 검역 증명서", "shortName": "Phytosanitary", "desc": "선적 화물이 해충이 없으며 도착국 수입 규정을 충족함을 확인." },
+        { "name": "훈증 증명서", "shortName": "Fumigation", "desc": "목재 포장 및 목재 제품에 대한 ISPM 15 훈증 처리." }
+      ]
+    }
+  },
+  "contact": {
+    "hero": { "eyebrow": "연락처", "title": "문의하기", "description": "TEKCOM에 연락해 주셔서 감사합니다. 모든 문의에 72근무시간 내에 답변드립니다." },
+    "form": { "eyebrow": "메시지 보내기", "title": "귀하의 의견은 소중합니다", "name": "이름 *", "email": "이메일 *", "phone": "전화번호", "company": "회사명", "subject": "제목 *", "message": "내용 *", "submit": "메시지 보내기" },
+    "info": { "company": "TEKCOM Corporation", "hq": "본사 — 빈증 1공장", "addr1": "M1-M2-M7-M8 부지, N2-N3 거리, 확장 Nam Tan Uyen 산업단지, Binh Co 동, 호치민시, 베트남", "bd2": "빈증 2공장", "addr2": "A1-A2-A3-A4-A5 부지, N5 거리, 확장 Nam Tan Uyen 산업단지, Binh Co 동, 호치민시, 베트남", "hotlineLabel": "핫라인:", "emailLabel": "이메일:" }
+  },
+  "news": {
+    "hero": { "eyebrow": "뉴스", "title": "뉴스 및 업데이트", "description": "TEKCOM의 최신 이야기." },
+    "section": { "eyebrow": "최신 기사", "title": "TEKCOM 이야기" },
+    "articles": [
+      { "title": "TEKCOM, 북미 수출 확장", "date": "2026년 3월 12일", "category": "회사 뉴스", "excerpt": "선도 미국 유통업체와 장기 공급 계약…" },
+      { "title": "2025 지속 가능성 보고서 발표", "date": "2026년 2월 2일", "category": "지속 가능성", "excerpt": "23% 배출 감소, FSC® 인증 88%…" },
+      { "title": "BD2 가구 합판 라인 둘러보기", "date": "2026년 1월 18일", "category": "비하인드", "excerpt": "가장 자동화된 라인 견학…" },
+      { "title": "Vietnam Wood 2025의 TEKCOM", "date": "2025년 11월 22일", "category": "이벤트", "excerpt": "A-12 부스에서 최신 거푸집 라인을 확인하세요…" }
+    ]
+  },
+  "experience": {
+    "hero": { "eyebrow": "경험", "title": "TEKCOM의 여정", "description": "20년 이상의 운영 경험에서 나온 제품, 고객, 컨테이너 적재 및 수출입 서류 사진." },
+    "categories": { "products": "제품 사진", "customers": "파트너 및 고객", "loading": "컨테이너 적재", "documents": "수출 서류" },
+    "comingSoon": "갤러리가 업데이트 중입니다. 곧 다시 방문해 주세요."
+  },
+  "footer": {
+    "brief": "함께 최고를 만들다. 2005년 설립, 건설 및 건축 디자인을 위한 합판 및 관련 제품 전문.",
+    "quickLinksTitle": "빠른 링크",
+    "productsTitle": "제품",
+    "contactTitle": "연락처",
+    "products": ["고무나무 단판", "유칼립투스 단판", "아카시아 단판", "소나무 단판"],
+    "addressShort": "빈증성, 베트남",
+    "phone": "+84 977 668 000",
+    "email": "info@tekcom.vn",
+    "rights": "© {year} TEKCOM Corporation. 모든 권리 보유.",
+    "privacy": "개인정보 처리방침",
+    "terms": "이용약관"
+  }
+}

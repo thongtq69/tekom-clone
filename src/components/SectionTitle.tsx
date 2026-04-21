@@ -3,6 +3,7 @@ type Props = {
   title: string;
   subtitle?: string;
   align?: "left" | "center";
+  inverse?: boolean;
 };
 
 export default function SectionTitle({
@@ -10,30 +11,37 @@ export default function SectionTitle({
   title,
   subtitle,
   align = "left",
+  inverse = false,
 }: Props) {
   return (
     <div className={align === "center" ? "text-center" : ""}>
       {eyebrow && (
-        <p className="heading-eyebrow mb-3" style={{ color: "var(--color-gold)" }}>
+        <p
+          className="heading-eyebrow mb-3"
+          style={{ color: "var(--color-gold)" }}
+        >
           {eyebrow}
         </p>
       )}
-      <h2
-        className="font-display font-bold uppercase text-2xl md:text-3xl lg:text-4xl leading-tight tracking-wide mb-3"
-        style={{ color: "var(--color-navy)" }}
-      >
+      <h2 style={inverse ? { color: "#fff", letterSpacing: "5px" } : undefined}>
         {title}
       </h2>
       {subtitle && (
         <p
-          className="text-base max-w-2xl"
-          style={{ color: "var(--color-muted)" }}
+          className="mt-3 max-w-2xl"
+          style={{
+            color: inverse
+              ? "rgba(255,255,255,0.75)"
+              : "var(--color-muted)",
+            fontSize: "15px",
+            lineHeight: "24px",
+          }}
         >
           {subtitle}
         </p>
       )}
       <div
-        className="h-[3px] w-12 mt-5"
+        className="h-[2px] w-10 mt-4"
         style={{
           background: "var(--color-gold)",
           marginLeft: align === "center" ? "auto" : 0,

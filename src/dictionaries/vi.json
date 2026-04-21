@@ -1,55 +1,45 @@
 {
   "meta": {
     "title": "TEKCOM Corp — Cùng nhau xây dựng những điều tốt nhất",
-    "description": "Nhà sản xuất hàng đầu ván ép và tủ bếp RTA tại Việt Nam. Thành lập 2005."
+    "description": "Nhà sản xuất ván ép cao cấp tại Việt Nam: ván lạng cao su, bạch đàn, tràm, thông. Thành lập 2005, xuất khẩu 30+ quốc gia."
   },
   "nav": {
     "about": "Giới thiệu",
     "plywood": "Ván ép",
-    "cabinets": "Tủ bếp",
-    "marketCoverage": "Thị trường",
+    "experience": "Kinh nghiệm",
     "news": "Tin tức",
-    "career": "Tuyển dụng",
     "contact": "Liên hệ",
-    "sustainability": "Phát triển bền vững",
     "search": "Nhập từ khoá tìm kiếm...",
     "menu": "Menu"
   },
-  "footer": {
-    "follow": "Theo dõi chúng tôi",
-    "subscribe": "Đăng ký",
-    "emailPlaceholder": "Nhập email của bạn",
-    "company": "Công ty cổ phần TEKCOM",
-    "bd1Title": "Nhà máy Bình Dương 1 — Trụ sở chính",
-    "bd2Title": "Nhà máy Bình Dương 2",
-    "address": "Lô M1-M2-M7-M8, đường N2-N3,\nKCN Nam Tân Uyên Mở Rộng,\nP. Bình Cơ, TP. Hồ Chí Minh, Việt Nam",
-    "address2": "Lô A1-A2-A3-A4-A5, đường N5,\nKCN Nam Tân Uyên Mở Rộng,\nP. Bình Cơ, TP. Hồ Chí Minh, Việt Nam",
-    "companyInfo": "Công ty Cổ phần TEKCOM\nSố ĐKKD 3702612545 do Sở KHĐT T. Bình Dương cấp ngày 27/10/2017\nNgười đại diện: Vũ Quang Huy",
-    "careerCta": "Tuyển dụng →",
-    "rights": "© {year} TEKCOM Corporation. Bảo lưu mọi quyền.",
-    "tagline": "Cùng nhau xây dựng những điều tốt nhất."
-  },
   "common": {
     "scrollDown": "KÉO XUỐNG",
-    "viewMap": "Xem bản đồ",
+    "viewMore": "Xem thêm",
+    "viewDetail": "Xem chi tiết",
     "readMore": "Xem thêm",
     "contactUs": "Liên hệ ngay",
-    "downloadBrochure": "Tải brochure (PDF)",
-    "apply": "Ứng tuyển",
-    "send": "Gửi tin nhắn"
+    "send": "Gửi tin nhắn",
+    "minOrderQty": "Số lượng tối thiểu",
+    "dimensions": "Kích thước",
+    "material": "Chất liệu",
+    "price": "Giá tham khảo",
+    "viewMap": "Xem trên bản đồ"
+  },
+  "logo": {
+    "tagline": "Cùng nhau xây dựng những điều tốt nhất"
   },
   "home": {
     "hero": {
-      "eyebrow": "Giới thiệu",
+      "eyebrow": "GIỚI THIỆU",
       "title": "Cùng nhau xây dựng những điều tốt nhất.",
-      "description": "Thành lập từ năm 2005, Công ty Cổ phần TEKCOM chuyên cung cấp ván ép và các sản phẩm liên quan cho đối tác và khách hàng tại thị trường Việt Nam và xuất khẩu. Với cam kết mang đến sản phẩm chất lượng cao, TEKCOM không ngừng phát triển những giải pháp đổi mới cho ngành xây dựng và sáng tạo kiến trúc.",
+      "description": "Thành lập từ năm 2005, Công ty Cổ phần TEKCOM chuyên cung cấp ván ép và các sản phẩm liên quan cho đối tác và khách hàng tại thị trường Việt Nam và xuất khẩu.",
       "products": "Sản phẩm chủ lực:",
-      "productsList": "Ván ép cốp pha | Ván ép nội thất | Tủ bếp RTA"
+      "productsList": "Ván lạng cao su  |  Ván lạng bạch đàn  |  Ván lạng tràm  |  Ván lạng thông"
     },
     "vision": {
-      "eyebrow": "Tầm nhìn",
-      "title": "Dẫn đầu thị trường ván ép và sản phẩm liên quan",
-      "lead": "Trở thành đơn vị dẫn đầu thị trường về ván ép và các sản phẩm liên quan; cung cấp giải pháp đổi mới trong xây dựng và thiết kế kiến trúc.",
+      "eyebrow": "TẦM NHÌN",
+      "title": "Trở thành đơn vị dẫn đầu thị trường ván ép và sản phẩm liên quan",
+      "lead": "Cung cấp giải pháp đổi mới trong xây dựng và thiết kế kiến trúc.",
       "items": [
         "Vị thế dẫn đầu trong nước và khu vực nhờ giải pháp sáng tạo và thương hiệu uy tín.",
         "Trở thành nhà sản xuất bền vững hàng đầu khu vực.",
@@ -57,265 +47,162 @@
         "Liên tục đổi mới để mang đến giải pháp phù hợp cho khách hàng."
       ]
     },
-    "values": {
-      "eyebrow": "Giá trị cốt lõi",
-      "title": "Bốn trụ cột dẫn dắt chúng tôi",
+    "globalReach": {
+      "eyebrow": "PHẠM VI TOÀN CẦU",
+      "title": "Thị trường xuất khẩu",
       "items": [
-        {
-          "title": "Chinh phục",
-          "items": [
-            "Chất lượng xuất sắc",
-            "Vận hành hiệu quả",
-            "Dám thách thức",
-            "Tận tâm",
-            "Tự chịu trách nhiệm",
-            "Phản ứng nhanh với mọi vấn đề"
-          ]
-        },
-        {
-          "title": "Đổi mới liên tục",
-          "items": [
-            "Tư duy đột phá",
-            "Tinh thần dám làm",
-            "Thích nghi tích cực",
-            "Sáng kiến kinh doanh",
-            "Học để chia sẻ, chia sẻ để học",
-            "Hành động chủ động"
-          ]
-        },
-        {
-          "title": "Hợp tác",
-          "items": [
-            "Cam kết cao",
-            "Hướng tới kết quả",
-            "Tinh thần phục vụ thực sự",
-            "Đóng góp ý tưởng xây dựng",
-            "Tôn trọng đối tác",
-            "Khuyến khích và tạo động lực cho nhau"
-          ]
-        },
-        {
-          "title": "Lấy khách hàng làm trung tâm",
-          "items": [
-            "Tư duy từ ngoài vào trong",
-            "Gắn kết tuyệt vời với khách hàng",
-            "Tinh thần WIN-WIN sâu sắc",
-            "Lắng nghe tích cực",
-            "Văn hoá phản hồi cởi mở",
-            "Vượt trên kỳ vọng"
-          ]
-        }
+        { "flag": "🇮🇳", "name": "Ấn Độ", "desc": "Đối tác chiến lược tại Nam Á" },
+        { "flag": "🇨🇳", "name": "Trung Quốc", "desc": "Trung tâm sản xuất lớn" },
+        { "flag": "🇺🇸", "name": "Hoa Kỳ", "desc": "Thị trường xuất khẩu chủ lực" },
+        { "flag": "🇦🇪", "name": "Dubai", "desc": "Cửa ngõ vào Trung Đông" },
+        { "flag": "🇴🇲", "name": "Oman", "desc": "Đối tác khu vực đang phát triển" },
+        { "flag": "🇰🇷", "name": "Hàn Quốc", "desc": "Đối tác công nghiệp tin cậy" }
       ]
     },
+    "aboutUs": {
+      "eyebrow": "GIỚI THIỆU",
+      "title": "Chúng tôi là ai?",
+      "lead": "Professionals in QUALITY — chuyên gia về chất lượng.",
+      "desc": "TEKCOM tự hào là đối tác sản xuất ván ép tin cậy, cam kết mang đến sản phẩm đạt chuẩn quốc tế và dịch vụ tận tâm cho khách hàng trong nước và toàn cầu.",
+      "cta": "Tìm hiểu thêm"
+    },
+    "privateLabel": {
+      "eyebrow": "ĐỐI TÁC",
+      "title": "Hãy để chúng tôi là đối tác Private Label của bạn",
+      "desc": "Chúng tôi luôn hướng đến sự thành công của khách hàng. Với năng lực sản xuất linh hoạt và đội ngũ kỹ thuật chuyên môn, TEKCOM sẵn sàng đồng hành cùng bạn xây dựng thương hiệu riêng — từ thiết kế bao bì đến tiêu chuẩn kỹ thuật.",
+      "cta": "Hợp tác cùng chúng tôi"
+    },
+    "experiencePreview": {
+      "eyebrow": "KINH NGHIỆM",
+      "title": "Hành trình của chúng tôi",
+      "desc": "Hình ảnh hàng hoá, đối tác, đóng container và các giấy tờ xuất nhập khẩu — minh chứng cho hơn 20 năm kinh nghiệm trong ngành.",
+      "cta": "Xem thư viện"
+    },
+    "plywoodPreview": {
+      "eyebrow": "SẢN PHẨM VÁN ÉP",
+      "title": "4 dòng ván lạng chủ lực",
+      "desc": "Từ cao su, bạch đàn, tràm đến thông — đáp ứng đa dạng nhu cầu xuất khẩu.",
+      "cta": "Xem tất cả sản phẩm"
+    },
     "factories": {
-      "eyebrow": "Cơ sở sản xuất",
-      "title": "Nhà máy của chúng tôi",
+      "eyebrow": "NHÀ MÁY",
+      "title": "Năng lực sản xuất",
       "items": [
         {
-          "name": "Nhà máy Bình Dương 1",
-          "desc": "Nhà máy 55.000 m² của TEKCOM được trang bị máy móc hiện đại nhất ngành ván phim cốp pha. Sản phẩm đạt tiêu chuẩn EU (EN 13986) và chứng nhận TÜV Rheinland về ván ép.",
+          "name": "Nhà máy Bình Dương 01",
+          "desc": "Nhà máy 55.000 m² của TEKCOM được trang bị máy móc hiện đại nhất ngành ván phim cốp pha. Sản phẩm đạt tiêu chuẩn EU (EN 13986) và chứng nhận TÜV Rheinland.",
           "area": "55.000 m²",
           "products": "Ván ép cốp pha",
           "people": "700+ nhân viên"
         },
         {
-          "name": "Nhà máy Bình Dương 2",
-          "desc": "Khánh thành 2019, BD2 tự động hoá cao và chuyên sản xuất ván ép cho ngành nội thất và các ngành khác, bao gồm tủ bếp chất lượng cao.",
+          "name": "Nhà máy Bình Dương 02",
+          "desc": "Khánh thành 2019, BD2 tự động hoá cao và chuyên sản xuất ván ép cho ngành nội thất, bao gồm tủ bếp RTA chất lượng cao.",
           "area": "60.000 m²",
           "products": "Ván ép nội thất, tủ bếp",
           "people": "600+ nhân viên"
         }
       ],
-      "labels": {
-        "area": "Tổng diện tích",
-        "products": "Sản phẩm chính",
-        "people": "Nhân lực"
-      }
+      "labels": { "area": "DIỆN TÍCH", "products": "SẢN PHẨM", "people": "NHÂN LỰC" }
     },
     "milestones": {
-      "eyebrow": "Cột mốc quan trọng",
-      "title": "Cùng nhau xây dựng những điều tốt nhất",
+      "eyebrow": "CỘT MỐC QUAN TRỌNG",
+      "title": "Hành trình của chúng tôi",
       "subtitle": "Trong từng bước phát triển, TEKCOM luôn nỗ lực phối hợp chặt chẽ với các đối tác.",
       "items": [
         { "year": "2005", "title": "Thành lập", "desc": "Là công ty thương mại vật liệu cách nhiệt." },
-        { "year": "2010", "title": "Dây chuyền ván ép đầu tiên", "desc": "Khởi động dây chuyền sản xuất ván ép đầu tiên tại BD1." },
-        { "year": "2015", "title": "Thị trường xuất khẩu", "desc": "Phục vụ đối tác tại châu Á, Úc và châu Âu." },
-        { "year": "2019", "title": "Nhà máy BD2", "desc": "Khánh thành nhà máy thứ hai chuyên về ván ép nội thất." },
-        { "year": "2022", "title": "Tủ bếp RTA", "desc": "Ra mắt dòng tủ bếp RTA cho thị trường Mỹ." },
-        { "year": "Hiện tại", "title": "Xây dựng tốt nhất", "desc": "Phục vụ khách hàng tại 30+ quốc gia." }
+        { "year": "2007", "title": "Thương mại — FFP", "desc": "Bắt đầu phân phối ván phim cốp pha tại Việt Nam." },
+        { "year": "2012", "title": "Sản xuất — FFP", "desc": "Vận hành dây chuyền FFP công suất 12.000 cbm/năm." },
+        { "year": "2015", "title": "Bình Dương 1 — Giai đoạn 1", "desc": "Khánh thành nhà máy mới công suất 60.000 cbm/năm." },
+        { "year": "2016", "title": "Bình Dương 1 — Giai đoạn 2", "desc": "Mở rộng công suất lên 138.000 cbm/năm." },
+        { "year": "2019", "title": "Bình Dương 2 — Giai đoạn 1", "desc": "Tập trung sản phẩm mới: ván nội thất, ván sàn 84.000 cbm/năm." }
       ]
-    },
-    "cta": {
-      "title": "Sẵn sàng cùng nhau xây dựng?",
-      "desc": "Đội ngũ TEKCOM luôn sẵn sàng hỗ trợ dự án tiếp theo của bạn — từ yêu cầu mẫu đến hợp tác cung ứng dài hạn.",
-      "button": "Liên hệ ngay"
     }
   },
   "plywood": {
     "hero": {
-      "eyebrow": "Ván ép",
-      "title": "Gỗ kỹ thuật, hiệu suất vượt trội.",
-      "description": "Từ cốp pha cho công trình cao tầng đến nội thất tinh tế, sản phẩm ván ép của chúng tôi được tin dùng bởi kiến trúc sư, nhà thầu và nhà sản xuất tại hơn 30 quốc gia."
+      "eyebrow": "VÁN ÉP",
+      "title": "Bốn dòng ván lạng chủ lực",
+      "description": "Từ ván lạng cao su, bạch đàn, tràm đến thông — TEKCOM cung cấp đa dạng nguyên liệu cho khách hàng nội thất và xuất khẩu trên toàn cầu."
     },
     "products": {
-      "eyebrow": "Danh mục sản phẩm",
-      "title": "Sản phẩm ván ép",
+      "eyebrow": "DANH MỤC SẢN PHẨM",
+      "title": "Sản phẩm ván lạng",
       "items": [
         {
-          "name": "Ván ép cốp pha",
-          "tagline": "Cốp pha bê tông cho công trình cao tầng",
-          "features": [
-            "Bề mặt phim phenolic dễ tháo dỡ",
-            "Tái sử dụng 8+ lần",
-            "Đạt tiêu chuẩn EN 13986",
-            "Đa độ dày: 12, 15, 17, 18, 21 mm"
-          ]
+          "slug": "rubberwood",
+          "name": "Ván lạng cao su",
+          "material": "Gỗ cao su (Hevea brasiliensis)",
+          "dimensions": "1220 × 2440 mm — dày 3 / 5 / 9 / 12 / 15 / 18 mm",
+          "price": "Liên hệ — báo giá theo thực tế",
+          "moq": "1 container 40' (≈ 25 m³)",
+          "highlights": ["Bề mặt mịn, vân gỗ đều", "Phù hợp nội thất cao cấp", "Sấy khô đạt 8–12% độ ẩm"]
         },
         {
-          "name": "Ván ép nội thất",
-          "tagline": "Ván ép cao cấp cho nội thất trong nhà",
-          "features": [
-            "Keo E0/E1 phát thải formaldehyde thấp",
-            "Bề mặt veneer hạng A mịn màng",
-            "Phân hạng BB/CC, CC/CC, BB/BB",
-            "Độ dày tuỳ chỉnh 4 mm – 25 mm"
-          ]
+          "slug": "eucalyptus",
+          "name": "Ván lạng bạch đàn",
+          "material": "Gỗ bạch đàn (Eucalyptus)",
+          "dimensions": "1220 × 2440 mm — dày 3 / 5 / 9 / 12 / 15 / 18 / 21 mm",
+          "price": "Liên hệ — báo giá theo thực tế",
+          "moq": "1 container 40' (≈ 25 m³)",
+          "highlights": ["Độ bền cơ học cao", "Thớ gỗ thẳng, ít mắt", "Thích hợp ván cốp pha & nội thất"]
         },
         {
-          "name": "Ván phim phủ",
-          "tagline": "Đa năng, bền bỉ, chống thời tiết",
-          "features": [
-            "Phim phenolic nâu / đen",
-            "Keo WBP chống nước",
-            "Bề mặt mịn hoặc lưới chống trượt",
-            "Cạnh viền được niêm phong"
-          ]
+          "slug": "acacia",
+          "name": "Ván lạng tràm",
+          "material": "Gỗ tràm (Acacia)",
+          "dimensions": "1220 × 2440 mm — dày 3 / 5 / 9 / 12 / 15 / 18 mm",
+          "price": "Liên hệ — báo giá theo thực tế",
+          "moq": "1 container 40' (≈ 25 m³)",
+          "highlights": ["Nguồn cung ổn định trong nước", "Màu sáng, dễ phủ keo / sơn", "Giá cạnh tranh"]
+        },
+        {
+          "slug": "pine",
+          "name": "Ván lạng thông",
+          "material": "Gỗ thông (Pine)",
+          "dimensions": "1220 × 2440 mm — dày 3 / 5 / 9 / 12 / 15 / 18 mm",
+          "price": "Liên hệ — báo giá theo thực tế",
+          "moq": "1 container 40' (≈ 25 m³)",
+          "highlights": ["Hương gỗ thông đặc trưng", "Vân đẹp, thẩm mỹ cao", "Phù hợp đồ nội thất xuất khẩu"]
         }
       ]
     },
-    "quality": {
-      "eyebrow": "Đảm bảo chất lượng",
-      "title": "Tiêu chuẩn & chứng nhận quốc tế",
-      "p1": "Mọi sản phẩm xuất xưởng đều được kiểm định ở mọi công đoạn — từ chọn gỗ đến kiểm tra cuối cùng — để đảm bảo hiệu suất ổn định.",
-      "p2": "Chúng tôi đạt chứng nhận EN 13986 (CE), TÜV Rheinland, CARB Phase II, FSC® Chain of Custody và đáp ứng giới hạn phát thải E0/E1 nghiêm ngặt cho sử dụng trong nhà.",
-      "certs": ["EN 13986", "TÜV Rheinland", "CARB P2", "FSC® CoC", "ISO 9001", "ISO 14001"]
-    }
-  },
-  "cabinets": {
-    "hero": {
-      "eyebrow": "TEKCOM — Đối tác tin cậy",
-      "title": "Tủ bếp RTA",
-      "description": "Tại TEKCOM, chúng tôi chuyên sản xuất tủ bếp cao cấp tại Việt Nam. Cam kết chất lượng tinh xảo và giao hàng đáng tin cậy, đáp ứng yêu cầu khắt khe của ngành sản xuất tủ bếp."
-    },
-    "features": {
-      "eyebrow": "Vì sao chọn TEKCOM",
-      "title": "Lợi thế khác biệt của chúng tôi",
+    "certifications": {
+      "eyebrow": "CHỨNG CHỈ & GIẤY TỜ",
+      "title": "Hồ sơ pháp lý đầy đủ cho xuất khẩu",
+      "subtitle": "TEKCOM cung cấp đầy đủ chứng từ bắt buộc cho mỗi lô hàng xuất khẩu.",
       "items": [
-        { "title": "Vật liệu cao cấp", "desc": "Gỗ tự nhiên, hộp ván ép, phụ kiện giảm chấn." },
-        { "title": "Kiểm soát chất lượng nghiêm ngặt", "desc": "Kiểm tra 100% sản phẩm trước khi đóng gói." },
-        { "title": "Năng lực mở rộng", "desc": "Lên đến 150 container/tháng." },
-        { "title": "Thiết kế tuỳ chỉnh", "desc": "Shaker, slab, raised-panel và phong cách hiện đại." },
-        { "title": "Thời gian sản xuất nhanh", "desc": "Mẫu 2 tuần · Sản xuất 45 ngày." },
-        { "title": "Hậu cần đáng tin cậy", "desc": "FCL/LCL — giao tận nơi." }
-      ]
-    },
-    "styles": {
-      "eyebrow": "Hoàn thiện",
-      "title": "Chọn phong cách của bạn",
-      "items": ["Shaker White", "Espresso", "Natural Oak", "Slate Grey"]
-    }
-  },
-  "marketCoverage": {
-    "hero": {
-      "eyebrow": "Thị trường",
-      "title": "Được tin dùng tại 30+ quốc gia.",
-      "description": "Từ nhà thầu Việt Nam đến các thương hiệu nội thất toàn cầu, TEKCOM phục vụ đa dạng khách hàng trên mọi châu lục."
-    },
-    "regions": {
-      "eyebrow": "Khu vực hoạt động",
-      "title": "Phạm vi toàn cầu, dịch vụ địa phương",
-      "items": [
-        { "name": "Châu Á – Thái Bình Dương", "countries": "Việt Nam, Nhật Bản, Hàn Quốc, Singapore, Úc, New Zealand" },
-        { "name": "Bắc Mỹ", "countries": "Hoa Kỳ, Canada" },
-        { "name": "Châu Âu", "countries": "Đức, Pháp, Anh, Hà Lan, Bỉ" },
-        { "name": "Trung Đông", "countries": "UAE, Ả Rập Xê Út, Qatar" }
-      ]
-    }
-  },
-  "news": {
-    "hero": {
-      "eyebrow": "Tin tức",
-      "title": "Tin tức & cập nhật",
-      "description": "Những câu chuyện mới nhất từ TEKCOM — ra mắt sản phẩm, tiến trình bền vững và hậu trường nhà máy."
-    },
-    "section": {
-      "eyebrow": "Bài viết mới nhất",
-      "title": "Câu chuyện từ TEKCOM"
-    },
-    "articles": [
-      {
-        "title": "TEKCOM mở rộng thị trường xuất khẩu sang Bắc Mỹ",
-        "date": "12/03/2026",
-        "category": "Tin công ty",
-        "excerpt": "Chúng tôi vinh dự thông báo hợp đồng cung ứng dài hạn với một nhà phân phối ván ép cốp pha hàng đầu tại Mỹ…"
-      },
-      {
-        "title": "Báo cáo phát triển bền vững 2025 đã ra mắt",
-        "date": "02/02/2026",
-        "category": "Phát triển bền vững",
-        "excerpt": "Điểm nhấn: giảm 23% phát thải scope 1, tỷ lệ nguyên liệu FSC® đạt 88%, lắp đặt mái điện mặt trời mới…"
-      },
-      {
-        "title": "Bên trong dây chuyền ván ép nội thất BD2",
-        "date": "18/01/2026",
-        "category": "Hậu trường",
-        "excerpt": "Hành trình tham quan dây chuyền tự động hoá cao nhất — từ bóc gỗ đến đóng gói, đây là cách một tấm ván được tạo ra."
-      },
-      {
-        "title": "TEKCOM tại Vietnam Wood 2025",
-        "date": "22/11/2025",
-        "category": "Sự kiện",
-        "excerpt": "Hãy ghé thăm gian hàng A-12 để xem dây chuyền cốp pha mới nhất và showroom tủ bếp RTA."
-      }
-    ]
-  },
-  "career": {
-    "hero": {
-      "eyebrow": "Tuyển dụng",
-      "title": "Phát triển sự nghiệp cùng chúng tôi",
-      "description": "Tại TEKCOM, con người là động lực sau mỗi sản phẩm. Hãy gia nhập đội ngũ đề cao sự xuất sắc, hợp tác và đổi mới liên tục."
-    },
-    "benefits": {
-      "eyebrow": "Vì sao chọn TEKCOM",
-      "title": "Phúc lợi & Văn hoá",
-      "items": [
-        "Lương cạnh tranh, đánh giá hàng năm",
-        "Lương tháng 13 + thưởng hiệu suất",
-        "Bảo hiểm sức khoẻ cao cấp cho nhân viên & gia đình",
-        "Nghỉ phép 14 – 18 ngày/năm",
-        "Đào tạo & phát triển liên tục",
-        "Cơ sở vật chất hiện đại, môi trường làm việc thân thiện"
-      ]
-    },
-    "jobs": {
-      "eyebrow": "Vị trí đang tuyển",
-      "title": "Chúng tôi đang tuyển",
-      "items": [
-        { "title": "Kỹ sư sản xuất", "location": "Nhà máy Bình Dương 2", "type": "Toàn thời gian" },
-        { "title": "Nhân viên kinh doanh xuất khẩu", "location": "Văn phòng TP.HCM", "type": "Toàn thời gian" },
-        { "title": "Giám sát QC — Ván ép", "location": "Nhà máy Bình Dương 1", "type": "Toàn thời gian" },
-        { "title": "Đối tác nhân sự (HRBP)", "location": "Văn phòng TP.HCM", "type": "Toàn thời gian" }
+        {
+          "name": "Hồ sơ lâm sản hợp pháp",
+          "shortName": "Bảng kê lâm sản",
+          "desc": "Chứng minh nguồn gốc gỗ hợp pháp theo quy định Việt Nam và EUTR."
+        },
+        {
+          "name": "Giấy chứng nhận xuất xứ",
+          "shortName": "C/O Form E",
+          "desc": "Chứng nhận xuất xứ hàng hoá hưởng ưu đãi thuế quan ASEAN — Trung Quốc."
+        },
+        {
+          "name": "Chứng nhận kiểm dịch thực vật",
+          "shortName": "Phytosanitary Certificate",
+          "desc": "Đảm bảo lô hàng không có sâu bệnh, đáp ứng quy định nhập khẩu của nước đến."
+        },
+        {
+          "name": "Chứng nhận hun trùng",
+          "shortName": "Fumigation Certificate",
+          "desc": "Xử lý hun trùng theo tiêu chuẩn ISPM 15 cho bao bì gỗ và sản phẩm gỗ."
+        }
       ]
     }
   },
   "contact": {
     "hero": {
-      "eyebrow": "Liên hệ",
+      "eyebrow": "LIÊN HỆ",
       "title": "Liên hệ với chúng tôi",
-      "description": "Cảm ơn bạn đã liên hệ TEKCOM. Chúng tôi cam kết phản hồi mọi yêu cầu trực tuyến trong vòng 72 giờ làm việc, hoặc vào ngày làm việc kế tiếp sau cuối tuần/ngày lễ."
+      "description": "Cảm ơn bạn đã liên hệ TEKCOM. Chúng tôi cam kết phản hồi mọi yêu cầu trong vòng 72 giờ làm việc."
     },
     "form": {
-      "eyebrow": "Gửi tin nhắn",
+      "eyebrow": "GỬI TIN NHẮN",
       "title": "Ý kiến của bạn rất quý giá với chúng tôi",
       "name": "Họ và tên *",
       "email": "Email *",
@@ -326,8 +213,8 @@
       "submit": "Gửi tin nhắn"
     },
     "info": {
-      "company": "Công ty cổ phần TEKCOM",
-      "hq": "Trụ sở chính — Nhà máy Bình Dương 1",
+      "company": "TEKCOM Corporation",
+      "hq": "Trụ sở — Nhà máy Bình Dương 1",
       "addr1": "Lô M1-M2-M7-M8, đường N2-N3, KCN Nam Tân Uyên Mở Rộng, P. Bình Cơ, TP. Hồ Chí Minh, Việt Nam",
       "bd2": "Nhà máy Bình Dương 2",
       "addr2": "Lô A1-A2-A3-A4-A5, đường N5, KCN Nam Tân Uyên Mở Rộng, P. Bình Cơ, TP. Hồ Chí Minh, Việt Nam",
@@ -335,30 +222,45 @@
       "emailLabel": "Email:"
     }
   },
-  "sustainability": {
+  "news": {
     "hero": {
-      "eyebrow": "Phát triển bền vững",
-      "title": "Cùng nhau, vì chặng đường dài.",
-      "description": "Phát triển bền vững không phải hoạt động phụ tại TEKCOM — đó là kim chỉ nam cho cách chúng tôi tìm nguồn, sản xuất và hợp tác. Lộ trình 2030 xoay quanh ba trụ cột."
+      "eyebrow": "TIN TỨC",
+      "title": "Tin tức & cập nhật",
+      "description": "Những câu chuyện mới nhất từ TEKCOM."
     },
-    "pillars": {
-      "eyebrow": "Trụ cột của chúng tôi",
-      "title": "Ba lĩnh vực trọng tâm",
-      "items": [
-        { "title": "Nguồn nguyên liệu bền vững", "desc": "100% gỗ hợp pháp, 88% có chứng nhận FSC®, hợp tác với hộ trồng rừng nhỏ tại Việt Nam." },
-        { "title": "Vận hành sạch hơn", "desc": "Mái điện mặt trời tại BD2 cung cấp 22% điện năng nhà máy. Mục tiêu 50% năng lượng tái tạo vào 2030." },
-        { "title": "Con người & cộng đồng", "desc": "Điều kiện làm việc an toàn, lương công bằng, đầu tư tích cực cho giáo dục và phát triển địa phương." }
-      ]
+    "section": { "eyebrow": "BÀI VIẾT MỚI NHẤT", "title": "Tin từ TEKCOM" },
+    "articles": [
+      { "title": "TEKCOM mở rộng xuất khẩu Bắc Mỹ", "date": "12/03/2026", "category": "Tin công ty", "excerpt": "Hợp đồng cung ứng dài hạn với nhà phân phối ván ép tại Mỹ…" },
+      { "title": "Báo cáo phát triển bền vững 2025", "date": "02/02/2026", "category": "Bền vững", "excerpt": "Giảm 23% phát thải, FSC® đạt 88%…" },
+      { "title": "Bên trong dây chuyền ván nội thất BD2", "date": "18/01/2026", "category": "Hậu trường", "excerpt": "Tham quan dây chuyền tự động hoá cao nhất…" },
+      { "title": "TEKCOM tại Vietnam Wood 2025", "date": "22/11/2025", "category": "Sự kiện", "excerpt": "Ghé booth A-12 xem dòng cốp pha mới…" }
+    ]
+  },
+  "experience": {
+    "hero": {
+      "eyebrow": "KINH NGHIỆM",
+      "title": "Hành trình của TEKCOM",
+      "description": "Hình ảnh hàng hoá, đối tác, đóng container và các giấy tờ xuất nhập khẩu trong hơn 20 năm hoạt động."
     },
-    "stats": {
-      "eyebrow": "Số liệu",
-      "title": "Tiến trình của chúng tôi",
-      "items": [
-        { "value": "−23%", "label": "Phát thải Scope 1+2 so với 2020" },
-        { "value": "88%", "label": "Nguyên liệu chứng nhận FSC®" },
-        { "value": "1.300+", "label": "Nhân viên chính thức" },
-        { "value": "30+", "label": "Thị trường xuất khẩu" }
-      ]
-    }
+    "categories": {
+      "products": "Hình ảnh hàng hoá",
+      "customers": "Đối tác & khách hàng",
+      "loading": "Hình đóng container",
+      "documents": "Giấy tờ xuất nhập khẩu"
+    },
+    "comingSoon": "Thư viện hình ảnh đang được cập nhật. Vui lòng quay lại sau."
+  },
+  "footer": {
+    "brief": "Cùng nhau xây dựng những điều tốt nhất. Thành lập 2005, chuyên ván ép và sản phẩm liên quan cho ngành xây dựng và thiết kế kiến trúc.",
+    "quickLinksTitle": "Liên kết nhanh",
+    "productsTitle": "Sản phẩm",
+    "contactTitle": "Liên hệ",
+    "products": ["Ván lạng cao su", "Ván lạng bạch đàn", "Ván lạng tràm", "Ván lạng thông"],
+    "addressShort": "Tỉnh Bình Dương, Việt Nam",
+    "phone": "+84 977 668 000",
+    "email": "info@tekcom.vn",
+    "rights": "© {year} TEKCOM Corporation. Bảo lưu mọi quyền.",
+    "privacy": "Chính sách bảo mật",
+    "terms": "Điều khoản sử dụng"
   }
 }

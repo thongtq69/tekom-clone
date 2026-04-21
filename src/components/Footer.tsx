@@ -6,26 +6,31 @@ type Props = { lang: Locale; dict: Dictionary };
 
 export default function Footer({ lang, dict }: Props) {
   const f = dict.footer;
+
   return (
     <footer
-      className="text-white/90 text-sm"
+      className="text-white/85"
       style={{ background: "var(--color-navy-dark)" }}
     >
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-10 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div className="max-w-[1280px] mx-auto px-6 lg:px-10 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {/* Brand + brief */}
         <div>
-          <div className="mb-5">
+          <div className="mb-3">
             <Image
               src="/images/logo.png"
               alt="TEKCOM"
               width={140}
               height={42}
-              className="h-10 w-auto brightness-0 invert"
+              className="h-9 w-auto brightness-0 invert"
             />
           </div>
-          <p className="text-white/70 text-xs uppercase tracking-[0.32em] mb-3">
-            {f.follow}
+          <p
+            className="text-white/70 mb-5"
+            style={{ fontSize: "13px", lineHeight: "21px" }}
+          >
+            {f.brief}
           </p>
-          <div className="flex gap-3 mb-6">
+          <div className="flex gap-2">
             <SocialIcon
               href="https://www.facebook.com/TekcomCorporation/"
               label="Facebook"
@@ -35,77 +40,142 @@ export default function Footer({ lang, dict }: Props) {
             <SocialIcon href="https://www.youtube.com" label="YouTube">
               <path d="M23 12s0-3.6-.46-5.32a2.78 2.78 0 0 0-1.95-1.95C18.86 4.27 12 4.27 12 4.27s-6.86 0-8.59.46A2.78 2.78 0 0 0 1.46 6.68C1 8.4 1 12 1 12s0 3.6.46 5.32a2.78 2.78 0 0 0 1.95 1.95c1.73.46 8.59.46 8.59.46s6.86 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95C23 15.6 23 12 23 12zM9.75 15.27V8.73L15.5 12l-5.75 3.27z" />
             </SocialIcon>
+            <SocialIcon href="https://www.linkedin.com" label="LinkedIn">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+            </SocialIcon>
           </div>
-          <form className="flex border border-white/30">
-            <input
-              type="email"
-              placeholder={f.emailPlaceholder}
-              className="bg-transparent px-3 py-2 text-xs flex-1 outline-none placeholder-white/50"
-            />
-            <button
-              type="submit"
-              className="px-4 py-2 text-xs font-bold uppercase tracking-wider"
-              style={{ background: "var(--color-gold)" }}
-            >
-              {f.subscribe}
-            </button>
-          </form>
         </div>
 
+        {/* Quick links */}
         <div>
-          <h4 className="text-xs uppercase tracking-[0.32em] mb-4 text-white">
-            {f.company}
-          </h4>
-          <p className="font-bold mb-2 text-white">{f.bd1Title}</p>
-          <p className="text-white/70 leading-relaxed text-[13px] whitespace-pre-line">
-            {f.address}
-          </p>
-        </div>
-
-        <div>
-          <h4 className="text-xs uppercase tracking-[0.32em] mb-4 text-white">
-            {f.bd2Title}
-          </h4>
-          <p className="text-white/70 leading-relaxed text-[13px] whitespace-pre-line mb-6">
-            {f.address2}
-          </p>
-          <p className="text-[13px]">
-            <a
-              href="tel:+84977668000"
-              className="hover:text-[color:var(--color-gold)]"
-            >
-              (+84) 977 668 000
-            </a>{" "}
-            —{" "}
-            <a
-              href="mailto:info@tekcom.vn"
-              className="hover:text-[color:var(--color-gold)]"
-            >
-              info@tekcom.vn
-            </a>
-          </p>
-        </div>
-
-        <div>
-          <h4 className="text-xs uppercase tracking-[0.32em] mb-4 text-white">
-            Info
-          </h4>
-          <p className="text-white/70 leading-relaxed text-[13px] whitespace-pre-line">
-            {f.companyInfo}
-          </p>
-          <Link
-            href={`/${lang}/career`}
-            className="inline-block mt-4 text-[color:var(--color-gold)] text-xs uppercase tracking-[0.2em] font-bold"
+          <h4
+            className="mb-4 text-white"
+            style={{
+              fontSize: "13px",
+              letterSpacing: "3px",
+              fontWeight: 700,
+              textTransform: "uppercase",
+            }}
           >
-            {f.careerCta}
-          </Link>
+            {f.quickLinksTitle}
+          </h4>
+          <ul className="space-y-2.5">
+            {[
+              { label: dict.nav.about, href: `/${lang}` },
+              { label: dict.nav.plywood, href: `/${lang}/plywood` },
+              { label: dict.nav.experience, href: `/${lang}/experience` },
+              { label: dict.nav.news, href: `/${lang}/news` },
+              { label: dict.nav.contact, href: `/${lang}/contact` },
+            ].map((item) => (
+              <li key={item.href}>
+                <Link
+                  href={item.href}
+                  className="text-white/70 hover:text-[color:var(--color-gold)] transition-colors"
+                  style={{ fontSize: "13px" }}
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Products */}
+        <div>
+          <h4
+            className="mb-4 text-white"
+            style={{
+              fontSize: "13px",
+              letterSpacing: "3px",
+              fontWeight: 700,
+              textTransform: "uppercase",
+            }}
+          >
+            {f.productsTitle}
+          </h4>
+          <ul className="space-y-2.5">
+            {f.products.map((p) => (
+              <li
+                key={p}
+                className="text-white/70"
+                style={{ fontSize: "13px" }}
+              >
+                {p}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Contact */}
+        <div>
+          <h4
+            className="mb-4 text-white"
+            style={{
+              fontSize: "13px",
+              letterSpacing: "3px",
+              fontWeight: 700,
+              textTransform: "uppercase",
+            }}
+          >
+            {f.contactTitle}
+          </h4>
+          <ul className="space-y-2.5 text-white/70" style={{ fontSize: "13px" }}>
+            <li className="flex gap-2 items-start">
+              <span style={{ color: "var(--color-gold)" }}>📍</span>
+              <span>{f.addressShort}</span>
+            </li>
+            <li className="flex gap-2 items-start">
+              <span style={{ color: "var(--color-gold)" }}>📞</span>
+              <a
+                href={`tel:${f.phone.replace(/\s/g, "")}`}
+                className="hover:text-[color:var(--color-gold)]"
+              >
+                {f.phone}
+              </a>
+            </li>
+            <li className="flex gap-2 items-start">
+              <span style={{ color: "var(--color-gold)" }}>✉️</span>
+              <a
+                href={`mailto:${f.email}`}
+                className="hover:text-[color:var(--color-gold)]"
+              >
+                {f.email}
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
 
       <div className="border-t border-white/10">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10 py-4 text-xs text-white/50 flex flex-col md:flex-row justify-between gap-2">
+        <div
+          className="max-w-[1280px] mx-auto px-6 lg:px-10 py-5 text-white/50 flex flex-col md:flex-row md:items-center justify-between gap-4"
+          style={{ fontSize: "12px" }}
+        >
           <p>{f.rights.replace("{year}", String(new Date().getFullYear()))}</p>
-          <p>{f.tagline}</p>
+
+          <div className="flex items-center gap-5 flex-wrap">
+            <Link href="#" className="hover:text-[color:var(--color-gold)]">
+              {f.privacy}
+            </Link>
+            <Link href="#" className="hover:text-[color:var(--color-gold)]">
+              {f.terms}
+            </Link>
+            <a
+              href="http://online.gov.vn/CustomWebsiteDisplay.aspx?DocId=60070"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Đã thông báo Bộ Công Thương"
+              className="inline-block hover:opacity-80 transition-opacity"
+            >
+              <Image
+                src="/images/bocongthuong.png"
+                alt="Đã thông báo Bộ Công Thương"
+                width={150}
+                height={56}
+                className="h-9 w-auto"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </footer>
@@ -127,9 +197,9 @@ function SocialIcon({
       target="_blank"
       rel="noreferrer"
       aria-label={label}
-      className="w-9 h-9 rounded-full border border-white/40 flex items-center justify-center hover:bg-[color:var(--color-gold)] hover:border-[color:var(--color-gold)] transition-colors"
+      className="w-8 h-8 rounded-full border border-white/30 flex items-center justify-center hover:bg-[color:var(--color-gold)] hover:border-[color:var(--color-gold)] transition-colors"
     >
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
         {children}
       </svg>
     </a>

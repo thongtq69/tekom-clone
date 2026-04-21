@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "title": "TEKCOM Corp — 共に最高を築く",
+    "description": "ベトナムのプレミアム合板メーカー:ラバーウッド、ユーカリ、アカシア、パインの突板。2005年設立、30か国以上に輸出。"
+  },
+  "nav": {
+    "about": "会社概要",
+    "plywood": "合板",
+    "experience": "経験",
+    "news": "ニュース",
+    "contact": "お問い合わせ",
+    "search": "キーワードを入力...",
+    "menu": "メニュー"
+  },
+  "common": {
+    "scrollDown": "下にスクロール",
+    "viewMore": "もっと見る",
+    "viewDetail": "詳細を見る",
+    "readMore": "続きを読む",
+    "contactUs": "お問い合わせ",
+    "send": "メッセージを送る",
+    "minOrderQty": "最小注文数量",
+    "dimensions": "寸法",
+    "material": "材質",
+    "price": "参考価格",
+    "viewMap": "地図で見る"
+  },
+  "logo": { "tagline": "共に最高を築く" },
+  "home": {
+    "hero": {
+      "eyebrow": "会社概要",
+      "title": "共に最高を築く。",
+      "description": "2005年設立のTEKCOM Corporationは、ベトナム国内および輸出市場のパートナーとお客様に合板および関連製品を提供することを専門としています。",
+      "products": "主要製品:",
+      "productsList": "ラバーウッド突板  |  ユーカリ突板  |  アカシア突板  |  パイン突板"
+    },
+    "vision": {
+      "eyebrow": "ビジョン",
+      "title": "木材および関連製品の市場リーダーへ",
+      "lead": "建築・建築デザイン分野で革新的なソリューションを提供します。",
+      "items": [
+        "革新的なソリューションと有名ブランドにより、国内および地域市場でリーディングポジションを確保。",
+        "地域における持続可能なリーディングメーカーになる。",
+        "効果的なサプライチェーン管理の運営。",
+        "顧客に適切なソリューションを届けるため絶えず革新する。"
+      ]
+    },
+    "globalReach": {
+      "eyebrow": "グローバル展開",
+      "title": "輸出市場",
+      "items": [
+        { "flag": "🇮🇳", "name": "インド", "desc": "南アジアの主要パートナー" },
+        { "flag": "🇨🇳", "name": "中国", "desc": "主要な製造拠点" },
+        { "flag": "🇺🇸", "name": "アメリカ", "desc": "主要な輸出先" },
+        { "flag": "🇦🇪", "name": "ドバイ", "desc": "中東への玄関口" },
+        { "flag": "🇴🇲", "name": "オマーン", "desc": "成長する地域パートナー" },
+        { "flag": "🇰🇷", "name": "韓国", "desc": "信頼できる産業パートナー" }
+      ]
+    },
+    "aboutUs": { "eyebrow": "会社概要", "title": "私たちは誰か?", "lead": "品質のプロフェッショナル。", "desc": "TEKCOMは信頼される合板メーカーとして、ベトナムおよび世界中のお客様に国際標準の製品と献身的なサービスをお届けすることに誇りを持っています。", "cta": "詳しく見る" },
+    "privateLabel": { "eyebrow": "パートナーシップ", "title": "PRIVATE LABEL パートナーになります", "desc": "私たちは常にお客様の成功のために働きます。柔軟な生産能力と経験豊富なエンジニアリングチームと共に、TEKCOMはパッケージデザインから技術仕様まで、お客様の自社ブランド構築を支援する準備ができています。", "cta": "私たちと協力する" },
+    "experiencePreview": { "eyebrow": "経験", "title": "私たちの歩み", "desc": "製品、お客様、コンテナ積み込み、輸出書類の写真 — 20年以上の業界経験の証。", "cta": "ギャラリーを見る" },
+    "plywoodPreview": { "eyebrow": "合板製品", "title": "4つのコア突板ライン", "desc": "ラバーウッド、ユーカリ、アカシアからパインまで — 多様な輸出ニーズに対応。", "cta": "全製品を見る" },
+    "factories": {
+      "eyebrow": "工場",
+      "title": "卓越した製造",
+      "items": [
+        { "name": "ビンズオン第1工場", "desc": "TEKCOMの55,000m²の工場はFFP業界で最も最先端の設備を備えています。製品はEN 13986 (CE) およびTÜV Rheinland認証を取得しています。", "area": "55,000 m²", "products": "型枠合板", "people": "700+ 従業員" },
+        { "name": "ビンズオン第2工場", "desc": "2019年開設のBD2は更に自動化が進み、家具用合板や高級RTAキッチンキャビネットを含む様々な産業向け合板を専門としています。", "area": "60,000 m²", "products": "家具合板、キッチンキャビネット", "people": "600+ 従業員" }
+      ],
+      "labels": { "area": "面積", "products": "製品", "people": "人員" }
+    },
+    "milestones": {
+      "eyebrow": "主要マイルストーン",
+      "title": "私たちの歩み",
+      "subtitle": "運営の各ステップで、TEKCOMはパートナーとの一貫した協力に努めています。",
+      "items": [
+        { "year": "2005", "title": "設立", "desc": "断熱材商社として。" },
+        { "year": "2007", "title": "貿易 — FFP", "desc": "ベトナムでのFFP流通開始。" },
+        { "year": "2012", "title": "製造 — FFP", "desc": "年間12,000 cbmの設計能力でFFP生産開始。" },
+        { "year": "2015", "title": "ビンズオン1 — 第1段階", "desc": "年間60,000 cbm能力の新工場開設。" },
+        { "year": "2016", "title": "ビンズオン1 — 第2段階", "desc": "能力を年間138,000 cbmに拡大。" },
+        { "year": "2019", "title": "ビンズオン2 — 第1段階", "desc": "新製品ポートフォリオ:家具合板、フロアベース — 年間84,000 cbm。" }
+      ]
+    }
+  },
+  "plywood": {
+    "hero": { "eyebrow": "合板", "title": "4つのコア突板ライン", "description": "ラバーウッド、ユーカリ、アカシアからパインまで — TEKCOMは世界中の家具・輸出顧客に多様な原材料を供給します。" },
+    "products": {
+      "eyebrow": "製品ラインナップ",
+      "title": "突板製品",
+      "items": [
+        { "slug": "rubberwood", "name": "ラバーウッド突板", "material": "ラバーウッド (Hevea brasiliensis)", "dimensions": "1220 × 2440 mm — 厚さ 3 / 5 / 9 / 12 / 15 / 18 mm", "price": "見積もりはお問い合わせください", "moq": "40フィートコンテナ1本 (約 25 m³)", "highlights": ["滑らかな表面、均一な木目", "高級家具に最適", "乾燥含水率 8–12%"] },
+        { "slug": "eucalyptus", "name": "ユーカリ突板", "material": "ユーカリ", "dimensions": "1220 × 2440 mm — 厚さ 3 / 5 / 9 / 12 / 15 / 18 / 21 mm", "price": "見積もりはお問い合わせください", "moq": "40フィートコンテナ1本 (約 25 m³)", "highlights": ["高い機械的強度", "通直木理、節が少ない", "型枠・家具に適する"] },
+        { "slug": "acacia", "name": "アカシア突板", "material": "アカシア", "dimensions": "1220 × 2440 mm — 厚さ 3 / 5 / 9 / 12 / 15 / 18 mm", "price": "見積もりはお問い合わせください", "moq": "40フィートコンテナ1本 (約 25 m³)", "highlights": ["安定した国内供給", "明るい色調、塗装・接着が容易", "競争力のある価格"] },
+        { "slug": "pine", "name": "パイン突板", "material": "パイン", "dimensions": "1220 × 2440 mm — 厚さ 3 / 5 / 9 / 12 / 15 / 18 mm", "price": "見積もりはお問い合わせください", "moq": "40フィートコンテナ1本 (約 25 m³)", "highlights": ["特有のパインの香り", "美しい木目、高い美観", "輸出家具に最適"] }
+      ]
+    },
+    "certifications": {
+      "eyebrow": "認証・書類",
+      "title": "輸出に必要な完全な法的書類",
+      "subtitle": "TEKCOMはすべての輸出出荷に必要な書類をすべて提供します。",
+      "items": [
+        { "name": "合法林産物記録", "shortName": "林産物明細", "desc": "ベトナムの規制およびEUTRに基づく合法木材原産地の証明。" },
+        { "name": "原産地証明書", "shortName": "C/O Form E", "desc": "ASEAN — 中国特恵関税のための原産地証明。" },
+        { "name": "植物検疫証明書", "shortName": "Phytosanitary", "desc": "出荷物に害虫がなく、輸入国の規定を満たしていることを保証。" },
+        { "name": "燻蒸証明書", "shortName": "Fumigation", "desc": "木材包装および木製品に対するISPM 15基準の燻蒸処理。" }
+      ]
+    }
+  },
+  "contact": {
+    "hero": { "eyebrow": "お問い合わせ", "title": "お問い合わせ", "description": "TEKCOMにご連絡いただきありがとうございます。すべてのお問い合わせに72営業時間以内に対応いたします。" },
+    "form": { "eyebrow": "メッセージ送信", "title": "ご意見は私たちにとって貴重です", "name": "お名前 *", "email": "メール *", "phone": "電話", "company": "会社", "subject": "件名 *", "message": "内容 *", "submit": "メッセージを送る" },
+    "info": { "company": "TEKCOM Corporation", "hq": "本社 — ビンズオン第1工場", "addr1": "M1-M2-M7-M8 区画、N2-N3通り、拡張Nam Tan Uyen工業団地、Binh Co区、ホーチミン市、ベトナム", "bd2": "ビンズオン第2工場", "addr2": "A1-A2-A3-A4-A5 区画、N5通り、拡張Nam Tan Uyen工業団地、Binh Co区、ホーチミン市、ベトナム", "hotlineLabel": "ホットライン:", "emailLabel": "メール:" }
+  },
+  "news": {
+    "hero": { "eyebrow": "ニュース", "title": "ニュース・最新情報", "description": "TEKCOMからの最新情報。" },
+    "section": { "eyebrow": "最新記事", "title": "TEKCOMストーリー" },
+    "articles": [
+      { "title": "TEKCOM、北米輸出を拡大", "date": "2026年3月12日", "category": "企業ニュース", "excerpt": "米国の主要販売代理店との長期供給契約…" },
+      { "title": "2025年サステナビリティレポート発行", "date": "2026年2月2日", "category": "サステナビリティ", "excerpt": "排出23%削減、FSC®認証材料88%…" },
+      { "title": "BD2家具合板ラインの内側", "date": "2026年1月18日", "category": "舞台裏", "excerpt": "最も自動化されたラインの見学…" },
+      { "title": "Vietnam Wood 2025のTEKCOM", "date": "2025年11月22日", "category": "イベント", "excerpt": "A-12ブースで最新の型枠ラインをご覧ください…" }
+    ]
+  },
+  "experience": {
+    "hero": { "eyebrow": "経験", "title": "TEKCOMの歩み", "description": "20年以上の運営から得た製品、顧客、コンテナ積み込み、輸出入書類の写真。" },
+    "categories": { "products": "製品写真", "customers": "パートナー・顧客", "loading": "コンテナ積み込み", "documents": "輸出書類" },
+    "comingSoon": "ギャラリーは更新中です。後ほどご確認ください。"
+  },
+  "footer": {
+    "brief": "共に最高を築く。2005年設立、建築・建築デザイン向けの合板および関連製品を専門。",
+    "quickLinksTitle": "クイックリンク",
+    "productsTitle": "製品",
+    "contactTitle": "お問い合わせ",
+    "products": ["ラバーウッド突板", "ユーカリ突板", "アカシア突板", "パイン突板"],
+    "addressShort": "ビンズオン省、ベトナム",
+    "phone": "+84 977 668 000",
+    "email": "info@tekcom.vn",
+    "rights": "© {year} TEKCOM Corporation. 全著作権所有。",
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約"
+  }
+}

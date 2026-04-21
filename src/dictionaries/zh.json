@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "title": "TEKCOM 公司 — 共同建设最好的产品",
+    "description": "越南优质胶合板制造商:橡胶木、桉木、相思木、松木单板。成立于2005年,出口至30多个国家。"
+  },
+  "nav": {
+    "about": "关于我们",
+    "plywood": "胶合板",
+    "experience": "经验",
+    "news": "新闻",
+    "contact": "联系",
+    "search": "请输入关键字...",
+    "menu": "菜单"
+  },
+  "common": {
+    "scrollDown": "向下滚动",
+    "viewMore": "查看更多",
+    "viewDetail": "查看详情",
+    "readMore": "阅读更多",
+    "contactUs": "立即联系",
+    "send": "发送消息",
+    "minOrderQty": "最小起订量",
+    "dimensions": "规格",
+    "material": "材质",
+    "price": "参考价格",
+    "viewMap": "在地图上查看"
+  },
+  "logo": { "tagline": "共同建设最好的产品" },
+  "home": {
+    "hero": {
+      "eyebrow": "关于我们",
+      "title": "共同建设最好的产品。",
+      "description": "TEKCOM 公司成立于2005年,专门为越南及出口市场的合作伙伴和客户提供胶合板及相关产品。",
+      "products": "核心产品:",
+      "productsList": "橡胶木单板  |  桉木单板  |  相思木单板  |  松木单板"
+    },
+    "vision": {
+      "eyebrow": "我们的愿景",
+      "title": "成为木材及相关产品的市场领导者",
+      "lead": "为建筑和建筑设计提供创新解决方案。",
+      "items": [
+        "凭借创新解决方案和知名品牌在国内和地区市场占据领先地位。",
+        "成为该地区可持续发展的领先制造商。",
+        "运营有效的供应链管理。",
+        "不断创新,为客户提供合适的解决方案。"
+      ]
+    },
+    "globalReach": {
+      "eyebrow": "全球覆盖",
+      "title": "我们的出口市场",
+      "items": [
+        { "flag": "🇮🇳", "name": "印度", "desc": "南亚关键合作伙伴" },
+        { "flag": "🇨🇳", "name": "中国", "desc": "重要制造中心" },
+        { "flag": "🇺🇸", "name": "美国", "desc": "主要出口目的地" },
+        { "flag": "🇦🇪", "name": "迪拜", "desc": "通往中东的门户" },
+        { "flag": "🇴🇲", "name": "阿曼", "desc": "成长中的区域伙伴" },
+        { "flag": "🇰🇷", "name": "韩国", "desc": "可信赖的工业伙伴" }
+      ]
+    },
+    "aboutUs": {
+      "eyebrow": "关于我们",
+      "title": "我们是谁?",
+      "lead": "品质专家。",
+      "desc": "TEKCOM 自豪地成为值得信赖的胶合板制造合作伙伴,致力于为越南及全球客户提供国际标准的产品和专业服务。",
+      "cta": "了解更多"
+    },
+    "privateLabel": {
+      "eyebrow": "合作伙伴",
+      "title": "让我们成为您的自有品牌合作伙伴",
+      "desc": "我们始终以客户成功为目标。凭借灵活的生产能力和经验丰富的工程团队,TEKCOM 已准备好与您共同打造您自己的品牌——从包装设计到技术规格。",
+      "cta": "与我们合作"
+    },
+    "experiencePreview": {
+      "eyebrow": "经验",
+      "title": "我们的历程",
+      "desc": "产品、客户、集装箱装柜和出口文件的照片——见证20多年的行业经验。",
+      "cta": "查看图库"
+    },
+    "plywoodPreview": {
+      "eyebrow": "胶合板产品",
+      "title": "4款核心单板系列",
+      "desc": "从橡胶木、桉木、相思木到松木——满足多样化的出口需求。",
+      "cta": "查看所有产品"
+    },
+    "factories": {
+      "eyebrow": "工厂",
+      "title": "卓越制造",
+      "items": [
+        {
+          "name": "平阳一厂",
+          "desc": "TEKCOM 的55,000平方米工厂配备了FFP行业最先进的设施。我们的产品获得欧盟标准(EN 13986)认证和TÜV莱茵认证。",
+          "area": "55,000 m²",
+          "products": "建筑模板胶合板",
+          "people": "700+ 员工"
+        },
+        {
+          "name": "平阳二厂",
+          "desc": "于2019年开业,BD2自动化程度更高,专门生产家具及其他行业用胶合板,包括高品质RTA厨柜。",
+          "area": "60,000 m²",
+          "products": "家具胶合板,厨柜",
+          "people": "600+ 员工"
+        }
+      ],
+      "labels": { "area": "面积", "products": "产品", "people": "员工" }
+    },
+    "milestones": {
+      "eyebrow": "重要里程碑",
+      "title": "我们的历程",
+      "subtitle": "在每一步运营中,TEKCOM 都努力与合作伙伴保持紧密协作。",
+      "items": [
+        { "year": "2005", "title": "成立", "desc": "作为绝缘材料贸易公司起步。" },
+        { "year": "2007", "title": "贸易 — FFP", "desc": "开始在越南分销FFP。" },
+        { "year": "2012", "title": "制造 — FFP", "desc": "运营FFP生产线,设计产能12,000立方米/年。" },
+        { "year": "2015", "title": "平阳一厂 — 一期", "desc": "开设新工厂,设计产能60,000立方米/年。" },
+        { "year": "2016", "title": "平阳一厂 — 二期", "desc": "扩大产能至138,000立方米/年。" },
+        { "year": "2019", "title": "平阳二厂 — 一期", "desc": "新产品组合:家具胶合板、地板基材,84,000立方米/年。" }
+      ]
+    }
+  },
+  "plywood": {
+    "hero": {
+      "eyebrow": "胶合板",
+      "title": "四款核心单板系列",
+      "description": "从橡胶木、桉木、相思木到松木——TEKCOM 为全球家具和出口客户提供多样化原材料。"
+    },
+    "products": {
+      "eyebrow": "产品系列",
+      "title": "单板产品",
+      "items": [
+        { "slug": "rubberwood", "name": "橡胶木单板", "material": "橡胶木 (Hevea brasiliensis)", "dimensions": "1220 × 2440 mm — 厚度 3 / 5 / 9 / 12 / 15 / 18 mm", "price": "请联系报价", "moq": "1 × 40' 集装箱 (≈ 25 m³)", "highlights": ["表面光滑,纹理均匀", "适合高端家具", "窑干含水率8–12%"] },
+        { "slug": "eucalyptus", "name": "桉木单板", "material": "桉木", "dimensions": "1220 × 2440 mm — 厚度 3 / 5 / 9 / 12 / 15 / 18 / 21 mm", "price": "请联系报价", "moq": "1 × 40' 集装箱 (≈ 25 m³)", "highlights": ["机械强度高", "纹理直,节疤少", "适合模板及家具"] },
+        { "slug": "acacia", "name": "相思木单板", "material": "相思木", "dimensions": "1220 × 2440 mm — 厚度 3 / 5 / 9 / 12 / 15 / 18 mm", "price": "请联系报价", "moq": "1 × 40' 集装箱 (≈ 25 m³)", "highlights": ["国内供应稳定", "色泽浅,易上胶上漆", "价格具竞争力"] },
+        { "slug": "pine", "name": "松木单板", "material": "松木", "dimensions": "1220 × 2440 mm — 厚度 3 / 5 / 9 / 12 / 15 / 18 mm", "price": "请联系报价", "moq": "1 × 40' 集装箱 (≈ 25 m³)", "highlights": ["独特松香味", "纹理美观,美感高", "适合出口家具"] }
+      ]
+    },
+    "certifications": {
+      "eyebrow": "证书与文件",
+      "title": "完整的出口法律文件",
+      "subtitle": "TEKCOM 为每一批出口货物提供所需的全部文件。",
+      "items": [
+        { "name": "合法林产品记录", "shortName": "林产品清单", "desc": "依据越南法规和EUTR证明木材合法来源。" },
+        { "name": "原产地证书", "shortName": "C/O Form E", "desc": "享受东盟-中国关税优惠的原产地证明。" },
+        { "name": "植物检疫证书", "shortName": "Phytosanitary", "desc": "确认货物无害虫,符合目的国进口要求。" },
+        { "name": "熏蒸证书", "shortName": "Fumigation", "desc": "符合ISPM 15标准的木质包装和木制品熏蒸处理。" }
+      ]
+    }
+  },
+  "contact": {
+    "hero": { "eyebrow": "联系", "title": "联系我们", "description": "感谢您联系 TEKCOM。我们承诺在72个工作小时内回复所有咨询。" },
+    "form": { "eyebrow": "发送消息", "title": "您的意见对我们非常宝贵", "name": "您的姓名 *", "email": "您的邮箱 *", "phone": "电话", "company": "公司", "subject": "主题 *", "message": "内容 *", "submit": "发送消息" },
+    "info": { "company": "TEKCOM 公司", "hq": "总部 — 平阳一厂", "addr1": "M1-M2-M7-M8 号地块,N2-N3 街,扩展 Nam Tan Uyen 工业园,Binh Co 坊,胡志明市,越南", "bd2": "平阳二厂", "addr2": "A1-A2-A3-A4-A5 号地块,N5 街,扩展 Nam Tan Uyen 工业园,Binh Co 坊,胡志明市,越南", "hotlineLabel": "热线:", "emailLabel": "邮箱:" }
+  },
+  "news": {
+    "hero": { "eyebrow": "新闻", "title": "新闻与更新", "description": "TEKCOM 最新动态。" },
+    "section": { "eyebrow": "最新文章", "title": "TEKCOM 故事" },
+    "articles": [
+      { "title": "TEKCOM 拓展北美出口市场", "date": "2026年3月12日", "category": "公司新闻", "excerpt": "与美国领先经销商签订长期供应协议……" },
+      { "title": "2025年可持续发展报告发布", "date": "2026年2月2日", "category": "可持续发展", "excerpt": "减排23%,FSC® 认证材料88%……" },
+      { "title": "走进 BD2 家具胶合板生产线", "date": "2026年1月18日", "category": "幕后", "excerpt": "参观我们最自动化的生产线……" },
+      { "title": "TEKCOM 亮相 Vietnam Wood 2025", "date": "2025年11月22日", "category": "活动", "excerpt": "请光临 A-12 展位查看最新建筑模板系列……" }
+    ]
+  },
+  "experience": {
+    "hero": { "eyebrow": "经验", "title": "TEKCOM 的历程", "description": "20多年运营中的产品、客户、集装箱装柜及进出口文件照片。" },
+    "categories": { "products": "产品照片", "customers": "合作伙伴与客户", "loading": "集装箱装柜", "documents": "出口文件" },
+    "comingSoon": "图库正在更新中。请稍后再访问。"
+  },
+  "footer": {
+    "brief": "共同建设最好的产品。成立于2005年,专门提供建筑和建筑设计领域的胶合板及相关产品。",
+    "quickLinksTitle": "快速链接",
+    "productsTitle": "产品",
+    "contactTitle": "联系",
+    "products": ["橡胶木单板", "桉木单板", "相思木单板", "松木单板"],
+    "addressShort": "越南平阳省",
+    "phone": "+84 977 668 000",
+    "email": "info@tekcom.vn",
+    "rights": "© {year} TEKCOM 公司。版权所有。",
+    "privacy": "隐私政策",
+    "terms": "服务条款"
+  }
+}

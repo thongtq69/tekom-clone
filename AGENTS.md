@@ -62,23 +62,34 @@ export default async function MyPage(props: PageProps<"/[lang]/my-page">) {
 | Bước | Việc làm |
 |------|---------|
 | 1 | Mở `src/dictionaries/vi.json`, thêm key + giá trị tiếng Việt |
-| 2 | Mở `src/dictionaries/en.json`, thêm **CÙNG key** + giá trị tiếng Anh |
+| 2 | Mở **TẤT CẢ 5 file còn lại** (`en.json`, `zh.json`, `hi.json`, `ko.json`, `ja.json`) thêm **CÙNG key** với value đã dịch |
 | 3 | Trong page/component, đọc `dict.<key>` thay vì hard-code |
-| 4 | TypeScript suy `Dictionary` từ `vi.json` → mọi key tự autocomplete + báo lỗi nếu thiếu ở `en.json` |
+| 4 | TypeScript suy `Dictionary` từ `vi.json` → mọi key tự autocomplete + báo lỗi nếu thiếu key ở các file khác |
 
-### Khi user yêu cầu thêm ngôn ngữ mới (vd Trung)
+### Ngôn ngữ hiện tại (6 ngôn ngữ)
 
-1. Tạo `src/dictionaries/zh.json` (copy structure từ `vi.json`, dịch values)
-2. Thêm vào `src/dictionaries/index.ts`:
-   ```ts
-   const dictionaries = {
-     vi: () => import("./vi.json")…,
-     en: () => import("./en.json")…,
-     zh: () => import("./zh.json").then(m => m.default as Dictionary),
-   };
-   ```
-3. Thêm `"zh"` vào `locales` array trong `index.ts` và `proxy.ts`
-4. Thêm option vào dropdown trong `components/Header.tsx`
+| Code | Ngôn ngữ | File | URL prefix |
+|------|----------|------|------------|
+| `vi` | 🇻🇳 Tiếng Việt (default) | `vi.json` | `/vi/...` |
+| `en` | 🇬🇧 English | `en.json` | `/en/...` |
+| `zh` | 🇨🇳 中文 | `zh.json` | `/zh/...` |
+| `hi` | 🇮🇳 हिन्दी | `hi.json` | `/hi/...` |
+| `ko` | 🇰🇷 한국어 | `ko.json` | `/ko/...` |
+| `ja` | 🇯🇵 日本語 | `ja.json` | `/ja/...` |
+
+`/` tự động redirect sang `/vi` (default).
+
+### Khi user yêu cầu thêm ngôn ngữ mới
+
+1. Tạo `src/dictionaries/<code>.json` (copy structure từ `vi.json`, dịch values)
+2. Thêm vào `src/dictionaries/index.ts` trong `dictionaries` object
+3. Thêm code vào 4 nơi trong `src/dictionaries/locales.ts`: `locales`, `localeNames`, `localeFlags` (và verify `defaultLocale` nếu cần đổi)
+4. Thêm code vào `locales` array trong `src/proxy.ts`
+
+### Module tách rời server/client
+
+- `src/dictionaries/index.ts` — **server-only**, chứa `getDictionary()`. CHỈ import từ Server Components.
+- `src/dictionaries/locales.ts` — client-safe, chứa `locales`, `Locale`, `localeNames`, `localeFlags`, `hasLocale`. Client components (vd `Header.tsx`) phải import từ đây.
 
 ## Quy tắc 2 — Link nội bộ luôn có prefix `/${lang}`
 

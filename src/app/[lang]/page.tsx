@@ -14,119 +14,331 @@ export default async function HomePage(props: PageProps<"/[lang]">) {
 
   return (
     <>
+      {/* HERO — base44 style: 72vh, soft overlay, products line below */}
       <Hero
         eyebrow={h.hero.eyebrow}
         title={h.hero.title}
         bgImage="/images/hero-about.png"
+        height="hero"
+        overlay="soft"
         description={
           <>
-            {h.hero.description}
-            <br />
-            <br />
-            {h.hero.products} <strong>{h.hero.productsList}</strong>
+            <p style={{ fontSize: "15px", lineHeight: "26px" }}>
+              {h.hero.description}
+            </p>
+            <p
+              className="mt-6"
+              style={{ fontSize: "13px", lineHeight: "22px" }}
+            >
+              <span className="font-bold text-white">{h.hero.products}</span>
+            </p>
+            <p
+              className="mt-1"
+              style={{ fontSize: "13px", lineHeight: "22px" }}
+            >
+              {h.hero.productsList}
+            </p>
           </>
         }
       />
 
-      <section className="py-24 bg-white">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-12 items-start">
+      {/* VISION */}
+      <section className="py-16 bg-white">
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-10 items-start">
           <div className="lg:col-span-5">
             <SectionTitle eyebrow={h.vision.eyebrow} title={h.vision.title} />
           </div>
-          <div className="lg:col-span-7 space-y-5 text-[color:var(--color-foreground)]/80 leading-relaxed">
+          <div className="lg:col-span-7 space-y-4">
             <p
-              className="text-lg font-medium"
-              style={{ color: "var(--color-navy)" }}
+              className="font-medium"
+              style={{
+                color: "var(--color-navy)",
+                fontSize: "16px",
+                lineHeight: "26px",
+              }}
             >
               {h.vision.lead}
             </p>
-            <ul className="space-y-3 text-[15px]">
+            <ul className="space-y-2.5">
               {h.vision.items.map((it) => (
-                <Bullet key={it}>{it}</Bullet>
+                <li key={it} className="flex gap-3">
+                  <span
+                    className="mt-2 w-1.5 h-1.5 rounded-full shrink-0"
+                    style={{ background: "var(--color-gold)" }}
+                  />
+                  <span
+                    style={{
+                      color: "var(--color-foreground)",
+                      fontSize: "15px",
+                      lineHeight: "24px",
+                    }}
+                  >
+                    {it}
+                  </span>
+                </li>
               ))}
             </ul>
           </div>
         </div>
       </section>
 
+      {/* GLOBAL REACH */}
       <section
-        className="py-24"
+        className="py-16"
         style={{
-          background: "linear-gradient(180deg, #f7f8fa 0%, #ffffff 100%)",
+          background:
+            "linear-gradient(180deg, #f7f8fa 0%, #ffffff 100%)",
         }}
       >
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
-          <div className="text-center mb-14 flex flex-col items-center">
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-10">
+          <div className="text-center mb-10 flex flex-col items-center">
             <SectionTitle
-              eyebrow={h.values.eyebrow}
-              title={h.values.title}
+              eyebrow={h.globalReach.eyebrow}
+              title={h.globalReach.title}
               align="center"
             />
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {h.values.items.map((v) => (
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            {h.globalReach.items.map((country) => (
               <div
-                key={v.title}
-                className="bg-white p-7 border-t-4 hover:shadow-xl transition-shadow"
-                style={{ borderColor: "var(--color-gold)" }}
+                key={country.name}
+                className="bg-white p-5 text-center border border-[color:var(--color-line)] hover:border-[color:var(--color-gold)] hover:shadow-md transition-all"
               >
+                <div className="text-4xl mb-2">{country.flag}</div>
                 <h3
-                  className="font-display font-bold uppercase tracking-wider text-lg mb-4"
-                  style={{ color: "var(--color-navy)" }}
+                  className="mb-1"
+                  style={{
+                    fontSize: "14px",
+                    letterSpacing: "2px",
+                    color: "var(--color-navy)",
+                  }}
                 >
-                  {v.title}
+                  {country.name}
                 </h3>
-                <ul className="space-y-2 text-sm text-[color:var(--color-muted)]">
-                  {v.items.map((it) => (
-                    <li key={it} className="flex gap-2">
-                      <span style={{ color: "var(--color-gold)" }}>•</span>
-                      <span>{it}</span>
-                    </li>
-                  ))}
-                </ul>
+                <p
+                  style={{
+                    fontSize: "12px",
+                    lineHeight: "18px",
+                    color: "var(--color-muted)",
+                  }}
+                >
+                  {country.desc}
+                </p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-24 bg-white">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
-          <div className="text-center mb-14 flex flex-col items-center">
+      {/* ABOUT US — Who are we */}
+      <section className="py-16 bg-white">
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-10 items-center">
+          <div
+            className="aspect-[4/3] bg-cover bg-center"
+            style={{ backgroundImage: "url('/images/factory-bd1.jpg')" }}
+          />
+          <div>
+            <SectionTitle
+              eyebrow={h.aboutUs.eyebrow}
+              title={h.aboutUs.title}
+            />
+            <p
+              className="mt-5 font-bold"
+              style={{
+                color: "var(--color-gold)",
+                fontSize: "16px",
+                letterSpacing: "1px",
+              }}
+            >
+              {h.aboutUs.lead}
+            </p>
+            <p
+              className="mt-3"
+              style={{
+                color: "var(--color-muted)",
+                fontSize: "15px",
+                lineHeight: "26px",
+              }}
+            >
+              {h.aboutUs.desc}
+            </p>
+            <Link href={`/${lang}/about`} className="btn-gold mt-6">
+              {h.aboutUs.cta} →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* PRIVATE LABEL PARTNER */}
+      <section
+        className="py-16 bg-cover bg-center relative"
+        style={{
+          backgroundImage:
+            "linear-gradient(135deg, rgba(21,52,82,0.92), rgba(13,34,56,0.94)), url('/images/vision-bg.jpg')",
+        }}
+      >
+        <div className="max-w-[1100px] mx-auto px-6 lg:px-10 text-center text-white">
+          <p
+            className="font-bold mb-3"
+            style={{
+              color: "var(--color-gold)",
+              fontSize: "13px",
+              letterSpacing: "5px",
+              textTransform: "uppercase",
+            }}
+          >
+            {h.privateLabel.eyebrow}
+          </p>
+          <h2 style={{ color: "#fff", letterSpacing: "3px" }}>
+            {h.privateLabel.title}
+          </h2>
+          <div
+            className="h-[2px] w-10 mx-auto my-5"
+            style={{ background: "var(--color-gold)" }}
+          />
+          <p
+            className="text-white/85 max-w-2xl mx-auto"
+            style={{ fontSize: "15px", lineHeight: "26px" }}
+          >
+            {h.privateLabel.desc}
+          </p>
+          <Link href={`/${lang}/contact`} className="btn-gold mt-7">
+            {h.privateLabel.cta} →
+          </Link>
+        </div>
+      </section>
+
+      {/* PLYWOOD PREVIEW — 4 products */}
+      <section className="py-16 bg-white">
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-10">
+          <div className="text-center mb-10 flex flex-col items-center">
+            <SectionTitle
+              eyebrow={h.plywoodPreview.eyebrow}
+              title={h.plywoodPreview.title}
+              subtitle={h.plywoodPreview.desc}
+              align="center"
+            />
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {dict.plywood.products.items.map((p, i) => (
+              <Link
+                key={p.slug}
+                href={`/${lang}/plywood#${p.slug}`}
+                className="group block"
+              >
+                <div
+                  className="aspect-square bg-cover bg-center mb-3 relative overflow-hidden"
+                  style={{
+                    backgroundImage: `linear-gradient(180deg, rgba(13,34,56,0.05), rgba(13,34,56,0.55)), url('${
+                      [
+                        "/images/factory-bd1.jpg",
+                        "/images/factory-bd2.jpeg",
+                        "/images/sustainability-3.jpg",
+                        "/images/sustainability-2.jpg",
+                      ][i % 4]
+                    }')`,
+                  }}
+                >
+                  <span className="absolute bottom-3 left-4 right-4 text-white font-bold text-sm tracking-wider uppercase">
+                    {p.name}
+                  </span>
+                </div>
+                <p
+                  style={{
+                    fontSize: "12px",
+                    color: "var(--color-muted)",
+                    lineHeight: "18px",
+                  }}
+                >
+                  {p.material}
+                </p>
+              </Link>
+            ))}
+          </div>
+          <div className="text-center mt-8">
+            <Link href={`/${lang}/plywood`} className="btn-navy">
+              {h.plywoodPreview.cta} →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* EXPERIENCE PREVIEW */}
+      <section className="py-16" style={{ background: "#f7f8fa" }}>
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-10 items-center">
+          <div>
+            <SectionTitle
+              eyebrow={h.experiencePreview.eyebrow}
+              title={h.experiencePreview.title}
+              subtitle={h.experiencePreview.desc}
+            />
+            <Link
+              href={`/${lang}/experience`}
+              className="btn-gold mt-6"
+            >
+              {h.experiencePreview.cta} →
+            </Link>
+          </div>
+          <div className="grid grid-cols-2 gap-3">
+            {[
+              "/images/sustainability-1.jpg",
+              "/images/sustainability-2.jpg",
+              "/images/sustainability-3.jpg",
+              "/images/sustainability-4.jpg",
+            ].map((src) => (
+              <div
+                key={src}
+                className="aspect-square bg-cover bg-center"
+                style={{ backgroundImage: `url('${src}')` }}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FACTORIES */}
+      <section className="py-16 bg-white">
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-10">
+          <div className="text-center mb-10 flex flex-col items-center">
             <SectionTitle
               eyebrow={h.factories.eyebrow}
               title={h.factories.title}
               align="center"
             />
           </div>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-6">
             {h.factories.items.map((f, i) => (
               <div
                 key={f.name}
-                className="relative overflow-hidden group"
+                className="overflow-hidden group"
                 style={{ background: "var(--color-navy)" }}
               >
                 <div
-                  className="aspect-[16/10] bg-cover bg-center opacity-90 group-hover:opacity-100 transition-opacity"
-                  style={{
-                    backgroundImage: `linear-gradient(135deg, rgba(21,52,82,0.35), rgba(13,34,56,0.15)), url('${factoryImages[i]}')`,
-                  }}
+                  className="aspect-[16/10] bg-cover bg-center transition-transform group-hover:scale-105"
+                  style={{ backgroundImage: `url('${factoryImages[i]}')` }}
                 />
-                <div className="p-7 text-white">
-                  <h3 className="font-display font-bold uppercase tracking-wider text-xl mb-3">
-                    {f.name}
-                  </h3>
-                  <p className="text-white/75 text-[14px] leading-relaxed mb-5">
+                <div className="p-6 text-white">
+                  <h3 className="text-white text-lg mb-2">{f.name}</h3>
+                  <p
+                    className="text-white/75 mb-4"
+                    style={{ fontSize: "14px", lineHeight: "22px" }}
+                  >
                     {f.desc}
                   </p>
-                  <div className="grid grid-cols-3 gap-4 pt-5 border-t border-white/15">
-                    <Stat label={h.factories.labels.area} value={f.area} />
+                  <div className="grid grid-cols-3 gap-3 pt-4 border-t border-white/15">
+                    <Stat
+                      label={h.factories.labels.area}
+                      value={f.area}
+                    />
                     <Stat
                       label={h.factories.labels.products}
                       value={f.products}
                       small
                     />
-                    <Stat label={h.factories.labels.people} value={f.people} />
+                    <Stat
+                      label={h.factories.labels.people}
+                      value={f.people}
+                    />
                   </div>
                 </div>
               </div>
@@ -135,83 +347,73 @@ export default async function HomePage(props: PageProps<"/[lang]">) {
         </div>
       </section>
 
+      {/* MILESTONES */}
       <section
-        className="py-24 relative bg-cover bg-center"
+        className="py-16 relative bg-cover bg-center"
         style={{
-          backgroundImage:
-            "linear-gradient(rgba(13,34,56,0.92), rgba(13,34,56,0.92)), url('/images/milestones-bg.png')",
+          background:
+            "linear-gradient(135deg, #153452 0%, #0d2238 50%, #1a4470 100%)",
         }}
       >
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10 text-white relative">
-          <div className="text-center mb-14">
-            <p className="heading-eyebrow mb-3">{h.milestones.eyebrow}</p>
-            <h2 className="font-display font-bold uppercase text-3xl md:text-4xl tracking-wide mb-3">
-              {h.milestones.title}
-            </h2>
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-10 text-white">
+          <div className="text-center mb-10 flex flex-col items-center">
+            <p
+              className="heading-eyebrow mb-3"
+              style={{ color: "var(--color-gold)" }}
+            >
+              {h.milestones.eyebrow}
+            </p>
+            <h2 style={{ color: "#fff" }}>{h.milestones.title}</h2>
             <div
-              className="h-[3px] w-12 mx-auto"
+              className="h-[2px] w-10 mt-4"
               style={{ background: "var(--color-gold)" }}
             />
-            <p className="text-white/70 mt-5 max-w-2xl mx-auto">
+            <p
+              className="text-white/70 mt-4 max-w-2xl"
+              style={{ fontSize: "15px", lineHeight: "24px" }}
+            >
               {h.milestones.subtitle}
             </p>
           </div>
-          <div className="relative">
-            <div className="absolute top-7 left-0 right-0 h-px bg-white/20 hidden md:block" />
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 relative">
-              {h.milestones.items.map((m) => (
-                <div key={m.year} className="text-center">
-                  <div
-                    className="w-14 h-14 mx-auto rounded-full flex items-center justify-center font-bold mb-4 relative"
-                    style={{ background: "var(--color-gold)" }}
-                  >
-                    <span className="text-white text-[12px]">{m.year}</span>
-                  </div>
-                  <h4 className="font-display font-bold uppercase text-sm tracking-wider mb-2">
-                    {m.title}
-                  </h4>
-                  <p className="text-white/65 text-[13px] leading-relaxed">
-                    {m.desc}
-                  </p>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
+            {h.milestones.items.map((m) => (
+              <div
+                key={m.year}
+                className="text-center border border-white/10 p-4"
+              >
+                <div
+                  className="font-bold mb-3"
+                  style={{
+                    color: "var(--color-gold)",
+                    fontSize: "20px",
+                    letterSpacing: "2px",
+                  }}
+                >
+                  {m.year}
                 </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20 bg-white">
-        <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
-          <div
-            className="relative px-8 py-16 md:px-16 md:py-20 text-center text-white overflow-hidden bg-cover bg-center"
-            style={{
-              backgroundImage:
-                "linear-gradient(135deg, rgba(21,52,82,0.92) 0%, rgba(13,34,56,0.92) 50%, rgba(26,68,112,0.92) 100%), url('/images/vision-bg.jpg')",
-            }}
-          >
-            <h3 className="font-display font-bold uppercase text-2xl md:text-3xl tracking-wide mb-4">
-              {h.cta.title}
-            </h3>
-            <p className="text-white/75 max-w-2xl mx-auto mb-8">{h.cta.desc}</p>
-            <Link href={`/${lang}/contact`} className="btn-gold">
-              {h.cta.button} →
-            </Link>
+                <h4
+                  className="text-white mb-2"
+                  style={{
+                    fontSize: "13px",
+                    letterSpacing: "1px",
+                    fontWeight: 700,
+                    textTransform: "uppercase",
+                  }}
+                >
+                  {m.title}
+                </h4>
+                <p
+                  className="text-white/65"
+                  style={{ fontSize: "12px", lineHeight: "18px" }}
+                >
+                  {m.desc}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
     </>
-  );
-}
-
-function Bullet({ children }: { children: React.ReactNode }) {
-  return (
-    <li className="flex gap-3">
-      <span
-        className="mt-2 w-2 h-2 rounded-full shrink-0"
-        style={{ background: "var(--color-gold)" }}
-      />
-      <span>{children}</span>
-    </li>
   );
 }
 
@@ -226,10 +428,20 @@ function Stat({
 }) {
   return (
     <div>
-      <p className="text-white/60 text-[10px] uppercase tracking-[0.2em] mb-1">
+      <p
+        className="text-white/60 mb-1"
+        style={{
+          fontSize: "9px",
+          letterSpacing: "2px",
+          textTransform: "uppercase",
+        }}
+      >
         {label}
       </p>
-      <p className={`font-bold ${small ? "text-[12px]" : "text-base"}`}>
+      <p
+        className="font-bold text-white"
+        style={{ fontSize: small ? "12px" : "15px", lineHeight: "18px" }}
+      >
         {value}
       </p>
     </div>

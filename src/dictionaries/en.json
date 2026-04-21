@@ -1,55 +1,45 @@
 {
   "meta": {
     "title": "TEKCOM Corp — Together Building The Best",
-    "description": "Leading manufacturer of plywood and RTA kitchen cabinets in Vietnam. Established 2005."
+    "description": "Premium plywood manufacturer in Vietnam: rubberwood, eucalyptus, acacia, pine veneer. Established 2005, exporting to 30+ countries."
   },
   "nav": {
     "about": "About Us",
     "plywood": "Plywood",
-    "cabinets": "Cabinets",
-    "marketCoverage": "Market Coverage",
+    "experience": "Experience",
     "news": "News",
-    "career": "Career",
     "contact": "Contact",
-    "sustainability": "Sustainability",
     "search": "Enter your keywords...",
     "menu": "Menu"
   },
-  "footer": {
-    "follow": "Follow Us On",
-    "subscribe": "Subscribe",
-    "emailPlaceholder": "Enter your email",
-    "company": "TEKCOM Corporation",
-    "bd1Title": "Binh Duong 1 Factory — Head Office",
-    "bd2Title": "Binh Duong 2 Factory",
-    "address": "Lots M1-M2-M7-M8, N2-N3 Street,\nNam Tan Uyen Expansion\nIndustrial Park, Binh Co Ward,\nHo Chi Minh City, Vietnam",
-    "address2": "Lots A1-A2-A3-A4-A5, N5 Street,\nNam Tan Uyen Expansion\nIndustrial Park, Binh Co Ward,\nHo Chi Minh City, Vietnam",
-    "companyInfo": "TEKCOM Joint Stock Company\nBusiness Registration No. 3702612545 issued by Binh Duong DPI on 27/10/2017\nLegal representative: Vu Quang Huy",
-    "careerCta": "Career →",
-    "rights": "© {year} TEKCOM Corporation. All rights reserved.",
-    "tagline": "Together Building The Best."
-  },
   "common": {
     "scrollDown": "SCROLL DOWN",
-    "viewMap": "View Map",
-    "readMore": "Read More",
-    "contactUs": "Contact Us",
-    "downloadBrochure": "Download Brochure (PDF)",
-    "apply": "Apply",
-    "send": "Send Message"
+    "viewMore": "View more",
+    "viewDetail": "View detail",
+    "readMore": "Read more",
+    "contactUs": "Contact us",
+    "send": "Send message",
+    "minOrderQty": "Minimum order quantity",
+    "dimensions": "Dimensions",
+    "material": "Material",
+    "price": "Reference price",
+    "viewMap": "View on map"
+  },
+  "logo": {
+    "tagline": "Together Building The Best"
   },
   "home": {
     "hero": {
-      "eyebrow": "About Us",
+      "eyebrow": "ABOUT US",
       "title": "Together Building The Best.",
-      "description": "Established in 2005, TEKCOM Corporation specializes in providing plywood and associated products to partners and clients in Vietnam and export markets. With a strong commitment to deliver high-quality products, the challenge of developing innovative solutions for construction and architectural creation never stops.",
+      "description": "Established in 2005, TEKCOM Corporation specializes in providing plywood and associated products to partners and clients in Vietnam and export markets.",
       "products": "Our core products include:",
-      "productsList": "Formwork Plywood | Furniture Plywood | RTA Kitchen Cabinets"
+      "productsList": "Rubberwood Veneer  |  Eucalyptus Veneer  |  Acacia Veneer  |  Pine Veneer"
     },
     "vision": {
-      "eyebrow": "Our Vision",
-      "title": "A Market Leader in Wood and Associated Products",
-      "lead": "To be a market leader of preferred wood and associated products; and to provide innovative solutions in construction and architectural design.",
+      "eyebrow": "OUR VISION",
+      "title": "To be a market leader of preferred wood and associated products",
+      "lead": "Providing innovative solutions in construction and architectural design.",
       "items": [
         "Leading position in the national and regional market through innovation and a well-known brand.",
         "Being a sustainable leading manufacturer in the region.",
@@ -57,265 +47,162 @@
         "Constantly renewed to bring suitable solutions to customers."
       ]
     },
-    "values": {
-      "eyebrow": "Our Core Values",
-      "title": "Four Pillars That Drive Us",
+    "globalReach": {
+      "eyebrow": "GLOBAL REACH",
+      "title": "Our Export Markets",
       "items": [
-        {
-          "title": "Conquer",
-          "items": [
-            "Excellent quality",
-            "Effective operation",
-            "Dare to challenge",
-            "Dedicated",
-            "Self-responsibility",
-            "Speedy response on issues"
-          ]
-        },
-        {
-          "title": "Constant Renewal",
-          "items": [
-            "Think outside the box",
-            "Can-do-it spirit",
-            "Positive adaptability",
-            "Business initiatives",
-            "Learn to share, share to learn",
-            "Proactive action"
-          ]
-        },
-        {
-          "title": "Collaboration",
-          "items": [
-            "High commitment",
-            "Result-oriented",
-            "True service mind-set",
-            "Constructive idea sharing",
-            "Respect business partners",
-            "Encourage and motivate each other"
-          ]
-        },
-        {
-          "title": "Customer Centricity",
-          "items": [
-            "Outside-in thinking",
-            "Excellent engagement with customers",
-            "Profound WIN-WIN spirit",
-            "Positive listening",
-            "Open feedback culture",
-            "Expectation plus"
-          ]
-        }
+        { "flag": "🇮🇳", "name": "India", "desc": "Key partner in South Asia" },
+        { "flag": "🇨🇳", "name": "China", "desc": "Major manufacturing hub" },
+        { "flag": "🇺🇸", "name": "America", "desc": "Primary export destination" },
+        { "flag": "🇦🇪", "name": "Dubai", "desc": "Gateway to the Middle East" },
+        { "flag": "🇴🇲", "name": "Oman", "desc": "Growing regional partner" },
+        { "flag": "🇰🇷", "name": "Korea", "desc": "Trusted industrial partner" }
       ]
     },
+    "aboutUs": {
+      "eyebrow": "ABOUT US",
+      "title": "Who are we?",
+      "lead": "Professionals in QUALITY.",
+      "desc": "TEKCOM is proud to be a trusted plywood manufacturing partner, committed to international-standard products and dedicated service to clients in Vietnam and worldwide.",
+      "cta": "Learn more"
+    },
+    "privateLabel": {
+      "eyebrow": "PARTNERSHIP",
+      "title": "Let Us Be Your PRIVATE LABEL PARTNER",
+      "desc": "We always work toward our customers' success. With flexible production capacity and an experienced engineering team, TEKCOM is ready to walk with you in building your own brand — from packaging design to technical specifications.",
+      "cta": "Partner with us"
+    },
+    "experiencePreview": {
+      "eyebrow": "EXPERIENCE",
+      "title": "Our journey",
+      "desc": "Photos of products, customers, container loading, and export documents — proof of more than 20 years of industry experience.",
+      "cta": "View gallery"
+    },
+    "plywoodPreview": {
+      "eyebrow": "PLYWOOD PRODUCTS",
+      "title": "4 core veneer lines",
+      "desc": "From rubberwood, eucalyptus, acacia to pine — meeting diverse export requirements.",
+      "cta": "View all products"
+    },
     "factories": {
-      "eyebrow": "Our Facilities",
-      "title": "Our Factories",
+      "eyebrow": "FACTORIES",
+      "title": "Manufacturing Excellence",
       "items": [
         {
           "name": "Binh Duong 01 Factory",
-          "desc": "TEKCOM's 55,000 square-meter factory is equipped with the most state-of-the-art facilities in FFP industry. Our offerings are certified to conform with EU Standards (EN 13986) and obtain TÜV Rheinland Certification in plywood.",
+          "desc": "TEKCOM's 55,000 m² factory is equipped with the most state-of-the-art facilities in the FFP industry. Our offerings are EN 13986 (CE) certified and obtain TÜV Rheinland certification.",
           "area": "55,000 m²",
           "products": "Formwork plywood",
           "people": "700+ employees"
         },
         {
           "name": "Binh Duong 02 Factory",
-          "desc": "Opened in 2019, BD2 is more automated and specialized in producing plywood for furniture and other industries, including high-quality kitchen cabinets.",
+          "desc": "Opened in 2019, BD2 is more automated and specialized in plywood for furniture and other industries, including premium RTA Kitchen Cabinets.",
           "area": "60,000 m²",
           "products": "Furniture plywood, kitchen cabinets",
           "people": "600+ employees"
         }
       ],
-      "labels": {
-        "area": "Total Area",
-        "products": "Main Products",
-        "people": "Man Power"
-      }
+      "labels": { "area": "AREA", "products": "PRODUCTS", "people": "STAFF" }
     },
     "milestones": {
-      "eyebrow": "Key Milestones",
-      "title": "Together Building The Best",
+      "eyebrow": "KEY MILESTONES",
+      "title": "Our Journey",
       "subtitle": "In each step of operation, TEKCOM is striving for consistent coordination with our partners.",
       "items": [
         { "year": "2005", "title": "Establishment", "desc": "As insulation trading company." },
-        { "year": "2010", "title": "First plywood line", "desc": "Launched our first plywood production line at BD1." },
-        { "year": "2015", "title": "Export markets", "desc": "Began serving partners across Asia, Australia, and the EU." },
-        { "year": "2019", "title": "BD2 factory", "desc": "Opened the second factory dedicated to furniture plywood." },
-        { "year": "2022", "title": "RTA Cabinets", "desc": "Launched RTA Kitchen Cabinet line for the US market." },
-        { "year": "Today", "title": "Building The Best", "desc": "Serving customers in 30+ countries." }
+        { "year": "2007", "title": "Trading — FFP", "desc": "Started distributing FFP in Vietnam." },
+        { "year": "2012", "title": "Manufacturing — FFP", "desc": "Operated FFP production with 12,000 cbm/year capacity." },
+        { "year": "2015", "title": "Binh Duong 1 — Phase 1", "desc": "Opened new facility with 60,000 cbm/year capacity." },
+        { "year": "2016", "title": "Binh Duong 1 — Phase 2", "desc": "Capacity expanded to 138,000 cbm/year." },
+        { "year": "2019", "title": "Binh Duong 2 — Phase 1", "desc": "New product portfolio: furniture plywood, floor base — 84,000 cbm/year." }
       ]
-    },
-    "cta": {
-      "title": "Ready to build something together?",
-      "desc": "Our team is ready to support your next project — from sample requests to long-term supply partnerships.",
-      "button": "Contact Us"
     }
   },
   "plywood": {
     "hero": {
-      "eyebrow": "Plywood",
-      "title": "Engineered Wood, Built To Perform.",
-      "description": "From formwork in skyscrapers to elegant furniture pieces, our plywood products are trusted by architects, contractors and manufacturers across 30+ countries."
+      "eyebrow": "PLYWOOD",
+      "title": "Four core veneer lines",
+      "description": "From rubberwood, eucalyptus, acacia to pine — TEKCOM supplies diverse raw materials to furniture and export customers worldwide."
     },
     "products": {
-      "eyebrow": "Product Range",
-      "title": "Plywood Products",
+      "eyebrow": "PRODUCT RANGE",
+      "title": "Veneer Products",
       "items": [
         {
-          "name": "Formwork Plywood",
-          "tagline": "Concrete formwork for high-rise construction",
-          "features": [
-            "Phenolic film face for excellent release",
-            "Up to 8+ reuse cycles",
-            "Conforms with EN 13986 standard",
-            "Multiple thicknesses: 12, 15, 17, 18, 21 mm"
-          ]
+          "slug": "rubberwood",
+          "name": "Rubberwood Veneer",
+          "material": "Rubberwood (Hevea brasiliensis)",
+          "dimensions": "1220 × 2440 mm — thickness 3 / 5 / 9 / 12 / 15 / 18 mm",
+          "price": "Contact for quotation",
+          "moq": "1 × 40' container (≈ 25 m³)",
+          "highlights": ["Smooth surface, even grain", "Ideal for premium furniture", "Kiln-dried 8–12% moisture"]
         },
         {
-          "name": "Furniture Plywood",
-          "tagline": "Premium-grade plywood for indoor furniture",
-          "features": [
-            "E0/E1 low-formaldehyde glue options",
-            "Smooth A-grade veneer surfaces",
-            "BB/CC, CC/CC, BB/BB grading",
-            "Custom thicknesses 4 mm – 25 mm"
-          ]
+          "slug": "eucalyptus",
+          "name": "Eucalyptus Veneer",
+          "material": "Eucalyptus",
+          "dimensions": "1220 × 2440 mm — thickness 3 / 5 / 9 / 12 / 15 / 18 / 21 mm",
+          "price": "Contact for quotation",
+          "moq": "1 × 40' container (≈ 25 m³)",
+          "highlights": ["High mechanical strength", "Straight grain, few knots", "Suited for formwork & furniture"]
         },
         {
-          "name": "Film Faced Plywood",
-          "tagline": "Versatile, durable, weather-resistant",
-          "features": [
-            "Brown / black phenolic film",
-            "Waterproof WBP glue",
-            "Smooth or wire-mesh face options",
-            "Edges sealed for protection"
-          ]
+          "slug": "acacia",
+          "name": "Acacia Veneer",
+          "material": "Acacia",
+          "dimensions": "1220 × 2440 mm — thickness 3 / 5 / 9 / 12 / 15 / 18 mm",
+          "price": "Contact for quotation",
+          "moq": "1 × 40' container (≈ 25 m³)",
+          "highlights": ["Stable domestic supply", "Light tone, easy glue / paint", "Competitive pricing"]
+        },
+        {
+          "slug": "pine",
+          "name": "Pine Veneer",
+          "material": "Pine",
+          "dimensions": "1220 × 2440 mm — thickness 3 / 5 / 9 / 12 / 15 / 18 mm",
+          "price": "Contact for quotation",
+          "moq": "1 × 40' container (≈ 25 m³)",
+          "highlights": ["Distinct pine aroma", "Beautiful grain, high aesthetic", "Ideal for export furniture"]
         }
       ]
     },
-    "quality": {
-      "eyebrow": "Quality Assurance",
-      "title": "International Standards & Certifications",
-      "p1": "Every product leaving our factories is tested at every stage — from log selection to final inspection — to ensure consistent performance.",
-      "p2": "We hold EN 13986 (CE), TÜV Rheinland, CARB Phase II, FSC® Chain of Custody and meet the strict E0/E1 emission limits for indoor use.",
-      "certs": ["EN 13986", "TÜV Rheinland", "CARB P2", "FSC® CoC", "ISO 9001", "ISO 14001"]
-    }
-  },
-  "cabinets": {
-    "hero": {
-      "eyebrow": "TEKCOM — Your Trusted Partner",
-      "title": "RTA Kitchen Cabinets",
-      "description": "At TEKCOM, we specialize in manufacturing premium kitchen cabinets in Vietnam. We ensure exceptional craftsmanship and reliable delivery, meeting the high demands of cabinet manufacturing."
-    },
-    "features": {
-      "eyebrow": "Why TEKCOM",
-      "title": "Features That Set Us Apart",
+    "certifications": {
+      "eyebrow": "CERTIFICATIONS & DOCUMENTS",
+      "title": "Complete legal paperwork for export",
+      "subtitle": "TEKCOM provides all required documents for every export shipment.",
       "items": [
-        { "title": "Premium Materials", "desc": "Solid wood, plywood box, soft-close hardware." },
-        { "title": "Rigorous QC", "desc": "100% inspection before flat-pack." },
-        { "title": "Scalable Capacity", "desc": "Up to 150 containers/month." },
-        { "title": "Custom Designs", "desc": "Shaker, slab, raised-panel and contemporary." },
-        { "title": "Quick Lead Time", "desc": "Sample 2 weeks · Production 45 days." },
-        { "title": "Reliable Logistics", "desc": "FCL/LCL — door-to-door available." }
-      ]
-    },
-    "styles": {
-      "eyebrow": "Finishes",
-      "title": "Choose Your Style",
-      "items": ["Shaker White", "Espresso", "Natural Oak", "Slate Grey"]
-    }
-  },
-  "marketCoverage": {
-    "hero": {
-      "eyebrow": "Market Coverage",
-      "title": "Trusted in 30+ Countries.",
-      "description": "From Vietnamese contractors to global furniture brands, TEKCOM serves a diverse customer base on every continent."
-    },
-    "regions": {
-      "eyebrow": "Where We Operate",
-      "title": "Global Reach, Local Service",
-      "items": [
-        { "name": "Asia Pacific", "countries": "Vietnam, Japan, South Korea, Singapore, Australia, New Zealand" },
-        { "name": "North America", "countries": "United States, Canada" },
-        { "name": "Europe", "countries": "Germany, France, UK, Netherlands, Belgium" },
-        { "name": "Middle East", "countries": "UAE, Saudi Arabia, Qatar" }
-      ]
-    }
-  },
-  "news": {
-    "hero": {
-      "eyebrow": "News",
-      "title": "News & Updates",
-      "description": "Latest stories from TEKCOM — product launches, sustainability progress and behind-the-scenes from our factories."
-    },
-    "section": {
-      "eyebrow": "Latest Articles",
-      "title": "Stories from TEKCOM"
-    },
-    "articles": [
-      {
-        "title": "TEKCOM Expands Export Footprint to North America",
-        "date": "Mar 12, 2026",
-        "category": "Company News",
-        "excerpt": "We are proud to announce a new long-term supply agreement with a leading US distributor of formwork plywood…"
-      },
-      {
-        "title": "Sustainability Report 2025 Released",
-        "date": "Feb 02, 2026",
-        "category": "Sustainability",
-        "excerpt": "Highlights include a 23% reduction in scope-1 emissions, FSC® certified raw material rate of 88%, and a new solar rooftop…"
-      },
-      {
-        "title": "Inside the BD2 Furniture Plywood Line",
-        "date": "Jan 18, 2026",
-        "category": "Behind the Scenes",
-        "excerpt": "A walkthrough of our most automated line — from log peeling to packaging, here's how a sheet is made."
-      },
-      {
-        "title": "TEKCOM at Vietnam Wood 2025",
-        "date": "Nov 22, 2025",
-        "category": "Events",
-        "excerpt": "Visit us at booth A-12 to see our newest formwork line and the RTA Cabinet showroom."
-      }
-    ]
-  },
-  "career": {
-    "hero": {
-      "eyebrow": "Career",
-      "title": "Build Your Career With Us",
-      "description": "At TEKCOM, our people are the engine behind every product. Join a team that values excellence, collaboration, and constant renewal."
-    },
-    "benefits": {
-      "eyebrow": "Why TEKCOM",
-      "title": "Benefits & Culture",
-      "items": [
-        "Competitive salary with annual review",
-        "13th-month salary + performance bonus",
-        "Premium health insurance for employees & family",
-        "Annual leave 14 – 18 days",
-        "Continuous training & development",
-        "Modern facilities and a friendly workplace"
-      ]
-    },
-    "jobs": {
-      "eyebrow": "Open Positions",
-      "title": "We Are Hiring",
-      "items": [
-        { "title": "Production Engineer", "location": "Binh Duong 2 Factory", "type": "Full-time" },
-        { "title": "Sales Executive — Export", "location": "HCMC Office", "type": "Full-time" },
-        { "title": "QC Supervisor — Plywood", "location": "Binh Duong 1 Factory", "type": "Full-time" },
-        { "title": "HR Business Partner", "location": "HCMC Office", "type": "Full-time" }
+        {
+          "name": "Legal Forestry Records",
+          "shortName": "Forest Product Inventory",
+          "desc": "Proof of legal timber origin per Vietnam regulations and EUTR."
+        },
+        {
+          "name": "Certificate of Origin",
+          "shortName": "C/O Form E",
+          "desc": "Origin certificate for ASEAN — China preferential tariff treatment."
+        },
+        {
+          "name": "Phytosanitary Certificate",
+          "shortName": "Phytosanitary",
+          "desc": "Confirms shipment is pest-free and meets the destination country's import rules."
+        },
+        {
+          "name": "Fumigation Certificate",
+          "shortName": "Fumigation",
+          "desc": "ISPM 15 fumigation treatment for wood packaging and wood products."
+        }
       ]
     }
   },
   "contact": {
     "hero": {
-      "eyebrow": "Contact",
+      "eyebrow": "CONTACT",
       "title": "Contact Us",
-      "description": "Thank you for contacting TEKCOM. How can we help you today? We strive to respond to online inquiries within 72 hours on work days, or on the next work day following a weekend or holiday."
+      "description": "Thank you for contacting TEKCOM. We commit to respond to all inquiries within 72 working hours."
     },
     "form": {
-      "eyebrow": "Send a Message",
+      "eyebrow": "SEND A MESSAGE",
       "title": "Your Input is Valued to Us",
       "name": "Your Name *",
       "email": "Your Email *",
@@ -328,37 +215,52 @@
     "info": {
       "company": "TEKCOM Corporation",
       "hq": "Head Quarter — Binh Duong 1 Factory",
-      "addr1": "Lots M1-M2-M7-M8, N2-N3 Street, Expanded Nam Tan Uyen Industrial Park, Binh Co Ward, Ho Chi Minh City, Vietnam",
+      "addr1": "Lots M1-M2-M7-M8, N2-N3 Street, Expanded Nam Tan Uyen IP, Binh Co Ward, Ho Chi Minh City, Vietnam",
       "bd2": "Binh Duong 2 Factory",
-      "addr2": "Lots A1-A2-A3-A4-A5, N5 Street, Expanded Nam Tan Uyen Industrial Park, Binh Co Ward, Ho Chi Minh City, Vietnam",
+      "addr2": "Lots A1-A2-A3-A4-A5, N5 Street, Expanded Nam Tan Uyen IP, Binh Co Ward, Ho Chi Minh City, Vietnam",
       "hotlineLabel": "Hotline:",
       "emailLabel": "Email:"
     }
   },
-  "sustainability": {
+  "news": {
     "hero": {
-      "eyebrow": "Sustainability",
-      "title": "Together, For The Long Run.",
-      "description": "Sustainability is not a side initiative at TEKCOM — it shapes how we source, produce, and partner. Our 2030 roadmap is built around three pillars."
+      "eyebrow": "NEWS",
+      "title": "News & Updates",
+      "description": "Latest stories from TEKCOM."
     },
-    "pillars": {
-      "eyebrow": "Our Pillars",
-      "title": "Three Areas of Focus",
-      "items": [
-        { "title": "Sustainable Sourcing", "desc": "100% legal timber, 88% FSC® certified, partnerships with smallholder forest growers in Vietnam." },
-        { "title": "Cleaner Operations", "desc": "Solar rooftop on BD2 covers 22% of factory electricity. Targeting 50% renewable mix by 2030." },
-        { "title": "People & Community", "desc": "Safe working conditions, fair wages, and active investment in workforce education and local development." }
-      ]
+    "section": { "eyebrow": "LATEST ARTICLES", "title": "Stories from TEKCOM" },
+    "articles": [
+      { "title": "TEKCOM Expands Export to North America", "date": "Mar 12, 2026", "category": "Company News", "excerpt": "Long-term supply agreement with a leading US distributor…" },
+      { "title": "Sustainability Report 2025 Released", "date": "Feb 02, 2026", "category": "Sustainability", "excerpt": "23% emission reduction, 88% FSC® certified material…" },
+      { "title": "Inside the BD2 Furniture Plywood Line", "date": "Jan 18, 2026", "category": "Behind the Scenes", "excerpt": "A walkthrough of our most automated line…" },
+      { "title": "TEKCOM at Vietnam Wood 2025", "date": "Nov 22, 2025", "category": "Events", "excerpt": "Visit booth A-12 to see our newest formwork line…" }
+    ]
+  },
+  "experience": {
+    "hero": {
+      "eyebrow": "EXPERIENCE",
+      "title": "TEKCOM's Journey",
+      "description": "Photos of products, customers, container loading and import-export documents from over 20 years of operation."
     },
-    "stats": {
-      "eyebrow": "By The Numbers",
-      "title": "Our Progress So Far",
-      "items": [
-        { "value": "−23%", "label": "Scope 1+2 emissions vs 2020 baseline" },
-        { "value": "88%", "label": "FSC® certified raw material" },
-        { "value": "1,300+", "label": "Direct employees" },
-        { "value": "30+", "label": "Export markets" }
-      ]
-    }
+    "categories": {
+      "products": "Product photos",
+      "customers": "Partners & customers",
+      "loading": "Container loading",
+      "documents": "Export documents"
+    },
+    "comingSoon": "Image gallery is being updated. Please check back soon."
+  },
+  "footer": {
+    "brief": "Together Building The Best. Established in 2005, specializing in plywood and associated products for construction and architectural design.",
+    "quickLinksTitle": "Quick Links",
+    "productsTitle": "Products",
+    "contactTitle": "Contact",
+    "products": ["Rubberwood Veneer", "Eucalyptus Veneer", "Acacia Veneer", "Pine Veneer"],
+    "addressShort": "Binh Duong Province, Vietnam",
+    "phone": "+84 977 668 000",
+    "email": "info@tekcom.vn",
+    "rights": "© {year} TEKCOM Corporation. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
   }
 }

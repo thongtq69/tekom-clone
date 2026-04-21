@@ -1,6 +1,6 @@
 import { NextResponse, type NextRequest } from "next/server";
 
-const locales = ["vi", "en"] as const;
+const locales = ["vi", "en", "zh", "hi", "ko", "ja"] as const;
 const defaultLocale = "vi";
 
 function pickLocale(req: NextRequest): string {
