@@ -75,9 +75,9 @@ export default function Header({ lang, dict }: Props) {
   return (
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
-        scrolled
+        scrolled || open
           ? "bg-white/95 backdrop-blur shadow-sm"
-          : "bg-white/85 backdrop-blur"
+          : "bg-transparent lg:bg-white/85 lg:backdrop-blur"
       }`}
     >
       <div className="max-w-[1400px] mx-auto px-6 lg:px-10 h-[88px] flex items-center justify-between">
@@ -168,7 +168,9 @@ export default function Header({ lang, dict }: Props) {
 
         <button
           aria-label={dict.nav.menu}
-          className="lg:hidden text-[color:var(--color-navy)]"
+          className={`lg:hidden ${
+            scrolled || open ? "text-[color:var(--color-navy)]" : "text-white"
+          }`}
           onClick={() => setOpen(!open)}
         >
           <svg
@@ -211,9 +213,19 @@ export default function Header({ lang, dict }: Props) {
                       }
                       aria-expanded={mobileExpanded === item.href}
                       aria-label={item.label}
-                      className="px-4 text-[10px] text-[color:var(--color-navy)] hover:text-[color:var(--color-gold)]"
+                      className="w-12 flex items-center justify-center text-[color:var(--color-navy)] hover:text-[color:var(--color-gold)] border-l border-[color:var(--color-line)]"
                     >
-                      {mobileExpanded === item.href ? "▴" : "▾"}
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2.2"
+                        className={`transition-transform ${mobileExpanded === item.href ? "rotate-180" : ""}`}
+                      >
+                        <path d="M6 9l6 6 6-6" />
+                      </svg>
                     </button>
                   </div>
                   {mobileExpanded === item.href && (

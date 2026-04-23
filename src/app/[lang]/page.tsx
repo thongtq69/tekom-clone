@@ -260,23 +260,28 @@ export default async function HomePage(props: PageProps<"/[lang]">) {
         className="py-20 relative overflow-hidden"
         style={{ background: "#1A202C" }}
       >
-        {/* Background mosaic — worker photos */}
+        {/* Background mosaic — worker photos. 6 tiles so every breakpoint
+            (2 / 3 / 6 cols) covers the whole section without empty cells. */}
         <div
           aria-hidden
-          className="absolute inset-0 grid grid-cols-2 md:grid-cols-5 pointer-events-none"
+          className="absolute inset-0 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 pointer-events-none"
         >
           {[
-            "/images/workers-thumbs.jpg",
-            "/images/sustainability-1.jpg",
-            "/images/sustainability-2.jpg",
-            "/images/sustainability-3.jpg",
-            "/images/sustainability-4.jpg",
-          ].map((img) => (
+            { src: "/images/workers-thumbs.jpg", pos: "center" },
+            { src: "/images/sustainability-1.jpg", pos: "center" },
+            { src: "/images/sustainability-2.jpg", pos: "center" },
+            { src: "/images/sustainability-3.jpg", pos: "center" },
+            { src: "/images/sustainability-4.jpg", pos: "center" },
+            // Reuse product-photo with worker measuring veneer — anchor to
+            // left so the worker stays in frame when the tile is narrow.
+            { src: "/images/sustainability-2.jpg", pos: "left center" },
+          ].map((t, i) => (
             <div
-              key={img}
-              className="bg-cover bg-center"
+              key={`${t.src}-${i}`}
+              className="bg-cover"
               style={{
-                backgroundImage: `url('${img}')`,
+                backgroundImage: `url('${t.src}')`,
+                backgroundPosition: t.pos,
                 filter: "grayscale(20%)",
               }}
             />
