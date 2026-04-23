@@ -49,7 +49,7 @@ export default function Hero({
       style={{ background }}
     >
       <div
-        className={`relative z-10 max-w-[1400px] mx-auto px-6 lg:px-10 w-full pt-20 pb-14 lg:pb-32 ${
+        className={`relative z-10 max-w-[1400px] mx-auto px-6 lg:px-10 w-full pt-28 lg:pt-36 pb-14 lg:pb-32 ${
           align === "center" ? "text-center" : ""
         }`}
       >
