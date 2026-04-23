@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "TEKCOM 公司 — 共同建设最好的产品",
-    "description": "越南优质胶合板制造商:橡胶木、桉木、相思木、松木单板。成立于2005年,出口至30多个国家。"
+    "title": "A&A Logistics — 4PL 行业最佳",
+    "description": "A&A Logistics — 领先的 4PL 服务商,为国内及出口市场提供集成物流解决方案与木材产品。"
   },
   "nav": {
     "about": "关于我们",
@@ -25,7 +25,7 @@
     "price": "参考价格",
     "viewMap": "在地图上查看"
   },
-  "logo": { "tagline": "共同建设最好的产品" },
+  "logo": { "tagline": "4PL 行业最佳" },
   "home": {
     "hero": {
       "eyebrow": "关于我们",
@@ -174,7 +174,7 @@
     "addressShort": "越南平阳省",
     "phone": "+84 977 668 000",
     "email": "info@tekcom.vn",
-    "rights": "© {year} TEKCOM 公司。版权所有。",
+    "rights": "© {year} A&A Logistics。版权所有。",
     "privacy": "隐私政策",
     "terms": "服务条款"
   }

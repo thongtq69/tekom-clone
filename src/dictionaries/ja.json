@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "TEKCOM Corp — 共に最高を築く",
-    "description": "ベトナムのプレミアム合板メーカー:ラバーウッド、ユーカリ、アカシア、パインの突板。2005年設立、30か国以上に輸出。"
+    "title": "A&A Logistics — 4PL のベスト",
+    "description": "A&A Logistics — 国内および輸出市場向けに統合物流ソリューションと木材製品を提供する、業界をリードする 4PL プロバイダー。"
   },
   "nav": {
     "about": "会社概要",
@@ -25,7 +25,7 @@
     "price": "参考価格",
     "viewMap": "地図で見る"
   },
-  "logo": { "tagline": "共に最高を築く" },
+  "logo": { "tagline": "4PL のベスト" },
   "home": {
     "hero": {
       "eyebrow": "会社概要",
@@ -137,7 +137,7 @@
     "addressShort": "ビンズオン省、ベトナム",
     "phone": "+84 977 668 000",
     "email": "info@tekcom.vn",
-    "rights": "© {year} TEKCOM Corporation. 全著作権所有。",
+    "rights": "© {year} A&A Logistics. 全著作権所有。",
     "privacy": "プライバシーポリシー",
     "terms": "利用規約"
   }

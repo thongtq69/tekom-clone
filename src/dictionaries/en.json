@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "TEKCOM Corp — Together Building The Best",
-    "description": "Premium plywood manufacturer in Vietnam: rubberwood, eucalyptus, acacia, pine veneer. Established 2005, exporting to 30+ countries."
+    "title": "A&A Logistics — The best of 4PL",
+    "description": "A&A Logistics — leading 4PL provider delivering integrated logistics solutions and wood products for domestic and export markets."
   },
   "nav": {
     "about": "About Us",
@@ -26,7 +26,7 @@
     "viewMap": "View on map"
   },
   "logo": {
-    "tagline": "Together Building The Best"
+    "tagline": "The best of 4PL"
   },
   "home": {
     "hero": {
@@ -259,7 +259,7 @@
     "addressShort": "Binh Duong Province, Vietnam",
     "phone": "+84 977 668 000",
     "email": "info@tekcom.vn",
-    "rights": "© {year} TEKCOM Corporation. All rights reserved.",
+    "rights": "© {year} A&A Logistics. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
   }

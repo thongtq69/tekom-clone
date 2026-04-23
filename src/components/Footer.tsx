@@ -15,13 +15,13 @@ export default function Footer({ lang, dict }: Props) {
       <div className="max-w-[1280px] mx-auto px-6 lg:px-10 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* Brand + brief */}
         <div>
-          <div className="mb-3">
+          <div className="mb-4 inline-block bg-white p-2">
             <Image
               src="/images/logo.png"
-              alt="TEKCOM"
-              width={140}
-              height={42}
-              className="h-9 w-auto brightness-0 invert"
+              alt="A&A Logistics"
+              width={120}
+              height={120}
+              className="h-16 w-auto"
             />
           </div>
           <p

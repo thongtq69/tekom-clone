@@ -59,27 +59,15 @@ export default function Header({ lang, dict }: Props) {
       }`}
     >
       <div className="max-w-[1400px] mx-auto px-6 lg:px-10 h-[70px] flex items-center justify-between">
-        <Link href={`/${lang}`} className="flex items-center gap-3 shrink-0">
+        <Link href={`/${lang}`} className="flex items-center shrink-0">
           <Image
             src="/images/logo.png"
-            alt="TEKCOM Corporation"
-            width={140}
-            height={42}
+            alt="A&A Logistics"
+            width={120}
+            height={120}
             priority
-            className="h-9 w-auto"
+            className="h-14 w-auto"
           />
-          <span
-            className="hidden xl:block text-[10px] leading-tight font-bold uppercase border-l pl-3"
-            style={{
-              color: "var(--color-navy)",
-              borderColor: "var(--color-gold)",
-              letterSpacing: "2px",
-            }}
-          >
-            {dict.logo.tagline.split(" ").slice(0, 2).join(" ")}
-            <br />
-            {dict.logo.tagline.split(" ").slice(2).join(" ")}
-          </span>
         </Link>
 
         <nav className="hidden lg:flex items-center gap-7 text-[15px] font-medium">

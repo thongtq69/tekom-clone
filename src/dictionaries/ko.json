@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "TEKCOM Corp — 함께 최고를 만들다",
-    "description": "베트남 프리미엄 합판 제조사: 고무나무, 유칼립투스, 아카시아, 소나무 단판. 2005년 설립, 30개국 이상 수출."
+    "title": "A&A Logistics — 최고의 4PL",
+    "description": "A&A Logistics — 통합 물류 솔루션과 목재 제품을 국내 및 수출 시장에 제공하는 선도적인 4PL 기업."
   },
   "nav": {
     "about": "회사 소개",
@@ -25,7 +25,7 @@
     "price": "참고 가격",
     "viewMap": "지도에서 보기"
   },
-  "logo": { "tagline": "함께 최고를 만들다" },
+  "logo": { "tagline": "최고의 4PL" },
   "home": {
     "hero": {
       "eyebrow": "회사 소개",
@@ -137,7 +137,7 @@
     "addressShort": "빈증성, 베트남",
     "phone": "+84 977 668 000",
     "email": "info@tekcom.vn",
-    "rights": "© {year} TEKCOM Corporation. 모든 권리 보유.",
+    "rights": "© {year} A&A Logistics. 모든 권리 보유.",
     "privacy": "개인정보 처리방침",
     "terms": "이용약관"
   }
