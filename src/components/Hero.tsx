@@ -31,15 +31,14 @@ export default function Hero({
   }[height];
 
   const overlayGradient = {
-    soft: "linear-gradient(180deg, rgba(13,34,56,0.30) 0%, rgba(13,34,56,0.55) 100%)",
-    normal: "linear-gradient(180deg, rgba(13,34,56,0.45) 0%, rgba(13,34,56,0.78) 100%)",
-    dark: "linear-gradient(180deg, rgba(13,34,56,0.65) 0%, rgba(13,34,56,0.92) 100%)",
+    soft: "linear-gradient(180deg, rgba(26,32,44,0.35) 0%, rgba(26,32,44,0.65) 100%)",
+    normal: "linear-gradient(180deg, rgba(26,32,44,0.55) 0%, rgba(26,32,44,0.85) 100%)",
+    dark: "linear-gradient(180deg, rgba(26,32,44,0.75) 0%, rgba(26,32,44,0.96) 100%)",
   }[overlay];
 
   const background = bgImage
     ? `${overlayGradient}, url('${bgImage}') center/cover no-repeat`
-    : bgGradient ||
-      "linear-gradient(135deg, #153452 0%, #0d2238 60%, #1a4470 100%)";
+    : bgGradient || "#1A202C";
 
   return (
     <section

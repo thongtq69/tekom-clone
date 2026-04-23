@@ -62,7 +62,7 @@ export default function ProductGallery({
 
   return (
     <>
-      <div className="relative border-t border-[color:var(--color-line)]">
+      <div className="relative border-t border-white/10">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-1" aria-label={alt}>
           {shown.map(({ src, idx }) => (
             <button

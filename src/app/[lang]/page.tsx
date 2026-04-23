@@ -66,13 +66,11 @@ export default async function HomePage(props: PageProps<"/[lang]">) {
         className="py-16"
         style={{ background: "#eef2f6" }}
       >
-        <div className="max-w-[1280px] mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-10 items-stretch">
-          <div className="flex lg:justify-center">
-            <div
-              className="bg-cover bg-center w-full aspect-[3/4] lg:w-auto lg:h-full"
-              style={{ backgroundImage: "url('/images/founder.jpg')" }}
-            />
-          </div>
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-10 grid lg:grid-cols-[1.15fr_1fr] gap-10 items-stretch">
+          <div
+            className="bg-cover bg-center w-full aspect-[4/5] lg:aspect-auto lg:min-h-[560px]"
+            style={{ backgroundImage: "url('/images/founder.jpg')" }}
+          />
           <div>
             <SectionTitle
               eyebrow={h.aboutUs.eyebrow}
@@ -105,11 +103,10 @@ export default async function HomePage(props: PageProps<"/[lang]">) {
       {/* GLOBAL REACH */}
       <section className="py-16 bg-white">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-10">
-          <div className="text-center mb-10 flex flex-col items-center">
+          <div className="mb-10">
             <SectionTitle
               eyebrow={h.globalReach.eyebrow}
               title={h.globalReach.title}
-              align="center"
             />
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -147,29 +144,32 @@ export default async function HomePage(props: PageProps<"/[lang]">) {
       </section>
 
       {/* FACTORIES */}
-      <section className="py-16 bg-white">
+      <section className="py-20" style={{ background: "#1A202C" }}>
         <div className="max-w-[1280px] mx-auto px-6 lg:px-10">
-          <div className="text-center mb-10 flex flex-col items-center">
+          <div className="mb-12">
             <SectionTitle
               eyebrow={h.factories.eyebrow}
               title={h.factories.title}
-              align="center"
+              inverse
             />
           </div>
           <div
-            className={`grid gap-6 ${
+            className={`grid gap-8 ${
               h.factories.items.length > 1
-                ? "md:grid-cols-2"
-                : "md:grid-cols-2 max-w-3xl mx-auto"
+                ? "lg:grid-cols-2"
+                : "lg:grid-cols-2 max-w-3xl mx-auto"
             }`}
           >
             {h.factories.items.map((f, i) => (
               <div
                 key={f.name}
-                className={`overflow-hidden group flex flex-col ${
+                className={`overflow-hidden group flex flex-col border ${
                   h.factories.items.length === 1 ? "md:col-span-2 md:flex-row" : ""
                 }`}
-                style={{ background: "var(--color-navy)" }}
+                style={{
+                  background: "rgba(255,255,255,0.05)",
+                  borderColor: "rgba(255,255,255,0.1)",
+                }}
               >
                 <FactorySlider
                   images={factoryImageSets[i] ?? factoryImageSets[0]}
@@ -219,14 +219,8 @@ export default async function HomePage(props: PageProps<"/[lang]">) {
       </section>
 
       {/* PRIVATE LABEL PARTNER — moved BELOW Factories */}
-      <section
-        className="py-16 bg-cover bg-center relative"
-        style={{
-          backgroundImage:
-            "linear-gradient(135deg, rgba(21,52,82,0.92), rgba(13,34,56,0.94)), url('/images/vision-bg.jpg')",
-        }}
-      >
-        <div className="max-w-[1280px] mx-auto px-6 lg:px-10 text-white">
+      <section className="py-16 bg-white">
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-10">
           <p
             className="font-bold mb-3"
             style={{
@@ -238,7 +232,7 @@ export default async function HomePage(props: PageProps<"/[lang]">) {
           >
             {h.privateLabel.eyebrow}
           </p>
-          <h2 style={{ color: "#fff", letterSpacing: "3px" }}>
+          <h2 style={{ color: "var(--color-navy)", letterSpacing: "3px" }}>
             {h.privateLabel.title}
           </h2>
           <div
@@ -246,8 +240,12 @@ export default async function HomePage(props: PageProps<"/[lang]">) {
             style={{ background: "var(--color-gold)" }}
           />
           <p
-            className="text-white/85 max-w-2xl"
-            style={{ fontSize: "15px", lineHeight: "26px" }}
+            className="max-w-2xl"
+            style={{
+              color: "var(--color-muted)",
+              fontSize: "15px",
+              lineHeight: "26px",
+            }}
           >
             {h.privateLabel.desc}
           </p>
@@ -257,41 +255,61 @@ export default async function HomePage(props: PageProps<"/[lang]">) {
         </div>
       </section>
 
-      <div aria-hidden className="h-16 bg-white" />
-
       {/* MILESTONES */}
       <section
-        className="py-16 relative bg-cover bg-center"
-        style={{
-          background:
-            "linear-gradient(135deg, #153452 0%, #0d2238 50%, #1a4470 100%)",
-        }}
+        className="py-20 relative overflow-hidden"
+        style={{ background: "#1A202C" }}
       >
-        <div className="max-w-[1280px] mx-auto px-6 lg:px-10 text-white">
-          <div className="text-center mb-10 flex flex-col items-center">
-            <p
-              className="heading-eyebrow mb-3"
-              style={{ color: "var(--color-gold)" }}
-            >
-              {h.milestones.eyebrow}
-            </p>
-            <h2 style={{ color: "#fff" }}>{h.milestones.title}</h2>
+        {/* Background mosaic — worker photos */}
+        <div
+          aria-hidden
+          className="absolute inset-0 grid grid-cols-2 md:grid-cols-5 pointer-events-none"
+        >
+          {[
+            "/images/workers-thumbs.jpg",
+            "/images/sustainability-1.jpg",
+            "/images/sustainability-2.jpg",
+            "/images/sustainability-3.jpg",
+            "/images/sustainability-4.jpg",
+          ].map((img) => (
             <div
-              className="h-[2px] w-10 mt-4"
-              style={{ background: "var(--color-gold)" }}
+              key={img}
+              className="bg-cover bg-center"
+              style={{
+                backgroundImage: `url('${img}')`,
+                filter: "grayscale(20%)",
+              }}
             />
-            <p
-              className="text-white/70 mt-4 max-w-2xl"
-              style={{ fontSize: "15px", lineHeight: "24px" }}
-            >
-              {h.milestones.subtitle}
-            </p>
+          ))}
+        </div>
+        {/* Dark overlay for contrast — softened */}
+        <div
+          aria-hidden
+          className="absolute inset-0 pointer-events-none"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(26,32,44,0.62) 0%, rgba(26,32,44,0.45) 50%, rgba(26,32,44,0.72) 100%)",
+          }}
+        />
+
+        <div className="relative z-10 max-w-[1280px] mx-auto px-6 lg:px-10 text-white">
+          <div className="mb-12">
+            <SectionTitle
+              eyebrow={h.milestones.eyebrow}
+              title={h.milestones.title}
+              subtitle={h.milestones.subtitle}
+              inverse
+            />
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
             {h.milestones.items.map((m) => (
               <div
                 key={m.year}
-                className="text-center border border-white/10 p-4"
+                className="text-center border p-5 backdrop-blur-sm transition-colors hover:border-[color:var(--color-gold)]"
+                style={{
+                  borderColor: "rgba(255,255,255,0.12)",
+                  background: "rgba(255,255,255,0.04)",
+                }}
               >
                 <div
                   className="font-bold mb-3"
@@ -310,12 +328,14 @@ export default async function HomePage(props: PageProps<"/[lang]">) {
                     letterSpacing: "1px",
                     fontWeight: 700,
                     textTransform: "uppercase",
+                    lineHeight: "18px",
+                    minHeight: "36px",
                   }}
                 >
                   {m.title}
                 </h4>
                 <p
-                  className="text-white/65"
+                  className="text-white/70"
                   style={{ fontSize: "12px", lineHeight: "18px" }}
                 >
                   {m.desc}

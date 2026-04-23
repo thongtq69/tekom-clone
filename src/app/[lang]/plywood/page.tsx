@@ -39,10 +39,10 @@ export default async function PlywoodPage(props: PageProps<"/[lang]/plywood">) {
                 <article
                   key={item.slug}
                   id={item.slug}
-                  className="border border-white/10 hover:border-white/25 transition-colors scroll-mt-24 overflow-hidden"
+                  className="border hover:border-white/25 transition-colors scroll-mt-24 overflow-hidden"
                   style={{
-                    background:
-                      "linear-gradient(135deg, #153452 0%, #0d2238 50%, #1a4470 100%)",
+                    background: "#1A202C",
+                    borderColor: "rgba(255,255,255,0.1)",
                   }}
                 >
                   <div className="p-6 md:p-10">
