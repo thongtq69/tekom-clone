@@ -139,18 +139,34 @@ export default async function HomePage(props: PageProps<"/[lang]">) {
               align="center"
             />
           </div>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div
+            className={`grid gap-6 ${
+              h.factories.items.length > 1
+                ? "md:grid-cols-2"
+                : "md:grid-cols-2 max-w-3xl mx-auto"
+            }`}
+          >
             {h.factories.items.map((f, i) => (
               <div
                 key={f.name}
-                className="overflow-hidden group"
+                className={`overflow-hidden group flex flex-col ${
+                  h.factories.items.length === 1 ? "md:col-span-2 md:flex-row" : ""
+                }`}
                 style={{ background: "var(--color-navy)" }}
               >
                 <div
-                  className="aspect-[16/10] bg-cover bg-center transition-transform group-hover:scale-105"
+                  className={`bg-cover bg-center transition-transform group-hover:scale-105 ${
+                    h.factories.items.length === 1
+                      ? "md:w-1/2 aspect-video md:aspect-auto"
+                      : "aspect-[16/10]"
+                  }`}
                   style={{ backgroundImage: `url('${factoryImages[i]}')` }}
                 />
-                <div className="p-6 text-white">
+                <div
+                  className={`p-6 text-white ${
+                    h.factories.items.length === 1 ? "md:w-1/2 md:p-8" : ""
+                  }`}
+                >
                   <h3 className="text-white text-lg mb-2">{f.name}</h3>
                   <p
                     className="text-white/75 mb-4"

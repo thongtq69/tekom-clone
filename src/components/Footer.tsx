@@ -148,34 +148,10 @@ export default function Footer({ lang, dict }: Props) {
 
       <div className="border-t border-white/10">
         <div
-          className="max-w-[1280px] mx-auto px-6 lg:px-10 py-5 text-white/50 flex flex-col md:flex-row md:items-center justify-between gap-4"
+          className="max-w-[1280px] mx-auto px-6 lg:px-10 py-5 text-white/50 text-center"
           style={{ fontSize: "12px" }}
         >
           <p>{f.rights.replace("{year}", String(new Date().getFullYear()))}</p>
-
-          <div className="flex items-center gap-5 flex-wrap">
-            <Link href="#" className="hover:text-[color:var(--color-gold)]">
-              {f.privacy}
-            </Link>
-            <Link href="#" className="hover:text-[color:var(--color-gold)]">
-              {f.terms}
-            </Link>
-            <a
-              href="http://online.gov.vn/CustomWebsiteDisplay.aspx?DocId=60070"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Đã thông báo Bộ Công Thương"
-              className="inline-block hover:opacity-80 transition-opacity"
-            >
-              <Image
-                src="/images/bocongthuong.png"
-                alt="Đã thông báo Bộ Công Thương"
-                width={150}
-                height={56}
-                className="h-9 w-auto"
-              />
-            </a>
-          </div>
         </div>
       </div>
     </footer>

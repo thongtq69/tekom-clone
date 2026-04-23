@@ -85,22 +85,15 @@
       "cta": "View all products"
     },
     "factories": {
-      "eyebrow": "FACTORIES",
-      "title": "Manufacturing Excellence",
+      "eyebrow": "FACTORY",
+      "title": "Affiliated Factory",
       "items": [
         {
           "name": "Binh Duong 01 Factory",
-          "desc": "TEKCOM's 55,000 m² factory is equipped with the most state-of-the-art facilities in the FFP industry. Our offerings are EN 13986 (CE) certified and obtain TÜV Rheinland certification.",
+          "desc": "Our 55,000 m² affiliated factory is equipped with the most state-of-the-art facilities in the FFP industry. Offerings are EN 13986 (CE) certified and obtain TÜV Rheinland certification.",
           "area": "55,000 m²",
           "products": "Formwork plywood",
           "people": "700+ employees"
-        },
-        {
-          "name": "Binh Duong 02 Factory",
-          "desc": "Opened in 2019, BD2 is more automated and specialized in plywood for furniture and other industries, including premium RTA Kitchen Cabinets.",
-          "area": "60,000 m²",
-          "products": "Furniture plywood, kitchen cabinets",
-          "people": "600+ employees"
         }
       ],
       "labels": { "area": "AREA", "products": "PRODUCTS", "people": "STAFF" }

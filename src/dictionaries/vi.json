@@ -86,21 +86,14 @@
     },
     "factories": {
       "eyebrow": "NHÀ MÁY",
-      "title": "Năng lực sản xuất",
+      "title": "Nhà máy liên kết",
       "items": [
         {
           "name": "Nhà máy Bình Dương 01",
-          "desc": "Nhà máy 55.000 m² của TEKCOM được trang bị máy móc hiện đại nhất ngành ván phim cốp pha. Sản phẩm đạt tiêu chuẩn EU (EN 13986) và chứng nhận TÜV Rheinland.",
+          "desc": "Nhà máy 55.000 m² liên kết được trang bị máy móc hiện đại nhất ngành ván phim cốp pha. Sản phẩm đạt tiêu chuẩn EU (EN 13986) và chứng nhận TÜV Rheinland.",
           "area": "55.000 m²",
           "products": "Ván ép cốp pha",
           "people": "700+ nhân viên"
-        },
-        {
-          "name": "Nhà máy Bình Dương 02",
-          "desc": "Khánh thành 2019, BD2 tự động hoá cao và chuyên sản xuất ván ép cho ngành nội thất, bao gồm tủ bếp RTA chất lượng cao.",
-          "area": "60.000 m²",
-          "products": "Ván ép nội thất, tủ bếp",
-          "people": "600+ nhân viên"
         }
       ],
       "labels": { "area": "DIỆN TÍCH", "products": "SẢN PHẨM", "people": "NHÂN LỰC" }

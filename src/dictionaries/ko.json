@@ -63,10 +63,9 @@
     "plywoodPreview": { "eyebrow": "합판 제품", "title": "4가지 핵심 단판 라인", "desc": "고무나무, 유칼립투스, 아카시아부터 소나무까지 — 다양한 수출 요구를 충족합니다.", "cta": "전체 제품 보기" },
     "factories": {
       "eyebrow": "공장",
-      "title": "제조 우수성",
+      "title": "협력 공장",
       "items": [
-        { "name": "빈증 1공장", "desc": "TEKCOM의 55,000m² 공장은 FFP 산업에서 가장 최첨단 시설을 갖추고 있습니다. 제품은 EN 13986 (CE) 인증과 TÜV Rheinland 인증을 받았습니다.", "area": "55,000 m²", "products": "건축용 합판", "people": "700+ 직원" },
-        { "name": "빈증 2공장", "desc": "2019년 개설된 BD2는 더욱 자동화되어 가구 및 기타 산업용 합판, 프리미엄 RTA 주방 캐비닛에 특화되어 있습니다.", "area": "60,000 m²", "products": "가구용 합판, 주방 캐비닛", "people": "600+ 직원" }
+        { "name": "빈증 1공장", "desc": "55,000m² 협력 공장은 FFP 산업에서 가장 최첨단 시설을 갖추고 있습니다. 제품은 EN 13986 (CE) 인증과 TÜV Rheinland 인증을 받았습니다.", "area": "55,000 m²", "products": "건축용 합판", "people": "700+ 직원" }
       ],
       "labels": { "area": "면적", "products": "제품", "people": "인력" }
     },

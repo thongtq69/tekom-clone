@@ -26,7 +26,7 @@ export default function Hero({
 }: HeroProps) {
   const heightClass = {
     full: "min-h-screen",
-    hero: "min-h-[72vh]",
+    hero: "min-h-[72vh] lg:min-h-0",
     tall: "min-h-[78vh]",
     medium: "min-h-[55vh]",
     short: "min-h-[40vh]",
@@ -49,7 +49,7 @@ export default function Hero({
       style={{ background }}
     >
       <div
-        className={`relative z-10 max-w-[1400px] mx-auto px-6 lg:px-10 w-full pt-20 pb-14 ${
+        className={`relative z-10 max-w-[1400px] mx-auto px-6 lg:px-10 w-full pt-20 pb-14 lg:pb-32 ${
           align === "center" ? "text-center" : ""
         }`}
       >

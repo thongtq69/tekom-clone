@@ -58,15 +58,15 @@ export default function Header({ lang, dict }: Props) {
           : "bg-white/85 backdrop-blur"
       }`}
     >
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-10 h-[70px] flex items-center justify-between">
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-10 h-[88px] flex items-center justify-between">
         <Link href={`/${lang}`} className="flex items-center shrink-0">
           <Image
             src="/images/logo.png"
             alt="A&A Logistics"
-            width={120}
-            height={120}
+            width={160}
+            height={160}
             priority
-            className="h-14 w-auto"
+            className="h-20 w-auto"
           />
         </Link>
 
