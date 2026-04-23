@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import SectionTitle from "@/components/SectionTitle";
 import FactorySlider from "@/components/FactorySlider";
+import Twemoji from "@/components/Twemoji";
 import Link from "next/link";
 import { getDictionary, hasLocale } from "@/dictionaries";
 import { notFound } from "next/navigation";
@@ -65,11 +66,13 @@ export default async function HomePage(props: PageProps<"/[lang]">) {
         className="py-16"
         style={{ background: "#eef2f6" }}
       >
-        <div className="max-w-[1280px] mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-10 items-center">
-          <div
-            className="aspect-[3/4] bg-cover bg-center max-w-md mx-auto w-full"
-            style={{ backgroundImage: "url('/images/founder.jpg')" }}
-          />
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-10 items-stretch">
+          <div className="flex lg:justify-center">
+            <div
+              className="bg-cover bg-center w-full aspect-[3/4] lg:w-auto lg:h-full"
+              style={{ backgroundImage: "url('/images/founder.jpg')" }}
+            />
+          </div>
           <div>
             <SectionTitle
               eyebrow={h.aboutUs.eyebrow}
@@ -123,7 +126,9 @@ export default async function HomePage(props: PageProps<"/[lang]">) {
                 key={country.name}
                 className="bg-white p-5 text-center border border-[color:var(--color-line)] hover:border-[color:var(--color-gold)] hover:shadow-md transition-all"
               >
-                <div className="text-4xl mb-2">{country.flag}</div>
+                <div className="mb-2 flex justify-center">
+                  <Twemoji emoji={country.flag} size={40} />
+                </div>
                 <h3
                   className="mb-1"
                   style={{
@@ -190,7 +195,9 @@ export default async function HomePage(props: PageProps<"/[lang]">) {
                     h.factories.items.length === 1 ? "md:w-1/2 md:p-8" : ""
                   }`}
                 >
-                  <h3 className="text-white text-lg mb-2">{f.name}</h3>
+                  <h3 className="text-lg mb-2" style={{ color: "#fff" }}>
+                    {f.name}
+                  </h3>
                   <p
                     className="text-white/75 mb-4"
                     style={{ fontSize: "14px", lineHeight: "22px" }}
@@ -227,7 +234,7 @@ export default async function HomePage(props: PageProps<"/[lang]">) {
             "linear-gradient(135deg, rgba(21,52,82,0.92), rgba(13,34,56,0.94)), url('/images/vision-bg.jpg')",
         }}
       >
-        <div className="max-w-[1100px] mx-auto px-6 lg:px-10 text-center text-white">
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-10 text-white">
           <p
             className="font-bold mb-3"
             style={{
@@ -243,11 +250,11 @@ export default async function HomePage(props: PageProps<"/[lang]">) {
             {h.privateLabel.title}
           </h2>
           <div
-            className="h-[2px] w-10 mx-auto my-5"
+            className="h-[2px] w-10 my-5"
             style={{ background: "var(--color-gold)" }}
           />
           <p
-            className="text-white/85 max-w-2xl mx-auto"
+            className="text-white/85 max-w-2xl"
             style={{ fontSize: "15px", lineHeight: "26px" }}
           >
             {h.privateLabel.desc}
@@ -258,7 +265,7 @@ export default async function HomePage(props: PageProps<"/[lang]">) {
         </div>
       </section>
 
-      <div aria-hidden className="h-2 bg-white" />
+      <div aria-hidden className="h-16 bg-white" />
 
       {/* MILESTONES */}
       <section

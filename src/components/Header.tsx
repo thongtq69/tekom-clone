@@ -11,6 +11,7 @@ import {
   type Locale,
 } from "@/dictionaries/locales";
 import type { Dictionary } from "@/dictionaries";
+import Twemoji from "@/components/Twemoji";
 
 type Props = { lang: Locale; dict: Dictionary };
 
@@ -84,10 +85,12 @@ export default function Header({ lang, dict }: Props) {
           <Image
             src="/images/logo.png"
             alt="A&A Logistics"
-            width={160}
-            height={160}
+            width={200}
+            height={200}
             priority
-            className="h-20 w-auto"
+            unoptimized
+            className="object-contain"
+            style={{ width: "auto", height: "80px" }}
           />
         </Link>
 
@@ -137,7 +140,7 @@ export default function Header({ lang, dict }: Props) {
               onClick={() => setLangOpen(!langOpen)}
               className="text-[13px] font-semibold flex items-center gap-2 hover:text-[color:var(--color-gold)] transition-colors"
             >
-              <span>{localeFlags[lang]}</span>
+              <Twemoji emoji={localeFlags[lang]} size={18} />
               <span>{localeNames[lang]}</span>
               <span className="text-[10px]">▾</span>
             </button>
@@ -154,7 +157,7 @@ export default function Header({ lang, dict }: Props) {
                         : "text-[color:var(--color-navy)]"
                     }`}
                   >
-                    <span>{localeFlags[l]}</span>
+                    <Twemoji emoji={localeFlags[l]} size={18} />
                     <span>{localeNames[l]}</span>
                   </Link>
                 ))}
@@ -258,7 +261,7 @@ export default function Header({ lang, dict }: Props) {
                         : "border-[color:var(--color-line)] text-[color:var(--color-navy)]"
                     }`}
                   >
-                    <span>{localeFlags[l]}</span>
+                    <Twemoji emoji={localeFlags[l]} size={16} />
                     <span className="text-xs">{localeNames[l]}</span>
                   </Link>
                 ))}

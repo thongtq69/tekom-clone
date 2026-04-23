@@ -10,7 +10,6 @@ type HeroProps = {
   height?: "full" | "hero" | "tall" | "medium" | "short";
   /** Darkness of overlay over bgImage. "soft" lets the image show through more clearly. */
   overlay?: "soft" | "normal" | "dark";
-  showScroll?: boolean;
 };
 
 export default function Hero({
@@ -22,7 +21,6 @@ export default function Hero({
   align = "left",
   height = "hero",
   overlay = "normal",
-  showScroll = true,
 }: HeroProps) {
   const heightClass = {
     full: "min-h-screen",
@@ -77,7 +75,6 @@ export default function Hero({
           )}
         </div>
       </div>
-      {showScroll && <div className="scrolldown">SCROLL DOWN</div>}
     </section>
   );
 }

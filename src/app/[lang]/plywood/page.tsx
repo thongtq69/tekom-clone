@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getDictionary, hasLocale } from "@/dictionaries";
 import { notFound } from "next/navigation";
 import { productImages } from "./images";
+import ProductGallery from "@/components/ProductGallery";
 
 export default async function PlywoodPage(props: PageProps<"/[lang]/plywood">) {
   const { lang } = await props.params;
@@ -38,21 +39,28 @@ export default async function PlywoodPage(props: PageProps<"/[lang]/plywood">) {
                 <article
                   key={item.slug}
                   id={item.slug}
-                  className="border border-[color:var(--color-line)] hover:shadow-lg transition-shadow scroll-mt-24 overflow-hidden"
+                  className="border border-white/10 hover:border-white/25 transition-colors scroll-mt-24 overflow-hidden"
+                  style={{
+                    background:
+                      "linear-gradient(135deg, #153452 0%, #0d2238 50%, #1a4470 100%)",
+                  }}
                 >
                   <div className="p-6 md:p-10">
                     <Link
                       href={`/${lang}/plywood/${item.slug}`}
                       className="inline-block mb-5 hover:text-[color:var(--color-gold)] transition-colors"
-                      style={{
-                        fontSize: "24px",
-                        letterSpacing: "1px",
-                        color: "var(--color-navy)",
-                      }}
                     >
-                      <h3>{item.name}</h3>
+                      <h3
+                        style={{
+                          fontSize: "24px",
+                          letterSpacing: "1px",
+                          color: "#fff",
+                        }}
+                      >
+                        {item.name}
+                      </h3>
                     </Link>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-4 mb-5">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-4">
                       <dl className="space-y-2">
                         <Spec
                           label={dict.common.material}
@@ -68,60 +76,41 @@ export default async function PlywoodPage(props: PageProps<"/[lang]/plywood">) {
                           value={item.moq}
                         />
                       </dl>
-                      <ul className="space-y-1.5 md:pt-0 pt-3 md:border-l border-t md:border-t-0 border-[color:var(--color-line)] md:pl-10 pt-3">
-                        {item.highlights.map((h) => (
-                          <li
-                            key={h}
-                            className="flex gap-2"
-                            style={{
-                              fontSize: "13px",
-                              lineHeight: "20px",
-                              color: "var(--color-muted)",
-                            }}
-                          >
-                            <span style={{ color: "var(--color-gold)" }}>
-                              ▸
-                            </span>
-                            <span>{h}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div className="flex flex-col sm:flex-row flex-wrap gap-3">
-                      <Link
-                        href={`/${lang}/plywood/${item.slug}`}
-                        className="btn-gold justify-center w-full sm:w-auto"
-                      >
-                        {dict.common.viewDetail} →
-                      </Link>
-                      <Link
-                        href={`/${lang}/contact?subject=${encodeURIComponent(item.name)}`}
-                        className="inline-flex items-center justify-center gap-2 px-6 py-3 border-[1.5px] text-sm font-bold uppercase tracking-[1.5px] transition-colors w-full sm:w-auto"
-                        style={{
-                          borderColor: "var(--color-navy)",
-                          color: "var(--color-navy)",
-                        }}
-                      >
-                        {dict.common.contactUs}
-                      </Link>
+                      <div className="md:pt-0 pt-3 md:border-l border-t md:border-t-0 border-white/10 md:pl-10 flex flex-col gap-5">
+                        <ul className="space-y-1.5">
+                          {item.highlights.map((h) => (
+                            <li
+                              key={h}
+                              className="flex gap-2"
+                              style={{
+                                fontSize: "13px",
+                                lineHeight: "20px",
+                                color: "rgba(255,255,255,0.75)",
+                              }}
+                            >
+                              <span style={{ color: "var(--color-gold)" }}>
+                                ▸
+                              </span>
+                              <span>{h}</span>
+                            </li>
+                          ))}
+                        </ul>
+                        <Link
+                          href={`/${lang}/plywood/${item.slug}`}
+                          className="btn-gold self-start md:mt-auto"
+                        >
+                          {dict.common.viewDetail} →
+                        </Link>
+                      </div>
                     </div>
                   </div>
                   {images.length > 0 && (
-                    <Link
-                      href={`/${lang}/plywood/${item.slug}`}
-                      className="grid grid-cols-2 lg:grid-cols-4 gap-1 border-t border-[color:var(--color-line)]"
-                      aria-label={item.name}
-                    >
-                      {images.map((src, i) => (
-                        <div
-                          key={src}
-                          className="aspect-[3/4] bg-cover bg-center hover:opacity-90 transition-opacity"
-                          style={{ backgroundImage: `url('${src}')` }}
-                          role="img"
-                          aria-label={`${item.name} ${i + 1}`}
-                        />
-                      ))}
-                    </Link>
+                    <ProductGallery
+                      images={images}
+                      alt={item.name}
+                      prevLabel={dict.common.prev}
+                      nextLabel={dict.common.next}
+                    />
                   )}
                 </article>
               );
@@ -206,7 +195,7 @@ function Spec({ label, value }: { label: string; value: string }) {
           minWidth: "100px",
           fontSize: "11px",
           letterSpacing: "1.5px",
-          color: "var(--color-muted)",
+          color: "rgba(255,255,255,0.6)",
           textTransform: "uppercase",
         }}
       >
@@ -215,7 +204,7 @@ function Spec({ label, value }: { label: string; value: string }) {
       <dd
         style={{
           fontSize: "13px",
-          color: "var(--color-foreground)",
+          color: "rgba(255,255,255,0.9)",
           lineHeight: "20px",
         }}
       >
