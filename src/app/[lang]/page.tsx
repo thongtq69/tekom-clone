@@ -98,14 +98,6 @@ export default async function HomePage(props: PageProps<"/[lang]">) {
             >
               {h.aboutUs.desc}
             </p>
-            <a
-              href="https://aalog.com.vn/gioi-thieu/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-gold mt-6"
-            >
-              {h.aboutUs.cta} →
-            </a>
           </div>
         </div>
       </section>

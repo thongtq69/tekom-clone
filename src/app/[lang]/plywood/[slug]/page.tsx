@@ -2,6 +2,8 @@ import Link from "next/link";
 import { getDictionary, hasLocale } from "@/dictionaries";
 import { notFound } from "next/navigation";
 import SectionTitle from "@/components/SectionTitle";
+import ProductDetailGallery from "@/components/ProductDetailGallery";
+import LightboxGrid from "@/components/LightboxGrid";
 import { productImages } from "../images";
 
 type Params = { lang: string; slug: string };
@@ -18,7 +20,6 @@ export default async function PlywoodDetailPage(props: {
 
   const images = productImages[slug] ?? [];
   const hero = images[0] ?? "/images/factory-bd1.jpg";
-  const rest = images.slice(1);
 
   return (
     <>
@@ -60,25 +61,12 @@ export default async function PlywoodDetailPage(props: {
         <div className="max-w-[1280px] mx-auto px-6 lg:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
             <div className="lg:col-span-7">
-              <div
-                className="aspect-[4/3] bg-cover bg-center border border-[color:var(--color-line)]"
-                style={{ backgroundImage: `url('${hero}')` }}
-                role="img"
-                aria-label={item.name}
+              <ProductDetailGallery
+                images={images.length > 0 ? images : [hero]}
+                alt={item.name}
+                prevLabel={dict.common.prev}
+                nextLabel={dict.common.next}
               />
-              {rest.length > 0 && (
-                <div className="grid grid-cols-3 gap-2 mt-2">
-                  {rest.map((src, i) => (
-                    <div
-                      key={src}
-                      className="aspect-[4/3] bg-cover bg-center"
-                      style={{ backgroundImage: `url('${src}')` }}
-                      role="img"
-                      aria-label={`${item.name} ${i + 2}`}
-                    />
-                  ))}
-                </div>
-              )}
             </div>
 
             <div className="lg:col-span-5">
@@ -145,17 +133,12 @@ export default async function PlywoodDetailPage(props: {
                 align="center"
               />
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
-              {images.map((src, i) => (
-                <div
-                  key={src}
-                  className="aspect-[3/4] bg-cover bg-center"
-                  style={{ backgroundImage: `url('${src}')` }}
-                  role="img"
-                  aria-label={`${item.name} ${i + 1}`}
-                />
-              ))}
-            </div>
+            <LightboxGrid
+              images={images}
+              alt={item.name}
+              prevLabel={dict.common.prev}
+              nextLabel={dict.common.next}
+            />
           </div>
         </section>
       )}

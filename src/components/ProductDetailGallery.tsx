@@ -8,47 +8,28 @@ type Props = {
   prevLabel?: string;
   nextLabel?: string;
   closeLabel?: string;
-  /** Number of images visible at a time in the grid. Default 4. */
-  visible?: number;
 };
 
-/**
- * Grid shows a sliding window of `visible` images (default 4).
- * Prev/Next buttons rotate the window through the full image list.
- * Click = open lightbox (does NOT navigate).
- */
-export default function ProductGallery({
+export default function ProductDetailGallery({
   images,
   alt,
   prevLabel = "Previous",
   nextLabel = "Next",
   closeLabel = "Close",
-  visible = 4,
 }: Props) {
+  const [active, setActive] = useState(0);
   const [open, setOpen] = useState(false);
-  const [lightboxIdx, setLightboxIdx] = useState(0);
-  const [start, setStart] = useState(0);
 
   const total = images.length;
-  const windowSize = Math.min(visible, total);
-  const hasPager = total > windowSize;
-
-  const shown = Array.from({ length: windowSize }, (_, i) => {
-    const idx = (start + i) % total;
-    return { src: images[idx], idx };
-  });
-
-  const shiftNext = () => setStart((s) => (s + 1) % total);
-  const shiftPrev = () => setStart((s) => (s - 1 + total) % total);
+  const next = () => setActive((i) => (i + 1) % total);
+  const prev = () => setActive((i) => (i - 1 + total) % total);
 
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") setOpen(false);
-      if (e.key === "ArrowRight")
-        setLightboxIdx((i) => (i + 1) % total);
-      if (e.key === "ArrowLeft")
-        setLightboxIdx((i) => (i - 1 + total) % total);
+      if (e.key === "ArrowRight") next();
+      if (e.key === "ArrowLeft") prev();
     };
     window.addEventListener("keydown", onKey);
     document.body.style.overflow = "hidden";
@@ -56,54 +37,66 @@ export default function ProductGallery({
       window.removeEventListener("keydown", onKey);
       document.body.style.overflow = "";
     };
-  }, [open, total]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [open]);
 
   if (total === 0) return null;
 
   return (
     <>
-      <div className="relative border-t border-[color:var(--color-line)]">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-1" aria-label={alt}>
-          {shown.map(({ src, idx }) => (
-            <button
-              key={`${start}-${idx}`}
-              type="button"
-              onClick={() => {
-                setLightboxIdx(idx);
-                setOpen(true);
-              }}
-              className="relative aspect-[3/4] overflow-hidden cursor-zoom-in focus:outline-none focus:ring-2 focus:ring-[color:var(--color-gold)]"
-              aria-label={`${alt} ${idx + 1}`}
-            >
-              <div
-                className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: `url('${src}')` }}
-              />
-            </button>
-          ))}
-        </div>
+      <div className="relative">
+        <button
+          type="button"
+          onClick={() => setOpen(true)}
+          aria-label={`${alt} ${active + 1}`}
+          className="block w-full aspect-[4/3] bg-cover bg-center border border-[color:var(--color-line)] cursor-zoom-in focus:outline-none focus:ring-2 focus:ring-[color:var(--color-gold)]"
+          style={{ backgroundImage: `url('${images[active]}')` }}
+        />
 
-        {hasPager && (
+        {total > 1 && (
           <>
             <button
               type="button"
               aria-label={prevLabel}
-              onClick={shiftPrev}
-              className="absolute left-2 md:left-3 top-1/2 -translate-y-1/2 w-10 h-10 md:w-11 md:h-11 flex items-center justify-center bg-white/90 hover:bg-white text-[color:var(--color-navy)] shadow-md transition-colors text-xl leading-none z-10"
+              onClick={prev}
+              className="absolute left-2 md:left-3 top-1/2 -translate-y-1/2 w-10 h-10 md:w-11 md:h-11 flex items-center justify-center bg-white/90 hover:bg-white text-[color:var(--color-navy)] shadow-md transition-colors text-xl leading-none"
             >
               ‹
             </button>
             <button
               type="button"
               aria-label={nextLabel}
-              onClick={shiftNext}
-              className="absolute right-2 md:right-3 top-1/2 -translate-y-1/2 w-10 h-10 md:w-11 md:h-11 flex items-center justify-center bg-white/90 hover:bg-white text-[color:var(--color-navy)] shadow-md transition-colors text-xl leading-none z-10"
+              onClick={next}
+              className="absolute right-2 md:right-3 top-1/2 -translate-y-1/2 w-10 h-10 md:w-11 md:h-11 flex items-center justify-center bg-white/90 hover:bg-white text-[color:var(--color-navy)] shadow-md transition-colors text-xl leading-none"
             >
               ›
             </button>
+            <span className="absolute bottom-3 right-3 px-2.5 py-1 bg-black/50 text-white text-[11px] font-bold tracking-wider">
+              {active + 1} / {total}
+            </span>
           </>
         )}
       </div>
+
+      {total > 1 && (
+        <div className="grid grid-cols-4 md:grid-cols-6 gap-2 mt-2">
+          {images.map((src, i) => (
+            <button
+              key={src}
+              type="button"
+              onClick={() => setActive(i)}
+              aria-label={`${alt} ${i + 1}`}
+              aria-pressed={i === active}
+              className={`aspect-[4/3] bg-cover bg-center border transition-all focus:outline-none ${
+                i === active
+                  ? "border-[color:var(--color-gold)] border-2 opacity-100"
+                  : "border-[color:var(--color-line)] opacity-70 hover:opacity-100"
+              }`}
+              style={{ backgroundImage: `url('${src}')` }}
+            />
+          ))}
+        </div>
+      )}
 
       {open && (
         <div
@@ -128,7 +121,7 @@ export default function ProductGallery({
                 aria-label={prevLabel}
                 onClick={(e) => {
                   e.stopPropagation();
-                  setLightboxIdx((i) => (i - 1 + total) % total);
+                  prev();
                 }}
                 className="absolute left-4 md:left-8 w-12 h-12 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white text-xl"
               >
@@ -139,7 +132,7 @@ export default function ProductGallery({
                 aria-label={nextLabel}
                 onClick={(e) => {
                   e.stopPropagation();
-                  setLightboxIdx((i) => (i + 1) % total);
+                  next();
                 }}
                 className="absolute right-4 md:right-8 w-12 h-12 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white text-xl"
               >
@@ -154,13 +147,15 @@ export default function ProductGallery({
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={images[lightboxIdx]}
-              alt={`${alt} ${lightboxIdx + 1}`}
+              src={images[active]}
+              alt={`${alt} ${active + 1}`}
               className="max-w-[92vw] max-h-[88vh] object-contain select-none"
             />
-            <p className="absolute bottom-[-32px] left-1/2 -translate-x-1/2 text-white/80 text-xs tracking-widest uppercase">
-              {lightboxIdx + 1} / {total}
-            </p>
+            {total > 1 && (
+              <p className="absolute bottom-[-32px] left-1/2 -translate-x-1/2 text-white/80 text-xs tracking-widest uppercase">
+                {active + 1} / {total}
+              </p>
+            )}
           </div>
         </div>
       )}
