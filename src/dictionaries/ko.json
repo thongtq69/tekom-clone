@@ -30,7 +30,7 @@
     "hero": {
       "eyebrow": "회사 소개",
       "title": "함께 최고를 만들다.",
-      "description": "2005년에 설립된 TEKCOM은 베트남과 수출 시장의 파트너 및 고객에게 합판 및 관련 제품을 전문적으로 공급합니다.",
+      "description": "2005년에 설립된 AAlog은 베트남과 수출 시장의 파트너 및 고객에게 합판 및 관련 제품을 전문적으로 공급합니다.",
       "products": "주요 제품:",
       "productsList": "고무나무 단판  |  유칼립투스 단판  |  아카시아 단판  |  소나무 단판"
     },
@@ -57,8 +57,8 @@
         { "flag": "🇰🇷", "name": "한국", "desc": "신뢰할 수 있는 산업 파트너" }
       ]
     },
-    "aboutUs": { "eyebrow": "회사 소개", "title": "우리는 누구인가?", "lead": "품질의 전문가.", "desc": "TEKCOM은 신뢰할 수 있는 합판 제조 파트너로서, 베트남과 전 세계 고객에게 국제 표준 제품과 헌신적인 서비스를 제공하기 위해 노력합니다.", "cta": "더 알아보기" },
-    "privateLabel": { "eyebrow": "파트너십", "title": "PRIVATE LABEL 파트너가 되어드립니다", "desc": "우리는 항상 고객의 성공을 위해 일합니다. 유연한 생산 능력과 경험 많은 엔지니어링 팀과 함께, TEKCOM은 포장 디자인부터 기술 사양까지 귀사의 자체 브랜드 구축을 함께할 준비가 되어 있습니다.", "cta": "함께 협력하기" },
+    "aboutUs": { "eyebrow": "회사 소개", "title": "우리는 누구인가?", "lead": "품질의 전문가.", "desc": "AAlog은 신뢰할 수 있는 합판 제조 파트너로서, 베트남과 전 세계 고객에게 국제 표준 제품과 헌신적인 서비스를 제공하기 위해 노력합니다.", "cta": "더 알아보기" },
+    "privateLabel": { "eyebrow": "파트너십", "title": "PRIVATE LABEL 파트너가 되어드립니다", "desc": "우리는 항상 고객의 성공을 위해 일합니다. 유연한 생산 능력과 경험 많은 엔지니어링 팀과 함께, AAlog은 포장 디자인부터 기술 사양까지 귀사의 자체 브랜드 구축을 함께할 준비가 되어 있습니다.", "cta": "함께 협력하기" },
     "experiencePreview": { "eyebrow": "경험", "title": "우리의 여정", "desc": "제품, 고객, 컨테이너 적재, 수출 서류 사진 — 20년 이상의 업계 경험의 증거.", "cta": "갤러리 보기" },
     "plywoodPreview": { "eyebrow": "합판 제품", "title": "4가지 핵심 단판 라인", "desc": "고무나무, 유칼립투스, 아카시아부터 소나무까지 — 다양한 수출 요구를 충족합니다.", "cta": "전체 제품 보기" },
     "factories": {
@@ -72,7 +72,7 @@
     "milestones": {
       "eyebrow": "주요 이정표",
       "title": "우리의 여정",
-      "subtitle": "운영의 모든 단계에서 TEKCOM은 파트너와 일관된 협력을 위해 노력합니다.",
+      "subtitle": "운영의 모든 단계에서 AAlog은 파트너와 일관된 협력을 위해 노력합니다.",
       "items": [
         { "year": "2005", "title": "설립", "desc": "단열재 무역 회사로 시작." },
         { "year": "2007", "title": "무역 — FFP", "desc": "베트남에서 FFP 유통 시작." },
@@ -84,7 +84,7 @@
     }
   },
   "plywood": {
-    "hero": { "eyebrow": "합판", "title": "4가지 핵심 단판 라인", "description": "고무나무, 유칼립투스, 아카시아부터 소나무까지 — TEKCOM은 전 세계 가구 및 수출 고객에게 다양한 원자재를 공급합니다." },
+    "hero": { "eyebrow": "합판", "title": "4가지 핵심 단판 라인", "description": "고무나무, 유칼립투스, 아카시아부터 소나무까지 — AAlog은 전 세계 가구 및 수출 고객에게 다양한 원자재를 공급합니다." },
     "products": {
       "eyebrow": "제품 범위",
       "title": "단판 제품",
@@ -95,10 +95,16 @@
         { "slug": "pine", "name": "소나무 단판", "material": "소나무", "dimensions": "1220 × 2440 mm — 두께 3 / 5 / 9 / 12 / 15 / 18 mm", "price": "견적 문의", "moq": "1 × 40' 컨테이너 (≈ 25 m³)", "highlights": ["독특한 소나무 향", "아름다운 결, 높은 미관", "수출용 가구에 이상적"] }
       ]
     },
+    "detail": {
+      "back": "전체 제품으로 돌아가기",
+      "overview": "개요",
+      "gallery": "제품 갤러리",
+      "other": "기타 제품"
+    },
     "certifications": {
       "eyebrow": "인증서 및 서류",
       "title": "수출을 위한 완전한 법적 서류",
-      "subtitle": "TEKCOM은 모든 수출 선적에 필요한 모든 서류를 제공합니다.",
+      "subtitle": "AAlog은 모든 수출 선적에 필요한 모든 서류를 제공합니다.",
       "items": [
         { "name": "합법 임산물 기록", "shortName": "임산물 명세서", "desc": "베트남 규정 및 EUTR에 따른 합법 목재 원산지 증명." },
         { "name": "원산지 증명서", "shortName": "C/O Form E", "desc": "ASEAN — 중국 특혜 관세를 위한 원산지 증명서." },
@@ -108,22 +114,22 @@
     }
   },
   "contact": {
-    "hero": { "eyebrow": "연락처", "title": "문의하기", "description": "TEKCOM에 연락해 주셔서 감사합니다. 모든 문의에 72근무시간 내에 답변드립니다." },
+    "hero": { "eyebrow": "연락처", "title": "문의하기", "description": "AAlog에 연락해 주셔서 감사합니다. 모든 문의에 72근무시간 내에 답변드립니다." },
     "form": { "eyebrow": "메시지 보내기", "title": "귀하의 의견은 소중합니다", "name": "이름 *", "email": "이메일 *", "phone": "전화번호", "company": "회사명", "subject": "제목 *", "message": "내용 *", "submit": "메시지 보내기" },
-    "info": { "company": "TEKCOM Corporation", "hq": "본사 — 빈증 1공장", "addr1": "M1-M2-M7-M8 부지, N2-N3 거리, 확장 Nam Tan Uyen 산업단지, Binh Co 동, 호치민시, 베트남", "bd2": "빈증 2공장", "addr2": "A1-A2-A3-A4-A5 부지, N5 거리, 확장 Nam Tan Uyen 산업단지, Binh Co 동, 호치민시, 베트남", "hotlineLabel": "핫라인:", "emailLabel": "이메일:" }
+    "info": { "company": "AAlog Corporation", "hq": "본사 — 빈증 1공장", "addr1": "M1-M2-M7-M8 부지, N2-N3 거리, 확장 Nam Tan Uyen 산업단지, Binh Co 동, 호치민시, 베트남", "bd2": "빈증 2공장", "addr2": "A1-A2-A3-A4-A5 부지, N5 거리, 확장 Nam Tan Uyen 산업단지, Binh Co 동, 호치민시, 베트남", "hotlineLabel": "핫라인:", "emailLabel": "이메일:" }
   },
   "news": {
-    "hero": { "eyebrow": "뉴스", "title": "뉴스 및 업데이트", "description": "TEKCOM의 최신 이야기." },
-    "section": { "eyebrow": "최신 기사", "title": "TEKCOM 이야기" },
+    "hero": { "eyebrow": "뉴스", "title": "뉴스 및 업데이트", "description": "AAlog의 최신 이야기." },
+    "section": { "eyebrow": "최신 기사", "title": "AAlog 이야기" },
     "articles": [
-      { "title": "TEKCOM, 북미 수출 확장", "date": "2026년 3월 12일", "category": "회사 뉴스", "excerpt": "선도 미국 유통업체와 장기 공급 계약…" },
+      { "title": "AAlog, 북미 수출 확장", "date": "2026년 3월 12일", "category": "회사 뉴스", "excerpt": "선도 미국 유통업체와 장기 공급 계약…" },
       { "title": "2025 지속 가능성 보고서 발표", "date": "2026년 2월 2일", "category": "지속 가능성", "excerpt": "23% 배출 감소, FSC® 인증 88%…" },
       { "title": "BD2 가구 합판 라인 둘러보기", "date": "2026년 1월 18일", "category": "비하인드", "excerpt": "가장 자동화된 라인 견학…" },
-      { "title": "Vietnam Wood 2025의 TEKCOM", "date": "2025년 11월 22일", "category": "이벤트", "excerpt": "A-12 부스에서 최신 거푸집 라인을 확인하세요…" }
+      { "title": "Vietnam Wood 2025의 AAlog", "date": "2025년 11월 22일", "category": "이벤트", "excerpt": "A-12 부스에서 최신 거푸집 라인을 확인하세요…" }
     ]
   },
   "experience": {
-    "hero": { "eyebrow": "경험", "title": "TEKCOM의 여정", "description": "20년 이상의 운영 경험에서 나온 제품, 고객, 컨테이너 적재 및 수출입 서류 사진." },
+    "hero": { "eyebrow": "경험", "title": "AAlog의 여정", "description": "20년 이상의 운영 경험에서 나온 제품, 고객, 컨테이너 적재 및 수출입 서류 사진." },
     "categories": { "products": "제품 사진", "customers": "파트너 및 고객", "loading": "컨테이너 적재", "documents": "수출 서류" },
     "comingSoon": "갤러리가 업데이트 중입니다. 곧 다시 방문해 주세요."
   },
@@ -135,7 +141,7 @@
     "products": ["고무나무 단판", "유칼립투스 단판", "아카시아 단판", "소나무 단판"],
     "addressShort": "빈증성, 베트남",
     "phone": "+84 977 668 000",
-    "email": "info@tekcom.vn",
+    "email": "info@aalog.vn",
     "rights": "© {year} A&A Logistics. 모든 권리 보유.",
     "privacy": "개인정보 처리방침",
     "terms": "이용약관"

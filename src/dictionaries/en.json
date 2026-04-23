@@ -32,7 +32,7 @@
     "hero": {
       "eyebrow": "ABOUT US",
       "title": "Together Building The Best.",
-      "description": "Established in 2005, TEKCOM Corporation specializes in providing plywood and associated products to partners and clients in Vietnam and export markets.",
+      "description": "Established in 2005, AAlog Corporation specializes in providing plywood and associated products to partners and clients in Vietnam and export markets.",
       "products": "Our core products include:",
       "productsList": "Rubberwood Veneer  |  Eucalyptus Veneer  |  Acacia Veneer  |  Pine Veneer"
     },
@@ -60,16 +60,16 @@
       ]
     },
     "aboutUs": {
-      "eyebrow": "ABOUT US",
-      "title": "Who are we?",
-      "lead": "Professionals in QUALITY.",
-      "desc": "TEKCOM is proud to be a trusted plywood manufacturing partner, committed to international-standard products and dedicated service to clients in Vietnam and worldwide.",
+      "eyebrow": "OUR FOUNDER",
+      "title": "Our story",
+      "lead": "Dedicated • Transparent • Quality first.",
+      "desc": "AAlog's founder is on the factory floor every day — inspecting each batch of veneer, working side by side with the technical team, and staying close to every customer. Our working style is straightforward: we deliver what we promise, quality comes before price, and we build long-term partnerships instead of chasing short-term orders.",
       "cta": "Learn more"
     },
     "privateLabel": {
       "eyebrow": "PARTNERSHIP",
       "title": "Let Us Be Your PRIVATE LABEL PARTNER",
-      "desc": "We always work toward our customers' success. With flexible production capacity and an experienced engineering team, TEKCOM is ready to walk with you in building your own brand — from packaging design to technical specifications.",
+      "desc": "We always work toward our customers' success. With flexible production capacity and an experienced engineering team, AAlog is ready to walk with you in building your own brand — from packaging design to technical specifications.",
       "cta": "Partner with us"
     },
     "experiencePreview": {
@@ -101,7 +101,7 @@
     "milestones": {
       "eyebrow": "KEY MILESTONES",
       "title": "Our Journey",
-      "subtitle": "In each step of operation, TEKCOM is striving for consistent coordination with our partners.",
+      "subtitle": "In each step of operation, AAlog is striving for consistent coordination with our partners.",
       "items": [
         { "year": "2005", "title": "Establishment", "desc": "As insulation trading company." },
         { "year": "2007", "title": "Trading — FFP", "desc": "Started distributing FFP in Vietnam." },
@@ -116,7 +116,7 @@
     "hero": {
       "eyebrow": "PLYWOOD",
       "title": "Four core veneer lines",
-      "description": "From rubberwood, eucalyptus, acacia to pine — TEKCOM supplies diverse raw materials to furniture and export customers worldwide."
+      "description": "From rubberwood, eucalyptus, acacia to pine — AAlog supplies diverse raw materials to furniture and export customers worldwide."
     },
     "products": {
       "eyebrow": "PRODUCT RANGE",
@@ -160,10 +160,16 @@
         }
       ]
     },
+    "detail": {
+      "back": "Back to all products",
+      "overview": "Overview",
+      "gallery": "Product gallery",
+      "other": "Other products"
+    },
     "certifications": {
       "eyebrow": "CERTIFICATIONS & DOCUMENTS",
       "title": "Complete legal paperwork for export",
-      "subtitle": "TEKCOM provides all required documents for every export shipment.",
+      "subtitle": "AAlog provides all required documents for every export shipment.",
       "items": [
         {
           "name": "Legal Forestry Records",
@@ -192,7 +198,7 @@
     "hero": {
       "eyebrow": "CONTACT",
       "title": "Contact Us",
-      "description": "Thank you for contacting TEKCOM. We commit to respond to all inquiries within 72 working hours."
+      "description": "Thank you for contacting AAlog. We commit to respond to all inquiries within 72 working hours."
     },
     "form": {
       "eyebrow": "SEND A MESSAGE",
@@ -206,7 +212,7 @@
       "submit": "Send Message"
     },
     "info": {
-      "company": "TEKCOM Corporation",
+      "company": "AAlog Corporation",
       "hq": "Head Quarter — Binh Duong 1 Factory",
       "addr1": "Lots M1-M2-M7-M8, N2-N3 Street, Expanded Nam Tan Uyen IP, Binh Co Ward, Ho Chi Minh City, Vietnam",
       "bd2": "Binh Duong 2 Factory",
@@ -219,20 +225,20 @@
     "hero": {
       "eyebrow": "NEWS",
       "title": "News & Updates",
-      "description": "Latest stories from TEKCOM."
+      "description": "Latest stories from AAlog."
     },
-    "section": { "eyebrow": "LATEST ARTICLES", "title": "Stories from TEKCOM" },
+    "section": { "eyebrow": "LATEST ARTICLES", "title": "Stories from AAlog" },
     "articles": [
-      { "title": "TEKCOM Expands Export to North America", "date": "Mar 12, 2026", "category": "Company News", "excerpt": "Long-term supply agreement with a leading US distributor…" },
+      { "title": "AAlog Expands Export to North America", "date": "Mar 12, 2026", "category": "Company News", "excerpt": "Long-term supply agreement with a leading US distributor…" },
       { "title": "Sustainability Report 2025 Released", "date": "Feb 02, 2026", "category": "Sustainability", "excerpt": "23% emission reduction, 88% FSC® certified material…" },
       { "title": "Inside the BD2 Furniture Plywood Line", "date": "Jan 18, 2026", "category": "Behind the Scenes", "excerpt": "A walkthrough of our most automated line…" },
-      { "title": "TEKCOM at Vietnam Wood 2025", "date": "Nov 22, 2025", "category": "Events", "excerpt": "Visit booth A-12 to see our newest formwork line…" }
+      { "title": "AAlog at Vietnam Wood 2025", "date": "Nov 22, 2025", "category": "Events", "excerpt": "Visit booth A-12 to see our newest formwork line…" }
     ]
   },
   "experience": {
     "hero": {
       "eyebrow": "EXPERIENCE",
-      "title": "TEKCOM's Journey",
+      "title": "AAlog's Journey",
       "description": "Photos of products, customers, container loading and import-export documents from over 20 years of operation."
     },
     "categories": {
@@ -251,7 +257,7 @@
     "products": ["Rubberwood Veneer", "Eucalyptus Veneer", "Acacia Veneer", "Pine Veneer"],
     "addressShort": "Binh Duong Province, Vietnam",
     "phone": "+84 977 668 000",
-    "email": "info@tekcom.vn",
+    "email": "info@aalog.vn",
     "rights": "© {year} A&A Logistics. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"

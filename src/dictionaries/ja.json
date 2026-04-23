@@ -30,7 +30,7 @@
     "hero": {
       "eyebrow": "会社概要",
       "title": "共に最高を築く。",
-      "description": "2005年設立のTEKCOM Corporationは、ベトナム国内および輸出市場のパートナーとお客様に合板および関連製品を提供することを専門としています。",
+      "description": "2005年設立のAAlog Corporationは、ベトナム国内および輸出市場のパートナーとお客様に合板および関連製品を提供することを専門としています。",
       "products": "主要製品:",
       "productsList": "ラバーウッド突板  |  ユーカリ突板  |  アカシア突板  |  パイン突板"
     },
@@ -57,8 +57,8 @@
         { "flag": "🇰🇷", "name": "韓国", "desc": "信頼できる産業パートナー" }
       ]
     },
-    "aboutUs": { "eyebrow": "会社概要", "title": "私たちは誰か?", "lead": "品質のプロフェッショナル。", "desc": "TEKCOMは信頼される合板メーカーとして、ベトナムおよび世界中のお客様に国際標準の製品と献身的なサービスをお届けすることに誇りを持っています。", "cta": "詳しく見る" },
-    "privateLabel": { "eyebrow": "パートナーシップ", "title": "PRIVATE LABEL パートナーになります", "desc": "私たちは常にお客様の成功のために働きます。柔軟な生産能力と経験豊富なエンジニアリングチームと共に、TEKCOMはパッケージデザインから技術仕様まで、お客様の自社ブランド構築を支援する準備ができています。", "cta": "私たちと協力する" },
+    "aboutUs": { "eyebrow": "会社概要", "title": "私たちは誰か?", "lead": "品質のプロフェッショナル。", "desc": "AAlogは信頼される合板メーカーとして、ベトナムおよび世界中のお客様に国際標準の製品と献身的なサービスをお届けすることに誇りを持っています。", "cta": "詳しく見る" },
+    "privateLabel": { "eyebrow": "パートナーシップ", "title": "PRIVATE LABEL パートナーになります", "desc": "私たちは常にお客様の成功のために働きます。柔軟な生産能力と経験豊富なエンジニアリングチームと共に、AAlogはパッケージデザインから技術仕様まで、お客様の自社ブランド構築を支援する準備ができています。", "cta": "私たちと協力する" },
     "experiencePreview": { "eyebrow": "経験", "title": "私たちの歩み", "desc": "製品、お客様、コンテナ積み込み、輸出書類の写真 — 20年以上の業界経験の証。", "cta": "ギャラリーを見る" },
     "plywoodPreview": { "eyebrow": "合板製品", "title": "4つのコア突板ライン", "desc": "ラバーウッド、ユーカリ、アカシアからパインまで — 多様な輸出ニーズに対応。", "cta": "全製品を見る" },
     "factories": {
@@ -72,7 +72,7 @@
     "milestones": {
       "eyebrow": "主要マイルストーン",
       "title": "私たちの歩み",
-      "subtitle": "運営の各ステップで、TEKCOMはパートナーとの一貫した協力に努めています。",
+      "subtitle": "運営の各ステップで、AAlogはパートナーとの一貫した協力に努めています。",
       "items": [
         { "year": "2005", "title": "設立", "desc": "断熱材商社として。" },
         { "year": "2007", "title": "貿易 — FFP", "desc": "ベトナムでのFFP流通開始。" },
@@ -84,7 +84,7 @@
     }
   },
   "plywood": {
-    "hero": { "eyebrow": "合板", "title": "4つのコア突板ライン", "description": "ラバーウッド、ユーカリ、アカシアからパインまで — TEKCOMは世界中の家具・輸出顧客に多様な原材料を供給します。" },
+    "hero": { "eyebrow": "合板", "title": "4つのコア突板ライン", "description": "ラバーウッド、ユーカリ、アカシアからパインまで — AAlogは世界中の家具・輸出顧客に多様な原材料を供給します。" },
     "products": {
       "eyebrow": "製品ラインナップ",
       "title": "突板製品",
@@ -95,10 +95,16 @@
         { "slug": "pine", "name": "パイン突板", "material": "パイン", "dimensions": "1220 × 2440 mm — 厚さ 3 / 5 / 9 / 12 / 15 / 18 mm", "price": "見積もりはお問い合わせください", "moq": "40フィートコンテナ1本 (約 25 m³)", "highlights": ["特有のパインの香り", "美しい木目、高い美観", "輸出家具に最適"] }
       ]
     },
+    "detail": {
+      "back": "すべての製品に戻る",
+      "overview": "概要",
+      "gallery": "製品ギャラリー",
+      "other": "その他の製品"
+    },
     "certifications": {
       "eyebrow": "認証・書類",
       "title": "輸出に必要な完全な法的書類",
-      "subtitle": "TEKCOMはすべての輸出出荷に必要な書類をすべて提供します。",
+      "subtitle": "AAlogはすべての輸出出荷に必要な書類をすべて提供します。",
       "items": [
         { "name": "合法林産物記録", "shortName": "林産物明細", "desc": "ベトナムの規制およびEUTRに基づく合法木材原産地の証明。" },
         { "name": "原産地証明書", "shortName": "C/O Form E", "desc": "ASEAN — 中国特恵関税のための原産地証明。" },
@@ -108,22 +114,22 @@
     }
   },
   "contact": {
-    "hero": { "eyebrow": "お問い合わせ", "title": "お問い合わせ", "description": "TEKCOMにご連絡いただきありがとうございます。すべてのお問い合わせに72営業時間以内に対応いたします。" },
+    "hero": { "eyebrow": "お問い合わせ", "title": "お問い合わせ", "description": "AAlogにご連絡いただきありがとうございます。すべてのお問い合わせに72営業時間以内に対応いたします。" },
     "form": { "eyebrow": "メッセージ送信", "title": "ご意見は私たちにとって貴重です", "name": "お名前 *", "email": "メール *", "phone": "電話", "company": "会社", "subject": "件名 *", "message": "内容 *", "submit": "メッセージを送る" },
-    "info": { "company": "TEKCOM Corporation", "hq": "本社 — ビンズオン第1工場", "addr1": "M1-M2-M7-M8 区画、N2-N3通り、拡張Nam Tan Uyen工業団地、Binh Co区、ホーチミン市、ベトナム", "bd2": "ビンズオン第2工場", "addr2": "A1-A2-A3-A4-A5 区画、N5通り、拡張Nam Tan Uyen工業団地、Binh Co区、ホーチミン市、ベトナム", "hotlineLabel": "ホットライン:", "emailLabel": "メール:" }
+    "info": { "company": "AAlog Corporation", "hq": "本社 — ビンズオン第1工場", "addr1": "M1-M2-M7-M8 区画、N2-N3通り、拡張Nam Tan Uyen工業団地、Binh Co区、ホーチミン市、ベトナム", "bd2": "ビンズオン第2工場", "addr2": "A1-A2-A3-A4-A5 区画、N5通り、拡張Nam Tan Uyen工業団地、Binh Co区、ホーチミン市、ベトナム", "hotlineLabel": "ホットライン:", "emailLabel": "メール:" }
   },
   "news": {
-    "hero": { "eyebrow": "ニュース", "title": "ニュース・最新情報", "description": "TEKCOMからの最新情報。" },
-    "section": { "eyebrow": "最新記事", "title": "TEKCOMストーリー" },
+    "hero": { "eyebrow": "ニュース", "title": "ニュース・最新情報", "description": "AAlogからの最新情報。" },
+    "section": { "eyebrow": "最新記事", "title": "AAlogストーリー" },
     "articles": [
-      { "title": "TEKCOM、北米輸出を拡大", "date": "2026年3月12日", "category": "企業ニュース", "excerpt": "米国の主要販売代理店との長期供給契約…" },
+      { "title": "AAlog、北米輸出を拡大", "date": "2026年3月12日", "category": "企業ニュース", "excerpt": "米国の主要販売代理店との長期供給契約…" },
       { "title": "2025年サステナビリティレポート発行", "date": "2026年2月2日", "category": "サステナビリティ", "excerpt": "排出23%削減、FSC®認証材料88%…" },
       { "title": "BD2家具合板ラインの内側", "date": "2026年1月18日", "category": "舞台裏", "excerpt": "最も自動化されたラインの見学…" },
-      { "title": "Vietnam Wood 2025のTEKCOM", "date": "2025年11月22日", "category": "イベント", "excerpt": "A-12ブースで最新の型枠ラインをご覧ください…" }
+      { "title": "Vietnam Wood 2025のAAlog", "date": "2025年11月22日", "category": "イベント", "excerpt": "A-12ブースで最新の型枠ラインをご覧ください…" }
     ]
   },
   "experience": {
-    "hero": { "eyebrow": "経験", "title": "TEKCOMの歩み", "description": "20年以上の運営から得た製品、顧客、コンテナ積み込み、輸出入書類の写真。" },
+    "hero": { "eyebrow": "経験", "title": "AAlogの歩み", "description": "20年以上の運営から得た製品、顧客、コンテナ積み込み、輸出入書類の写真。" },
     "categories": { "products": "製品写真", "customers": "パートナー・顧客", "loading": "コンテナ積み込み", "documents": "輸出書類" },
     "comingSoon": "ギャラリーは更新中です。後ほどご確認ください。"
   },
@@ -135,7 +141,7 @@
     "products": ["ラバーウッド突板", "ユーカリ突板", "アカシア突板", "パイン突板"],
     "addressShort": "ビンズオン省、ベトナム",
     "phone": "+84 977 668 000",
-    "email": "info@tekcom.vn",
+    "email": "info@aalog.vn",
     "rights": "© {year} A&A Logistics. 全著作権所有。",
     "privacy": "プライバシーポリシー",
     "terms": "利用規約"

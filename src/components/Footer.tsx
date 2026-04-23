@@ -32,7 +32,7 @@ export default function Footer({ lang, dict }: Props) {
           </p>
           <div className="flex gap-2">
             <SocialIcon
-              href="https://www.facebook.com/TekcomCorporation/"
+              href="https://www.facebook.com/AAlogCorporation/"
               label="Facebook"
             >
               <path d="M22 12a10 10 0 1 0-11.56 9.88v-7H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.88h-2.34v7A10 10 0 0 0 22 12z" />

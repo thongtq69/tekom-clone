@@ -3,13 +3,7 @@ import SectionTitle from "@/components/SectionTitle";
 import Link from "next/link";
 import { getDictionary, hasLocale } from "@/dictionaries";
 import { notFound } from "next/navigation";
-
-const productImages: Record<string, string> = {
-  rubberwood: "/images/factory-bd1.jpg",
-  eucalyptus: "/images/factory-bd2.jpeg",
-  acacia: "/images/sustainability-3.jpg",
-  pine: "/images/sustainability-2.jpg",
-};
+import { productImages } from "./images";
 
 export default async function PlywoodPage(props: PageProps<"/[lang]/plywood">) {
   const { lang } = await props.params;
@@ -37,67 +31,101 @@ export default async function PlywoodPage(props: PageProps<"/[lang]/plywood">) {
               align="center"
             />
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {p.products.items.map((item) => (
-              <article
-                key={item.slug}
-                id={item.slug}
-                className="group flex flex-col md:flex-row border border-[color:var(--color-line)] hover:shadow-lg transition-shadow scroll-mt-24"
-              >
-                <div
-                  className="md:w-2/5 aspect-video md:aspect-auto bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url('${productImages[item.slug] ?? "/images/factory-bd1.jpg"}')`,
-                  }}
-                />
-                <div className="md:w-3/5 p-6">
-                  <h3
-                    className="mb-4"
-                    style={{
-                      fontSize: "20px",
-                      letterSpacing: "1px",
-                      color: "var(--color-navy)",
-                    }}
-                  >
-                    {item.name}
-                  </h3>
-                  <dl className="space-y-2 mb-4">
-                    <Spec
-                      label={dict.common.material}
-                      value={item.material}
-                    />
-                    <Spec
-                      label={dict.common.dimensions}
-                      value={item.dimensions}
-                    />
-                    <Spec label={dict.common.price} value={item.price} />
-                    <Spec label={dict.common.minOrderQty} value={item.moq} />
-                  </dl>
-                  <ul className="space-y-1.5 mb-5 pt-3 border-t border-[color:var(--color-line)]">
-                    {item.highlights.map((h) => (
-                      <li
-                        key={h}
-                        className="flex gap-2"
+          <div className="flex flex-col gap-10">
+            {p.products.items.map((item) => {
+              const images = productImages[item.slug] ?? [];
+              return (
+                <article
+                  key={item.slug}
+                  id={item.slug}
+                  className="border border-[color:var(--color-line)] hover:shadow-lg transition-shadow scroll-mt-24 overflow-hidden"
+                >
+                  <div className="p-6 md:p-10">
+                    <Link
+                      href={`/${lang}/plywood/${item.slug}`}
+                      className="inline-block mb-5 hover:text-[color:var(--color-gold)] transition-colors"
+                      style={{
+                        fontSize: "24px",
+                        letterSpacing: "1px",
+                        color: "var(--color-navy)",
+                      }}
+                    >
+                      <h3>{item.name}</h3>
+                    </Link>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-4 mb-5">
+                      <dl className="space-y-2">
+                        <Spec
+                          label={dict.common.material}
+                          value={item.material}
+                        />
+                        <Spec
+                          label={dict.common.dimensions}
+                          value={item.dimensions}
+                        />
+                        <Spec label={dict.common.price} value={item.price} />
+                        <Spec
+                          label={dict.common.minOrderQty}
+                          value={item.moq}
+                        />
+                      </dl>
+                      <ul className="space-y-1.5 md:pt-0 pt-3 md:border-l border-t md:border-t-0 border-[color:var(--color-line)] md:pl-10 pt-3">
+                        {item.highlights.map((h) => (
+                          <li
+                            key={h}
+                            className="flex gap-2"
+                            style={{
+                              fontSize: "13px",
+                              lineHeight: "20px",
+                              color: "var(--color-muted)",
+                            }}
+                          >
+                            <span style={{ color: "var(--color-gold)" }}>
+                              ▸
+                            </span>
+                            <span>{h}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="flex flex-wrap gap-3">
+                      <Link
+                        href={`/${lang}/plywood/${item.slug}`}
+                        className="btn-gold"
+                      >
+                        {dict.common.viewDetail} →
+                      </Link>
+                      <Link
+                        href={`/${lang}/contact?subject=${encodeURIComponent(item.name)}`}
+                        className="inline-flex items-center gap-2 px-6 py-3 border-[1.5px] text-sm font-bold uppercase tracking-[1.5px] transition-colors"
                         style={{
-                          fontSize: "13px",
-                          lineHeight: "20px",
-                          color: "var(--color-muted)",
+                          borderColor: "var(--color-navy)",
+                          color: "var(--color-navy)",
                         }}
                       >
-                        <span style={{ color: "var(--color-gold)" }}>▸</span>
-                        <span>{h}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <Link
-                    href={`/${lang}/contact?subject=${encodeURIComponent(item.name)}`}
-                    className="btn-gold"
-                  >
-                    {dict.common.contactUs} →
-                  </Link>
-                </div>
-              </article>
-            ))}
+                        {dict.common.contactUs}
+                      </Link>
+                    </div>
+                  </div>
+                  {images.length > 0 && (
+                    <Link
+                      href={`/${lang}/plywood/${item.slug}`}
+                      className="grid grid-cols-2 lg:grid-cols-4 gap-1 border-t border-[color:var(--color-line)]"
+                      aria-label={item.name}
+                    >
+                      {images.map((src, i) => (
+                        <div
+                          key={src}
+                          className="aspect-[3/4] bg-cover bg-center hover:opacity-90 transition-opacity"
+                          style={{ backgroundImage: `url('${src}')` }}
+                          role="img"
+                          aria-label={`${item.name} ${i + 1}`}
+                        />
+                      ))}
+                    </Link>
+                  )}
+                </article>
+              );
+            })}
           </div>
         </div>
       </section>

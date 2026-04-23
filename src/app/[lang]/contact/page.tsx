@@ -112,11 +112,11 @@ export default async function ContactPage(props: PageProps<"/[lang]/contact">) {
                   {c.info.emailLabel}
                 </span>{" "}
                 <a
-                  href="mailto:info@tekcom.vn"
+                  href="mailto:info@aalog.vn"
                   className="font-bold"
                   style={{ color: "var(--color-navy)" }}
                 >
-                  info@tekcom.vn
+                  info@aalog.vn
                 </a>
               </p>
             </div>

@@ -44,6 +44,7 @@ export default async function RootLayout(props: LayoutProps<"/[lang]">) {
       <body className="min-h-full flex flex-col">
         <Header lang={lang as Locale} dict={dict} />
         <main className="flex-1">{props.children}</main>
+        <div aria-hidden className="h-2 bg-white" />
         <Footer lang={lang as Locale} dict={dict} />
       </body>
     </html>

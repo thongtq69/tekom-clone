@@ -43,7 +43,7 @@ export default function Header({ lang, dict }: Props) {
   const plywoodChildren: NavChild[] = dict.plywood.products.items.map(
     (item) => ({
       label: item.name,
-      href: `/${lang}/plywood#${item.slug}`,
+      href: `/${lang}/plywood/${item.slug}`,
     }),
   );
 

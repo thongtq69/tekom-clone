@@ -32,7 +32,7 @@
     "hero": {
       "eyebrow": "GIỚI THIỆU",
       "title": "Cùng nhau xây dựng những điều tốt nhất.",
-      "description": "Thành lập từ năm 2005, Công ty Cổ phần TEKCOM chuyên cung cấp ván ép và các sản phẩm liên quan cho đối tác và khách hàng tại thị trường Việt Nam và xuất khẩu.",
+      "description": "Thành lập từ năm 2005, Công ty Cổ phần AAlog chuyên cung cấp ván ép và các sản phẩm liên quan cho đối tác và khách hàng tại thị trường Việt Nam và xuất khẩu.",
       "products": "Sản phẩm chủ lực:",
       "productsList": "Ván lạng cao su  |  Ván lạng bạch đàn  |  Ván lạng tràm  |  Ván lạng thông"
     },
@@ -60,16 +60,16 @@
       ]
     },
     "aboutUs": {
-      "eyebrow": "GIỚI THIỆU",
-      "title": "Chúng tôi là ai?",
-      "lead": "Professionals in QUALITY — chuyên gia về chất lượng.",
-      "desc": "TEKCOM tự hào là đối tác sản xuất ván ép tin cậy, cam kết mang đến sản phẩm đạt chuẩn quốc tế và dịch vụ tận tâm cho khách hàng trong nước và toàn cầu.",
+      "eyebrow": "NGƯỜI SÁNG LẬP",
+      "title": "Câu chuyện của chúng tôi",
+      "lead": "Tận tâm • Minh bạch • Chất lượng đặt lên hàng đầu.",
+      "desc": "Founder của AAlog trực tiếp có mặt tại xưởng mỗi ngày — kiểm tra từng lô ván, làm việc cùng anh em kỹ thuật và giữ liên lạc sát sao với khách hàng. Phong cách làm việc của chúng tôi đơn giản: nói được làm được, chất lượng trước rồi mới tính giá, và đồng hành lâu dài thay vì chạy theo đơn hàng ngắn hạn.",
       "cta": "Tìm hiểu thêm"
     },
     "privateLabel": {
       "eyebrow": "ĐỐI TÁC",
       "title": "Hãy để chúng tôi là đối tác Private Label của bạn",
-      "desc": "Chúng tôi luôn hướng đến sự thành công của khách hàng. Với năng lực sản xuất linh hoạt và đội ngũ kỹ thuật chuyên môn, TEKCOM sẵn sàng đồng hành cùng bạn xây dựng thương hiệu riêng — từ thiết kế bao bì đến tiêu chuẩn kỹ thuật.",
+      "desc": "Chúng tôi luôn hướng đến sự thành công của khách hàng. Với năng lực sản xuất linh hoạt và đội ngũ kỹ thuật chuyên môn, AAlog sẵn sàng đồng hành cùng bạn xây dựng thương hiệu riêng — từ thiết kế bao bì đến tiêu chuẩn kỹ thuật.",
       "cta": "Hợp tác cùng chúng tôi"
     },
     "experiencePreview": {
@@ -101,7 +101,7 @@
     "milestones": {
       "eyebrow": "CỘT MỐC QUAN TRỌNG",
       "title": "Hành trình của chúng tôi",
-      "subtitle": "Trong từng bước phát triển, TEKCOM luôn nỗ lực phối hợp chặt chẽ với các đối tác.",
+      "subtitle": "Trong từng bước phát triển, AAlog luôn nỗ lực phối hợp chặt chẽ với các đối tác.",
       "items": [
         { "year": "2005", "title": "Thành lập", "desc": "Là công ty thương mại vật liệu cách nhiệt." },
         { "year": "2007", "title": "Thương mại — FFP", "desc": "Bắt đầu phân phối ván phim cốp pha tại Việt Nam." },
@@ -116,7 +116,7 @@
     "hero": {
       "eyebrow": "VÁN ÉP",
       "title": "Bốn dòng ván lạng chủ lực",
-      "description": "Từ ván lạng cao su, bạch đàn, tràm đến thông — TEKCOM cung cấp đa dạng nguyên liệu cho khách hàng nội thất và xuất khẩu trên toàn cầu."
+      "description": "Từ ván lạng cao su, bạch đàn, tràm đến thông — AAlog cung cấp đa dạng nguyên liệu cho khách hàng nội thất và xuất khẩu trên toàn cầu."
     },
     "products": {
       "eyebrow": "DANH MỤC SẢN PHẨM",
@@ -160,10 +160,16 @@
         }
       ]
     },
+    "detail": {
+      "back": "Quay lại tất cả sản phẩm",
+      "overview": "Tổng quan",
+      "gallery": "Thư viện ảnh sản phẩm",
+      "other": "Sản phẩm khác"
+    },
     "certifications": {
       "eyebrow": "CHỨNG CHỈ & GIẤY TỜ",
       "title": "Hồ sơ pháp lý đầy đủ cho xuất khẩu",
-      "subtitle": "TEKCOM cung cấp đầy đủ chứng từ bắt buộc cho mỗi lô hàng xuất khẩu.",
+      "subtitle": "AAlog cung cấp đầy đủ chứng từ bắt buộc cho mỗi lô hàng xuất khẩu.",
       "items": [
         {
           "name": "Hồ sơ lâm sản hợp pháp",
@@ -192,7 +198,7 @@
     "hero": {
       "eyebrow": "LIÊN HỆ",
       "title": "Liên hệ với chúng tôi",
-      "description": "Cảm ơn bạn đã liên hệ TEKCOM. Chúng tôi cam kết phản hồi mọi yêu cầu trong vòng 72 giờ làm việc."
+      "description": "Cảm ơn bạn đã liên hệ AAlog. Chúng tôi cam kết phản hồi mọi yêu cầu trong vòng 72 giờ làm việc."
     },
     "form": {
       "eyebrow": "GỬI TIN NHẮN",
@@ -206,7 +212,7 @@
       "submit": "Gửi tin nhắn"
     },
     "info": {
-      "company": "TEKCOM Corporation",
+      "company": "AAlog Corporation",
       "hq": "Trụ sở — Nhà máy Bình Dương 1",
       "addr1": "Lô M1-M2-M7-M8, đường N2-N3, KCN Nam Tân Uyên Mở Rộng, P. Bình Cơ, TP. Hồ Chí Minh, Việt Nam",
       "bd2": "Nhà máy Bình Dương 2",
@@ -219,20 +225,20 @@
     "hero": {
       "eyebrow": "TIN TỨC",
       "title": "Tin tức & cập nhật",
-      "description": "Những câu chuyện mới nhất từ TEKCOM."
+      "description": "Những câu chuyện mới nhất từ AAlog."
     },
-    "section": { "eyebrow": "BÀI VIẾT MỚI NHẤT", "title": "Tin từ TEKCOM" },
+    "section": { "eyebrow": "BÀI VIẾT MỚI NHẤT", "title": "Tin từ AAlog" },
     "articles": [
-      { "title": "TEKCOM mở rộng xuất khẩu Bắc Mỹ", "date": "12/03/2026", "category": "Tin công ty", "excerpt": "Hợp đồng cung ứng dài hạn với nhà phân phối ván ép tại Mỹ…" },
+      { "title": "AAlog mở rộng xuất khẩu Bắc Mỹ", "date": "12/03/2026", "category": "Tin công ty", "excerpt": "Hợp đồng cung ứng dài hạn với nhà phân phối ván ép tại Mỹ…" },
       { "title": "Báo cáo phát triển bền vững 2025", "date": "02/02/2026", "category": "Bền vững", "excerpt": "Giảm 23% phát thải, FSC® đạt 88%…" },
       { "title": "Bên trong dây chuyền ván nội thất BD2", "date": "18/01/2026", "category": "Hậu trường", "excerpt": "Tham quan dây chuyền tự động hoá cao nhất…" },
-      { "title": "TEKCOM tại Vietnam Wood 2025", "date": "22/11/2025", "category": "Sự kiện", "excerpt": "Ghé booth A-12 xem dòng cốp pha mới…" }
+      { "title": "AAlog tại Vietnam Wood 2025", "date": "22/11/2025", "category": "Sự kiện", "excerpt": "Ghé booth A-12 xem dòng cốp pha mới…" }
     ]
   },
   "experience": {
     "hero": {
       "eyebrow": "KINH NGHIỆM",
-      "title": "Hành trình của TEKCOM",
+      "title": "Hành trình của AAlog",
       "description": "Hình ảnh hàng hoá, đối tác, đóng container và các giấy tờ xuất nhập khẩu trong hơn 20 năm hoạt động."
     },
     "categories": {
@@ -251,7 +257,7 @@
     "products": ["Ván lạng cao su", "Ván lạng bạch đàn", "Ván lạng tràm", "Ván lạng thông"],
     "addressShort": "Tỉnh Bình Dương, Việt Nam",
     "phone": "+84 977 668 000",
-    "email": "info@tekcom.vn",
+    "email": "info@aalog.vn",
     "rights": "© {year} A&A Logistics. Bảo lưu mọi quyền.",
     "privacy": "Chính sách bảo mật",
     "terms": "Điều khoản sử dụng"

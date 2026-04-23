@@ -43,11 +43,14 @@ export default async function HomePage(props: PageProps<"/[lang]">) {
       />
 
       {/* WHO ARE WE — replaces former Vision slot (left = image, right = content) */}
-      <section className="py-16 bg-white">
+      <section
+        className="py-16"
+        style={{ background: "#eef2f6" }}
+      >
         <div className="max-w-[1280px] mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-10 items-center">
           <div
-            className="aspect-[4/3] bg-cover bg-center"
-            style={{ backgroundImage: "url('/images/factory-bd1.jpg')" }}
+            className="aspect-[3/4] bg-cover bg-center max-w-md mx-auto w-full"
+            style={{ backgroundImage: "url('/images/founder.jpg')" }}
           />
           <div>
             <SectionTitle
@@ -74,21 +77,20 @@ export default async function HomePage(props: PageProps<"/[lang]">) {
             >
               {h.aboutUs.desc}
             </p>
-            <Link href={`/${lang}/about`} className="btn-gold mt-6">
+            <a
+              href="https://aalog.com.vn/gioi-thieu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-gold mt-6"
+            >
               {h.aboutUs.cta} →
-            </Link>
+            </a>
           </div>
         </div>
       </section>
 
       {/* GLOBAL REACH */}
-      <section
-        className="py-16"
-        style={{
-          background:
-            "linear-gradient(180deg, #f7f8fa 0%, #ffffff 100%)",
-        }}
-      >
+      <section className="py-16 bg-white">
         <div className="max-w-[1280px] mx-auto px-6 lg:px-10">
           <div className="text-center mb-10 flex flex-col items-center">
             <SectionTitle
@@ -234,6 +236,8 @@ export default async function HomePage(props: PageProps<"/[lang]">) {
           </Link>
         </div>
       </section>
+
+      <div aria-hidden className="h-2 bg-white" />
 
       {/* MILESTONES */}
       <section
