@@ -76,24 +76,6 @@ export default async function ContactPage(props: PageProps<"/[lang]/contact">) {
                 {dict.common.viewMap} →
               </a>
             </div>
-            <div>
-              <p
-                className="font-bold text-sm mb-1"
-                style={{ color: "var(--color-navy)" }}
-              >
-                {c.info.bd2}
-              </p>
-              <p className="text-[14px] text-[color:var(--color-muted)] leading-relaxed">
-                {c.info.addr2}
-              </p>
-              <a
-                href="https://goo.gl/maps/oBwuK9u2YS4oqBDbA"
-                className="text-xs uppercase tracking-[0.2em] font-bold mt-2 inline-block"
-                style={{ color: "var(--color-gold)" }}
-              >
-                {dict.common.viewMap} →
-              </a>
-            </div>
             <div className="pt-6 border-t border-[color:var(--color-line)] space-y-2">
               <p className="text-sm">
                 <span className="text-[color:var(--color-muted)]">

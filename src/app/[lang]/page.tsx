@@ -1,10 +1,21 @@
 import Hero from "@/components/Hero";
 import SectionTitle from "@/components/SectionTitle";
+import FactorySlider from "@/components/FactorySlider";
 import Link from "next/link";
 import { getDictionary, hasLocale } from "@/dictionaries";
 import { notFound } from "next/navigation";
 
-const factoryImages = ["/images/factory-bd1.jpg", "/images/factory-bd2.jpeg"];
+const factoryImageSets: string[][] = [
+  [
+    "/images/factory-bd1.jpg",
+    "/images/factory-bd2.jpeg",
+    "/images/plywood/rubberwood-1.jpg",
+    "/images/plywood/rubberwood-3.jpg",
+    "/images/plywood/rubberwood-4.jpg",
+    "/images/plywood/eucalyptus-1.jpg",
+    "/images/plywood/eucalyptus-3.jpg",
+  ],
+];
 
 export default async function HomePage(props: PageProps<"/[lang]">) {
   const { lang } = await props.params;
@@ -156,13 +167,16 @@ export default async function HomePage(props: PageProps<"/[lang]">) {
                 }`}
                 style={{ background: "var(--color-navy)" }}
               >
-                <div
-                  className={`bg-cover bg-center transition-transform group-hover:scale-105 ${
+                <FactorySlider
+                  images={factoryImageSets[i] ?? factoryImageSets[0]}
+                  alt={f.name}
+                  prevLabel={dict.common.prev}
+                  nextLabel={dict.common.next}
+                  className={
                     h.factories.items.length === 1
-                      ? "md:w-1/2 aspect-video md:aspect-auto"
+                      ? "md:w-1/2 aspect-video md:aspect-auto min-h-[280px]"
                       : "aspect-[16/10]"
-                  }`}
-                  style={{ backgroundImage: `url('${factoryImages[i]}')` }}
+                  }
                 />
                 <div
                   className={`p-6 text-white ${

@@ -23,7 +23,9 @@
     "dimensions": "Dimensions",
     "material": "Material",
     "price": "Reference price",
-    "viewMap": "View on map"
+    "viewMap": "View on map",
+    "prev": "Previous image",
+    "next": "Next image"
   },
   "logo": {
     "tagline": "The best of 4PL"

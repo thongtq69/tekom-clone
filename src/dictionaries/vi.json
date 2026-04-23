@@ -23,7 +23,9 @@
     "dimensions": "Kích thước",
     "material": "Chất liệu",
     "price": "Giá tham khảo",
-    "viewMap": "Xem trên bản đồ"
+    "viewMap": "Xem trên bản đồ",
+    "prev": "Ảnh trước",
+    "next": "Ảnh sau"
   },
   "logo": {
     "tagline": "The best of 4PL"

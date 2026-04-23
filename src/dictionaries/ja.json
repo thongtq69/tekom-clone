@@ -23,7 +23,9 @@
     "dimensions": "寸法",
     "material": "材質",
     "price": "参考価格",
-    "viewMap": "地図で見る"
+    "viewMap": "地図で見る",
+    "prev": "前の画像",
+    "next": "次の画像"
   },
   "logo": { "tagline": "4PL のベスト" },
   "home": {

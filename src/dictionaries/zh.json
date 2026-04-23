@@ -23,7 +23,9 @@
     "dimensions": "规格",
     "material": "材质",
     "price": "参考价格",
-    "viewMap": "在地图上查看"
+    "viewMap": "在地图上查看",
+    "prev": "上一张",
+    "next": "下一张"
   },
   "logo": { "tagline": "4PL 行业最佳" },
   "home": {

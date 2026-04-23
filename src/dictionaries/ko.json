@@ -23,7 +23,9 @@
     "dimensions": "규격",
     "material": "재질",
     "price": "참고 가격",
-    "viewMap": "지도에서 보기"
+    "viewMap": "지도에서 보기",
+    "prev": "이전 이미지",
+    "next": "다음 이미지"
   },
   "logo": { "tagline": "최고의 4PL" },
   "home": {

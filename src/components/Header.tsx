@@ -191,20 +191,28 @@ export default function Header({ lang, dict }: Props) {
             {navItems.map((item) =>
               item.children ? (
                 <div key={item.href}>
-                  <button
-                    onClick={() =>
-                      setMobileExpanded(
-                        mobileExpanded === item.href ? null : item.href,
-                      )
-                    }
-                    aria-expanded={mobileExpanded === item.href}
-                    className="w-full text-left text-[color:var(--color-navy)] hover:text-[color:var(--color-gold)] py-3 border-b border-[color:var(--color-line)] flex items-center justify-between"
-                  >
-                    <span>{item.label}</span>
-                    <span className="text-[10px]">
+                  <div className="flex items-stretch border-b border-[color:var(--color-line)]">
+                    <Link
+                      href={item.href}
+                      onClick={closeMobile}
+                      className="flex-1 py-3 text-[color:var(--color-navy)] hover:text-[color:var(--color-gold)]"
+                    >
+                      {item.label}
+                    </Link>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setMobileExpanded(
+                          mobileExpanded === item.href ? null : item.href,
+                        )
+                      }
+                      aria-expanded={mobileExpanded === item.href}
+                      aria-label={item.label}
+                      className="px-4 text-[10px] text-[color:var(--color-navy)] hover:text-[color:var(--color-gold)]"
+                    >
                       {mobileExpanded === item.href ? "▴" : "▾"}
-                    </span>
-                  </button>
+                    </button>
+                  </div>
                   {mobileExpanded === item.href && (
                     <div className="flex flex-col">
                       {item.children.map((child) => (
