@@ -8,12 +8,19 @@ import { notFound } from "next/navigation";
 const factoryImageSets: string[][] = [
   [
     "/images/factory-bd1.jpg",
-    "/images/factory-bd2.jpeg",
     "/images/plywood/rubberwood-1.jpg",
     "/images/plywood/rubberwood-3.jpg",
     "/images/plywood/rubberwood-4.jpg",
     "/images/plywood/eucalyptus-1.jpg",
     "/images/plywood/eucalyptus-3.jpg",
+  ],
+  [
+    "/images/factory-bd2.jpeg",
+    "/images/plywood/acacia-1.jpg",
+    "/images/plywood/acacia-3.jpg",
+    "/images/plywood/pine-1.jpg",
+    "/images/plywood/pine-3.jpg",
+    "/images/plywood/pine-4.jpg",
   ],
 ];
 

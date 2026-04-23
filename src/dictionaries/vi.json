@@ -96,6 +96,13 @@
           "area": "55.000 m²",
           "products": "Ván ép cốp pha",
           "people": "700+ nhân viên"
+        },
+        {
+          "name": "Nhà máy Bình Dương 02",
+          "desc": "Khánh thành 2019, BD2 tự động hoá cao và chuyên sản xuất ván ép cho ngành nội thất, bao gồm tủ bếp RTA chất lượng cao.",
+          "area": "60.000 m²",
+          "products": "Ván ép nội thất, tủ bếp",
+          "people": "600+ nhân viên"
         }
       ],
       "labels": { "area": "DIỆN TÍCH", "products": "SẢN PHẨM", "people": "NHÂN LỰC" }

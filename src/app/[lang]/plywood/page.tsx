@@ -87,16 +87,16 @@ export default async function PlywoodPage(props: PageProps<"/[lang]/plywood">) {
                         ))}
                       </ul>
                     </div>
-                    <div className="flex flex-wrap gap-3">
+                    <div className="flex flex-col sm:flex-row flex-wrap gap-3">
                       <Link
                         href={`/${lang}/plywood/${item.slug}`}
-                        className="btn-gold"
+                        className="btn-gold justify-center w-full sm:w-auto"
                       >
                         {dict.common.viewDetail} →
                       </Link>
                       <Link
                         href={`/${lang}/contact?subject=${encodeURIComponent(item.name)}`}
-                        className="inline-flex items-center gap-2 px-6 py-3 border-[1.5px] text-sm font-bold uppercase tracking-[1.5px] transition-colors"
+                        className="inline-flex items-center justify-center gap-2 px-6 py-3 border-[1.5px] text-sm font-bold uppercase tracking-[1.5px] transition-colors w-full sm:w-auto"
                         style={{
                           borderColor: "var(--color-navy)",
                           color: "var(--color-navy)",

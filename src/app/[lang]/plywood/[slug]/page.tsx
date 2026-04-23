@@ -19,7 +19,6 @@ export default async function PlywoodDetailPage(props: {
   const images = productImages[slug] ?? [];
   const hero = images[0] ?? "/images/factory-bd1.jpg";
   const rest = images.slice(1);
-  const others = p.products.items.filter((i) => i.slug !== slug);
 
   return (
     <>
@@ -161,71 +160,6 @@ export default async function PlywoodDetailPage(props: {
         </section>
       )}
 
-      {/* OTHER PRODUCTS */}
-      {others.length > 0 && (
-        <section className="py-16 bg-white">
-          <div className="max-w-[1280px] mx-auto px-6 lg:px-10">
-            <div className="text-center mb-10 flex flex-col items-center">
-              <SectionTitle
-                eyebrow={p.products.eyebrow}
-                title={p.detail.other}
-                align="center"
-              />
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {others.map((o) => {
-                const oImages = productImages[o.slug] ?? [];
-                return (
-                  <Link
-                    key={o.slug}
-                    href={`/${lang}/plywood/${o.slug}`}
-                    className="group block border border-[color:var(--color-line)] hover:shadow-lg transition-shadow overflow-hidden"
-                  >
-                    <div
-                      className="aspect-[4/3] bg-cover bg-center group-hover:scale-[1.03] transition-transform"
-                      style={{
-                        backgroundImage: `url('${oImages[0] ?? "/images/factory-bd1.jpg"}')`,
-                      }}
-                    />
-                    <div className="p-5">
-                      <h3
-                        className="mb-2 group-hover:text-[color:var(--color-gold)] transition-colors"
-                        style={{
-                          fontSize: "18px",
-                          letterSpacing: "1px",
-                          color: "var(--color-navy)",
-                        }}
-                      >
-                        {o.name}
-                      </h3>
-                      <p
-                        style={{
-                          fontSize: "13px",
-                          color: "var(--color-muted)",
-                          lineHeight: "20px",
-                        }}
-                      >
-                        {o.material}
-                      </p>
-                      <span
-                        className="mt-4 inline-flex items-center gap-1 font-bold"
-                        style={{
-                          color: "var(--color-gold)",
-                          fontSize: "12px",
-                          letterSpacing: "1.5px",
-                          textTransform: "uppercase",
-                        }}
-                      >
-                        {dict.common.viewDetail} →
-                      </span>
-                    </div>
-                  </Link>
-                );
-              })}
-            </div>
-          </div>
-        </section>
-      )}
     </>
   );
 }
